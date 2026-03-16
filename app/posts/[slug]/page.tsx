@@ -18,18 +18,24 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return { title: `${post.title} — Standard IA`, description: post.excerpt }
 }
 
+function inline(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((chunk, i) =>
+    chunk.startsWith('**') && chunk.endsWith('**')
+      ? <strong key={i}>{chunk.slice(2, -2)}</strong>
+      : chunk
+  )
+}
+
 function renderContent(content: string) {
-  return content
-    .split('\n')
-    .map((line, i) => {
-      if (line.startsWith('## ')) return <h2 key={i}>{line.slice(3)}</h2>
-      if (line.startsWith('### ')) return <h3 key={i}>{line.slice(4)}</h3>
-      if (line.startsWith('- ')) return <li key={i}>{line.slice(2)}</li>
-      if (line.startsWith('**') && line.endsWith('**')) return <p key={i}><strong>{line.slice(2, -2)}</strong></p>
-      if (line === '---') return <hr key={i} />
-      if (line === '') return <br key={i} />
-      return <p key={i}>{line}</p>
-    })
+  return content.split('\n').map((line, i) => {
+    if (line.startsWith('## '))  return <h2 key={i}>{line.slice(3)}</h2>
+    if (line.startsWith('### ')) return <h3 key={i}>{line.slice(4)}</h3>
+    if (/^\d+\.\s/.test(line))   return <li key={i}>{inline(line.replace(/^\d+\.\s/, ''))}</li>
+    if (line.startsWith('- '))   return <li key={i}>{inline(line.slice(2))}</li>
+    if (line === '---') return <hr key={i} />
+    if (line === '')   return <br key={i} />
+    return <p key={i}>{inline(line)}</p>
+  })
 }
 
 export default function PostPage({ params }: { params: { slug: string } }) {
