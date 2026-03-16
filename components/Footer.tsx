@@ -2,22 +2,18 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="py-8 px-6 border-t border-zinc-100 bg-white">
+    <footer className="py-8 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <Logo size={22} />
-          <span className="font-bold text-zinc-900 text-sm">Standard IA</span>
+          <span className="text-white font-bold text-sm">Standard IA</span>
         </div>
-
-        <div className="flex items-center gap-6 text-sm text-zinc-400">
-          <a href="#services" className="hover:text-zinc-700 transition-colors">Services</a>
-          <a href="#process"  className="hover:text-zinc-700 transition-colors">Process</a>
-          <a href="mailto:contact@standard-ia.pro" className="hover:text-zinc-700 transition-colors">Contact</a>
+        <div className="flex items-center gap-6 text-sm text-white/30">
+          <a href="#services" className="hover:text-white transition-colors">Services</a>
+          <a href="#process"  className="hover:text-white transition-colors">Process</a>
+          <a href="mailto:contact@standard-ia.pro" className="hover:text-white transition-colors">contact@standard-ia.pro</a>
         </div>
-
-        <p className="text-zinc-400 text-xs">
-          © {new Date().getFullYear()} Standard IA — SAS de droit français
-        </p>
+        <p className="text-white/20 text-xs">© {new Date().getFullYear()} Standard IA</p>
       </div>
     </footer>
   );

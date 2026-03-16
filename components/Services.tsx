@@ -1,98 +1,68 @@
 const services = [
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke="#16a34a" strokeWidth="1.5"/>
-        <path d="M7 10l2 2 4-4" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
+    label: "01",
     name: "Réceptionniste IA",
-    description: "Un agent IA qui répond à vos appels 24h/24, gère les questions courantes et prend les rendez-vous à votre place.",
-    price: "197",
+    price: "197€/mois",
+    description: "Un agent vocal qui décroche vos appels 24h/24, répond aux questions et prend les rendez-vous. Vous ne ratez plus jamais un client.",
+    tags: ["Appels entrants", "Prise de RDV", "FAQ automatique"],
   },
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M3 6a2 2 0 012-2h10a2 2 0 012 2v6a2 2 0 01-2 2H7l-4 2V6z" stroke="#16a34a" strokeWidth="1.5" strokeLinejoin="round"/>
-      </svg>
-    ),
+    label: "02",
     name: "Chatbot IA",
-    description: "Un chatbot intelligent sur votre site web qui répond instantanément, capture les leads et les transmet directement à votre CRM.",
-    price: "147",
+    price: "147€/mois",
+    description: "Un assistant sur votre site qui engage vos visiteurs, répond instantanément et envoie les leads directement dans votre CRM.",
+    tags: ["Capture de leads", "Réponses 24/7", "Intégration CRM"],
   },
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <circle cx="4" cy="10" r="2" stroke="#16a34a" strokeWidth="1.5"/>
-        <circle cx="16" cy="4" r="2" stroke="#16a34a" strokeWidth="1.5"/>
-        <circle cx="16" cy="16" r="2" stroke="#16a34a" strokeWidth="1.5"/>
-        <path d="M6 10h4m2-4.5L10 10l2 4.5" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
+    label: "03",
     name: "Automatisations IA",
-    description: "Vos outils connectés entre eux — CRM, email, calendrier, facturation. Les tâches répétitives disparaissent, vous vous concentrez sur l'essentiel.",
-    price: "297",
+    price: "297€/mois",
+    description: "Vos outils connectés entre eux. CRM, emails, facturation, reporting — les tâches répétitives disparaissent, vous gagnez des heures chaque semaine.",
+    tags: ["Zéro saisie manuelle", "Outils connectés", "Reporting auto"],
   },
   {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <rect x="2" y="3" width="16" height="11" rx="2" stroke="#16a34a" strokeWidth="1.5"/>
-        <path d="M6 17h8M10 14v3" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M6 8h8M6 10.5h5" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
+    label: "04",
     name: "Contenu IA",
-    description: "Production et publication automatisées de contenu pour vos réseaux sociaux. Votre présence en ligne tourne sans effort de votre côté.",
-    price: "197",
+    price: "197€/mois",
+    description: "Création et publication automatisées de contenu pour vos réseaux sociaux. Votre présence en ligne tourne sans que vous leviez le petit doigt.",
+    tags: ["Posts automatiques", "LinkedIn · Instagram", "Planning IA"],
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 bg-zinc-50">
+    <section id="services" className="py-28 px-6">
       <div className="max-w-5xl mx-auto">
-        {/* Header */}
-        <div className="mb-14">
-          <p className="text-green-600 text-xs font-semibold uppercase tracking-widest mb-3">
-            Nos services
-          </p>
-          <h2 className="text-4xl font-black text-zinc-900 tracking-tight">
-            Ce que nous déployons pour vous.
+        <div className="mb-16">
+          <p className="text-[#22c55e] text-xs font-semibold uppercase tracking-widest mb-3">Nos services</p>
+          <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            Ce que l&apos;IA fait<br />à votre place.
           </h2>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid md:grid-cols-2 gap-5">
-          {services.map((s, i) => (
-            <div
-              key={i}
-              className="bg-white border border-zinc-200 rounded-2xl p-7 hover:shadow-md transition-shadow duration-200"
-            >
-              <div className="w-9 h-9 rounded-lg bg-green-50 border border-green-100 flex items-center justify-center mb-5">
-                {s.icon}
+        <div className="grid md:grid-cols-2 gap-4">
+          {services.map((s) => (
+            <div key={s.label}
+              className="group border border-white/10 hover:border-[#22c55e]/40 rounded-2xl p-7 bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-200">
+              <div className="flex items-start justify-between mb-5">
+                <span className="text-white/20 font-black text-3xl leading-none">{s.label}</span>
+                <span className="text-[#22c55e] font-bold text-sm">{s.price}</span>
               </div>
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h3 className="text-zinc-900 font-bold text-lg">{s.name}</h3>
-                <div className="text-right flex-shrink-0">
-                  <span className="text-zinc-900 font-black text-xl">{s.price}€</span>
-                  <span className="text-zinc-400 text-xs">/mois</span>
-                </div>
+              <h3 className="text-white font-bold text-xl mb-3">{s.name}</h3>
+              <p className="text-white/50 text-sm leading-relaxed mb-5">{s.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {s.tags.map((t) => (
+                  <span key={t} className="text-white/40 text-xs border border-white/10 px-2.5 py-1 rounded-full">
+                    {t}
+                  </span>
+                ))}
               </div>
-              <p className="text-zinc-500 text-sm leading-relaxed mb-5">
-                {s.description}
-              </p>
-              <a
-                href="#contact"
-                className="text-green-600 hover:text-green-700 text-sm font-semibold transition-colors"
-              >
-                En savoir plus →
-              </a>
             </div>
           ))}
         </div>
 
-        <p className="text-zinc-400 text-xs mt-8 text-center">
-          Résiliable à tout moment · Pas de frais d&apos;installation · Onboarding inclus
+        <p className="text-white/20 text-xs text-center mt-8">
+          Sans engagement · Résiliable à tout moment · Onboarding inclus
         </p>
       </div>
     </section>

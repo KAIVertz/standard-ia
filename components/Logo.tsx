@@ -1,24 +1,9 @@
-export default function Logo({ size = 28 }: { size?: number }) {
+export default function Logo({ size = 32 }: { size?: number }) {
+  const s = size;
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 28 28"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Diamond / rotated square */}
-      <rect
-        x="4"
-        y="4"
-        width="20"
-        height="20"
-        rx="3"
-        transform="rotate(45 14 14)"
-        fill="#16a34a"
-      />
-      {/* Small circle accent top-right */}
-      <circle cx="20" cy="8" r="3" fill="#09090b" />
+    <svg width={s} height={s} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="32" height="32" rx="8" fill="#22c55e"/>
+      <path d="M9 16.5L14 21.5L23 11" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 }

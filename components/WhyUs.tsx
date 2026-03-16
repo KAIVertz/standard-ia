@@ -1,30 +1,20 @@
-const stats = [
-  {
-    value: "7 jours",
-    label: "Délai de déploiement moyen",
-  },
-  {
-    value: "100% FR",
-    label: "Équipe et support en français",
-  },
-  {
-    value: "0 contrat",
-    label: "Résiliable à tout moment",
-  },
+const numbers = [
+  { value: "7 jours", label: "Délai de déploiement" },
+  { value: "24h/24", label: "Votre IA travaille" },
+  { value: "75%", label: "De marge sur chaque client" },
+  { value: "0", label: "Ligne de code à écrire" },
 ];
 
 export default function WhyUs() {
   return (
-    <section className="py-20 px-6 border-t border-b border-zinc-100 bg-white">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-10 md:divide-x divide-zinc-100">
-          {stats.map((s, i) => (
-            <div key={i} className={`${i > 0 ? "md:pl-10" : ""}`}>
-              <div className="text-3xl font-black text-zinc-900 mb-1">{s.value}</div>
-              <div className="text-sm text-zinc-500">{s.label}</div>
-            </div>
-          ))}
-        </div>
+    <section className="py-20 px-6 border-t border-white/5">
+      <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+        {numbers.map((n, i) => (
+          <div key={i} className="text-center">
+            <div className="text-4xl font-black text-white mb-1">{n.value}</div>
+            <div className="text-white/40 text-sm">{n.label}</div>
+          </div>
+        ))}
       </div>
     </section>
   );
