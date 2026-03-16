@@ -1,7 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import Solution from "@/components/Solution";
+import WhyUs from "@/components/WhyUs";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import CtaBanner from "@/components/CtaBanner";
@@ -12,8 +11,7 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <Problem />
-      <Solution />
+      <WhyUs />
       <Services />
       <Process />
       <CtaBanner />
