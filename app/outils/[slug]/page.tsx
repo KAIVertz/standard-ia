@@ -30,56 +30,56 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
 
   return (
     <main>
-      <article className="max-w-2xl mx-auto px-6 py-12">
-        <Link href="/outils" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
+      <article className="max-w-2xl mx-auto px-6 py-14">
+        <Link href="/outils" className="text-sm text-[#444] hover:text-white transition-colors mb-10 inline-block">
           ← Tous les outils
         </Link>
 
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-14 h-14 rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center overflow-hidden">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="w-14 h-14 rounded-xl border border-[#222] bg-[#111] flex items-center justify-center overflow-hidden">
             <img src={tool.logo} alt={tool.name} className="w-9 h-9 object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl font-black text-[#111]">{tool.name}</h1>
-            <span className="text-xs text-gray-400">{tool.category} · {tool.pricing}</span>
+            <h1 className="font-display font-black text-white text-2xl">{tool.name}</h1>
+            <span className="text-xs text-[#444]">{tool.category} · {tool.pricing}</span>
           </div>
           <div className="ml-auto flex gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
-              <span key={i} className={`text-lg ${i < tool.rating ? 'text-[#16a34a]' : 'text-gray-200'}`}>★</span>
+              <span key={i} className={`text-lg ${i < tool.rating ? 'text-white' : 'text-[#222]'}`}>★</span>
             ))}
           </div>
         </div>
 
-        <p className="text-gray-600 text-lg leading-relaxed mb-4">{tool.tagline}</p>
+        <p className="text-[#888] text-lg leading-relaxed mb-6">{tool.tagline}</p>
 
-        <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-8">
-          <p className="text-sm font-semibold text-[#255BEE]">Verdict Standard IA</p>
-          <p className="text-sm text-[#1a47cc] mt-1">{tool.verdict}</p>
+        <div className="bg-[#111] border border-[#1f1f1f] rounded-xl p-5 mb-8">
+          <p className="text-xs font-semibold text-[#555] uppercase tracking-widest mb-2">Verdict Standard IA</p>
+          <p className="text-sm text-[#888] leading-relaxed">{tool.verdict}</p>
         </div>
 
         <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer"
-          className="inline-block w-full text-center bg-[#255BEE] hover:bg-[#1a47cc] text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-colors mb-10">
+          className="inline-block w-full text-center bg-white hover:bg-[#e5e5e5] text-black font-bold px-6 py-3.5 rounded-xl text-sm transition-colors mb-10">
           {tool.affiliateLabel} →
         </a>
 
-        <div className="prose" style={{ borderTop: "1px solid #e5e7eb", paddingTop: "2rem" }}>
+        <div className="prose" style={{ borderTop: "1px solid #1a1a1a", paddingTop: "2rem" }}>
           {renderContent(tool.content)}
         </div>
 
-        <div className="mt-10 pt-8" style={{ borderTop: "1px solid #e5e7eb" }}>
+        <div className="mt-10 pt-8" style={{ borderTop: "1px solid #1a1a1a" }}>
           <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer"
-            className="inline-block w-full text-center bg-[#255BEE] hover:bg-[#1a47cc] text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-colors">
+            className="inline-block w-full text-center bg-white hover:bg-[#e5e5e5] text-black font-bold px-6 py-3.5 rounded-xl text-sm transition-colors">
             {tool.affiliateLabel} →
           </a>
         </div>
       </article>
 
       {/* Newsletter CTA */}
-      <section className="py-12 px-6" style={{ background: "#f9fafb", borderTop: "1px solid #e5e7eb" }}>
+      <section className="py-14 px-6" style={{ background: "#0f0f0f", borderTop: "1px solid #1a1a1a" }}>
         <div className="max-w-xl mx-auto text-center">
-          <h3 className="font-black text-[#111] text-xl mb-2">Reçois chaque édition dans ta boîte mail.</h3>
-          <p className="text-gray-500 text-sm mb-5">Gratuit · Sans spam · Résiliable en un clic</p>
-          <div className="flex justify-center"><SubscribeForm variant="blue" /></div>
+          <h3 className="font-display font-black text-white text-2xl mb-3">Reçois chaque édition dans ta boîte mail.</h3>
+          <p className="text-[#555] text-sm mb-6">Gratuit · Sans spam · Résiliable en un clic</p>
+          <div className="flex justify-center"><SubscribeForm /></div>
         </div>
       </section>
     </main>

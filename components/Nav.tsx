@@ -12,20 +12,20 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={`sticky top-0 z-50 bg-white transition-shadow duration-200 ${scrolled ? "shadow-sm" : ""}`}
-      style={{ borderBottom: "1px solid #e5e7eb" }}>
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+    <nav
+      className={`sticky top-0 z-50 transition-all duration-200 ${scrolled ? "bg-[#0a0a0a]/95 backdrop-blur border-b border-[#1f1f1f]" : "bg-transparent"}`}>
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2.5">
           <Logo size={28} />
-          <span className="font-display font-bold text-[#030712] text-sm tracking-tight">Standard IA</span>
+          <span className="font-display font-bold text-white text-sm tracking-tight">Standard IA</span>
         </Link>
-        <div className="hidden md:flex items-center gap-6 text-sm text-gray-500">
-          <Link href="/posts" className="hover:text-gray-900 transition-colors">Articles</Link>
-          <Link href="/outils" className="hover:text-gray-900 transition-colors">Outils</Link>
-          <Link href="/newsletter" className="hover:text-gray-900 transition-colors">Newsletter</Link>
+        <div className="hidden md:flex items-center gap-8 text-sm text-[#666]">
+          <Link href="/posts" className="hover:text-white transition-colors">Articles</Link>
+          <Link href="/outils" className="hover:text-white transition-colors">Outils</Link>
+          <Link href="/newsletter" className="hover:text-white transition-colors">Newsletter</Link>
         </div>
         <Link href="/newsletter"
-          className="text-sm font-semibold bg-[#255BEE] hover:bg-[#1a47cc] text-white px-4 py-1.5 rounded-lg transition-colors">
+          className="text-sm font-semibold bg-white hover:bg-[#e5e5e5] text-black px-4 py-2 rounded-lg transition-colors">
           S&apos;abonner
         </Link>
       </div>

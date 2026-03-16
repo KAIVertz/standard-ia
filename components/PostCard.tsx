@@ -8,18 +8,17 @@ const typeLabel: Record<Post['type'], string> = {
 export default function PostCard({ post }: { post: Post }) {
   return (
     <Link href={`/posts/${post.slug}`}
-      className="block bg-white border border-gray-100 rounded-xl p-5 hover:shadow-md transition-all duration-200 group hover:border-gray-200">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="text-xs font-semibold text-[#255BEE] bg-blue-50 px-2 py-0.5 rounded-full">
-          {typeLabel[post.type]}
-        </span>
-        <span className="text-xs text-gray-400">{post.readTime} min</span>
+      className="block bg-[#111] border border-[#1f1f1f] rounded-xl p-6 hover:border-[#333] transition-all duration-200 group">
+      <div className="flex items-center gap-2 mb-4">
+        <span className="text-xs font-semibold text-[#666] uppercase tracking-widest">{typeLabel[post.type]}</span>
+        <span className="text-[#2a2a2a]">·</span>
+        <span className="text-xs text-[#444]">{post.readTime} min</span>
       </div>
-      <h3 className="font-display font-bold text-[#030712] text-base leading-snug mb-2 group-hover:text-[#255BEE] transition-colors">
+      <h3 className="font-display font-bold text-white text-base leading-snug mb-3 group-hover:text-[#ccc] transition-colors">
         {post.title}
       </h3>
-      <p className="text-sm text-gray-500 leading-relaxed line-clamp-2">{post.excerpt}</p>
-      <p className="text-xs text-gray-400 mt-3">
+      <p className="text-sm text-[#555] leading-relaxed line-clamp-2 mb-4">{post.excerpt}</p>
+      <p className="text-xs text-[#333]">
         {new Date(post.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
       </p>
     </Link>
