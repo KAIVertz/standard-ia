@@ -52,13 +52,13 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
 
         <p className="text-gray-600 text-lg leading-relaxed mb-4">{tool.tagline}</p>
 
-        <div className="bg-green-50 border border-green-100 rounded-xl p-4 mb-8">
-          <p className="text-sm font-semibold text-[#15803d]">Verdict Standard IA</p>
-          <p className="text-sm text-[#166534] mt-1">{tool.verdict}</p>
+        <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-8">
+          <p className="text-sm font-semibold text-[#255BEE]">Verdict Standard IA</p>
+          <p className="text-sm text-[#1a47cc] mt-1">{tool.verdict}</p>
         </div>
 
         <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer"
-          className="inline-block w-full text-center bg-[#16a34a] hover:bg-[#15803d] text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-colors mb-10">
+          className="inline-block w-full text-center bg-[#255BEE] hover:bg-[#1a47cc] text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-colors mb-10">
           {tool.affiliateLabel} →
         </a>
 
@@ -68,18 +68,18 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
 
         <div className="mt-10 pt-8" style={{ borderTop: "1px solid #e5e7eb" }}>
           <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer"
-            className="inline-block w-full text-center bg-[#16a34a] hover:bg-[#15803d] text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-colors">
+            className="inline-block w-full text-center bg-[#255BEE] hover:bg-[#1a47cc] text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-colors">
             {tool.affiliateLabel} →
           </a>
         </div>
       </article>
 
       {/* Newsletter CTA */}
-      <section className="py-12 px-6" style={{ background: "#f0fdf4", borderTop: "1px solid #dcfce7" }}>
+      <section className="py-12 px-6" style={{ background: "#f9fafb", borderTop: "1px solid #e5e7eb" }}>
         <div className="max-w-xl mx-auto text-center">
           <h3 className="font-black text-[#111] text-xl mb-2">Reçois chaque édition dans ta boîte mail.</h3>
           <p className="text-gray-500 text-sm mb-5">Gratuit · Sans spam · Résiliable en un clic</p>
-          <div className="flex justify-center"><SubscribeForm variant="green" /></div>
+          <div className="flex justify-center"><SubscribeForm variant="blue" /></div>
         </div>
       </section>
     </main>

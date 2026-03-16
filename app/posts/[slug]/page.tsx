@@ -70,11 +70,11 @@ export default function PostPage({ params }: { params: { slug: string } }) {
       </article>
 
       {/* Newsletter CTA */}
-      <section className="py-12 px-6" style={{ background: "#f0fdf4", borderTop: "1px solid #dcfce7" }}>
+      <section className="py-12 px-6" style={{ background: "#f9fafb", borderTop: "1px solid #e5e7eb" }}>
         <div className="max-w-xl mx-auto text-center">
           <h3 className="font-black text-[#111] text-xl mb-2">Reçois chaque édition dans ta boîte mail.</h3>
           <p className="text-gray-500 text-sm mb-5">Gratuit · Sans spam · Résiliable en un clic</p>
-          <div className="flex justify-center"><SubscribeForm variant="green" /></div>
+          <div className="flex justify-center"><SubscribeForm variant="blue" /></div>
         </div>
       </section>
 

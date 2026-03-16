@@ -7,7 +7,7 @@ export default function NewsletterPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="py-16 px-6 text-center" style={{ background: "#f0fdf4", borderBottom: "1px solid #dcfce7" }}>
+      <section className="py-16 px-6 text-center" style={{ background: "#f9fafb", borderBottom: "1px solid #e5e7eb" }}>
         <div className="max-w-xl mx-auto">
           <h1 className="text-4xl font-black text-[#111] tracking-tight mb-3">
             L&apos;IA expliquée simplement.<br />Chaque semaine.
@@ -16,7 +16,7 @@ export default function NewsletterPage() {
             Outils, actualités, conseils pratiques — tout ce qu&apos;il faut savoir sur l&apos;IA, en français, sans jargon.
           </p>
 
-          <div className="flex justify-center mb-4"><SubscribeForm variant="green" /></div>
+          <div className="flex justify-center mb-4"><SubscribeForm variant="blue" /></div>
           <p className="text-xs text-gray-400">Gratuit · Sans spam · Résiliable en un clic</p>
         </div>
       </section>

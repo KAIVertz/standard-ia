@@ -7,86 +7,95 @@ import SubscribeForm from "@/components/SubscribeForm"
 
 export default function Home() {
   const featured = getFeaturedPost()
-  const latestPosts = posts.filter(p => !p.featured).slice(0, 3)
+  const latestPosts = posts.filter(p => !p.featured).slice(0, 4)
 
   return (
     <main>
-      {/* Hero */}
-      <section className="border-b border-gray-100 py-16 px-6" style={{ background: "#fafafa" }}>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <span className="inline-block text-xs font-semibold text-[#16a34a] bg-green-50 border border-green-100 px-3 py-1 rounded-full mb-5">
-              La référence IA en français
-            </span>
-            <h1 className="text-4xl md:text-5xl font-black text-[#111] tracking-tight leading-tight mb-4">
-              L&apos;IA expliquée<br />simplement.
-            </h1>
-            <p className="text-gray-500 text-lg leading-relaxed mb-2">
-              Chaque semaine : les meilleurs outils, l&apos;actualité IA et des conseils concrets — en français, sans jargon.
-            </p>
-            <p className="text-sm text-gray-400 mb-8">Gratuit · Sans spam · Résiliable en un clic</p>
-
+      {/* Hero — newsletter-first like The Rundown */}
+      <section className="py-20 px-6 text-center" style={{ background: "#f9fafb", borderBottom: "1px solid #e5e7eb" }}>
+        <div className="max-w-2xl mx-auto">
+          <div className="inline-flex items-center gap-2 bg-blue-50 text-[#255BEE] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-blue-100">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#255BEE]" />
+            La newsletter IA #1 en français
+          </div>
+          <h1 className="font-display font-black text-[#030712] text-4xl md:text-5xl leading-tight tracking-tight mb-4">
+            L&apos;IA expliquée simplement.<br />Chaque semaine.
+          </h1>
+          <p className="text-gray-500 text-lg mb-8 leading-relaxed">
+            Outils, actualités et conseils pratiques — tout ce qu&apos;il faut savoir sur l&apos;IA, en français, sans jargon.
+          </p>
+          <div className="flex justify-center mb-3">
             <SubscribeForm />
           </div>
-
-          {/* Featured post preview */}
-          {featured && (
-            <Link href={`/posts/${featured.slug}`}
-              className="bg-white border border-gray-200 rounded-2xl p-7 hover:shadow-lg transition-shadow duration-200 group block">
-              <span className="text-xs font-semibold text-[#16a34a] bg-green-50 px-2.5 py-1 rounded-full border border-green-100">
-                À la une
-              </span>
-              <h2 className="text-xl font-black text-[#111] mt-4 mb-3 leading-snug group-hover:text-[#16a34a] transition-colors">
-                {featured.title}
-              </h2>
-              <p className="text-sm text-gray-500 leading-relaxed mb-4">{featured.excerpt}</p>
-              <span className="text-sm font-semibold text-[#16a34a]">Lire l&apos;article →</span>
-            </Link>
-          )}
+          <p className="text-xs text-gray-400">Gratuit · Sans spam · Résiliable en un clic</p>
         </div>
       </section>
 
-      {/* Latest posts */}
-      <section className="py-14 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="font-black text-[#111] text-xl">Derniers articles</h2>
-            <Link href="/posts" className="text-sm text-[#16a34a] font-semibold hover:underline">
-              Voir tout →
+      <div className="max-w-6xl mx-auto px-6">
+
+        {/* Featured article */}
+        {featured && (
+          <div className="py-10" style={{ borderBottom: "1px solid #e5e7eb" }}>
+            <p className="text-xs font-semibold text-[#255BEE] uppercase tracking-widest mb-4">À la une</p>
+            <Link href={`/posts/${featured.slug}`}
+              className="group grid md:grid-cols-3 gap-6 bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-lg transition-all duration-200">
+              <div className="md:col-span-2">
+                <span className="text-xs font-semibold text-[#255BEE] bg-blue-50 px-2.5 py-1 rounded-full">Article</span>
+                <h2 className="font-display font-black text-[#030712] text-2xl mt-3 mb-3 leading-snug group-hover:text-[#255BEE] transition-colors">
+                  {featured.title}
+                </h2>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">{featured.excerpt}</p>
+                <span className="text-sm font-semibold text-[#255BEE]">Lire l&apos;article →</span>
+              </div>
+              <div className="hidden md:flex items-center justify-center bg-gray-50 rounded-xl">
+                <span className="font-display font-black text-8xl text-gray-100 select-none">IA</span>
+              </div>
             </Link>
           </div>
-          <div className="grid md:grid-cols-3 gap-4">
+        )}
+
+        {/* Latest articles */}
+        <div className="py-10" style={{ borderBottom: "1px solid #e5e7eb" }}>
+          <div className="flex items-center justify-between mb-6">
+            <p className="font-display font-bold text-[#030712] text-lg">Derniers articles</p>
+            <Link href="/posts" className="text-sm text-[#255BEE] font-semibold hover:underline">Tout voir →</Link>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
             {latestPosts.map(p => <PostCard key={p.slug} post={p} />)}
           </div>
         </div>
-      </section>
 
-      {/* Newsletter banner */}
-      <section className="py-14 px-6" style={{ background: "#f0fdf4" }}>
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-black text-[#111] text-2xl mb-2">Ne manque aucune édition.</h2>
-          <p className="text-gray-500 text-base mb-6">Chaque semaine dans ta boîte mail. Gratuit, sans spam.</p>
-          <div className="flex justify-center"><SubscribeForm variant="green" /></div>
-        </div>
-      </section>
-
-      {/* Tool reviews */}
-      <section className="py-14 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h2 className="font-black text-[#111] text-xl">Outils testés</h2>
-              <p className="text-sm text-gray-400 mt-1">Les meilleurs outils IA passés en revue</p>
+        {/* Newsletter mid-page */}
+        <div className="py-10" style={{ borderBottom: "1px solid #e5e7eb" }}>
+          <div className="bg-[#255BEE] rounded-2xl px-8 py-10 text-center">
+            <h3 className="font-display font-black text-white text-2xl mb-2">Ne manque aucune édition.</h3>
+            <p className="text-blue-200 text-sm mb-6">Chaque semaine dans ta boîte mail. Gratuit.</p>
+            <div className="flex justify-center">
+              <form className="flex gap-2 w-full max-w-sm"
+                action="/newsletter">
+                <input type="email" placeholder="Votre email" required
+                  className="flex-1 border-0 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-white bg-white text-gray-900" />
+                <button type="submit"
+                  className="bg-white text-[#255BEE] font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-blue-50 transition-colors whitespace-nowrap">
+                  S&apos;abonner
+                </button>
+              </form>
             </div>
-            <Link href="/outils" className="text-sm text-[#16a34a] font-semibold hover:underline">
-              Voir tout →
-            </Link>
+          </div>
+        </div>
+
+        {/* Tool reviews */}
+        <div className="py-10">
+          <div className="flex items-center justify-between mb-6">
+            <p className="font-display font-bold text-[#030712] text-lg">Outils testés</p>
+            <Link href="/outils" className="text-sm text-[#255BEE] font-semibold hover:underline">Tout voir →</Link>
           </div>
           <div className="grid md:grid-cols-3 gap-4">
             {tools.map(t => <ToolCard key={t.slug} tool={t} />)}
           </div>
         </div>
-      </section>
+
+      </div>
     </main>
   )
 }
