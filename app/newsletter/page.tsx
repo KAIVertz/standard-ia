@@ -1,5 +1,5 @@
 import { editions } from "@/content/newsletter"
-import SubscribeForm from "@/components/SubscribeForm"
+import BeehiivEmbed from "@/components/BeehiivEmbed"
 import AnimateIn from "@/components/AnimateIn"
 
 export const metadata = { title: "Newsletter — Standard IA" }
@@ -21,10 +21,9 @@ export default function NewsletterPage() {
             </p>
           </AnimateIn>
           <AnimateIn delay={220}>
-            <div className="flex justify-center mb-4">
-              <SubscribeForm />
+            <div className="flex justify-center">
+              <BeehiivEmbed />
             </div>
-            <p className="text-xs text-[#333]">Gratuit · Sans spam · Résiliable en un clic</p>
           </AnimateIn>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { posts, getFeaturedPost } from "@/content/posts"
 import { tools } from "@/content/tools"
 import PostCard from "@/components/PostCard"
 import ToolCard from "@/components/ToolCard"
-import SubscribeForm from "@/components/SubscribeForm"
+import BeehiivEmbed from "@/components/BeehiivEmbed"
 import AnimateIn from "@/components/AnimateIn"
 
 export default function Home() {
@@ -27,10 +27,9 @@ export default function Home() {
             </p>
           </AnimateIn>
           <AnimateIn delay={220}>
-            <div className="flex justify-center mb-4">
-              <SubscribeForm />
+            <div className="flex justify-center">
+              <BeehiivEmbed />
             </div>
-            <p className="text-xs text-[#333]">Gratuit · Sans spam · Résiliable en un clic</p>
           </AnimateIn>
         </div>
       </section>
@@ -85,16 +84,9 @@ export default function Home() {
           <AnimateIn>
             <div className="rounded-2xl border border-[#1f1f1f] bg-[#111] px-10 py-12 text-center">
               <h3 className="font-display font-black text-white text-3xl mb-3">Ne manque aucune édition.</h3>
-              <p className="text-[#555] text-sm mb-8">Chaque semaine dans ta boîte mail. Gratuit.</p>
+              <p className="text-[#555] text-sm mb-6">Chaque semaine dans ta boîte mail. Gratuit.</p>
               <div className="flex justify-center">
-                <form className="flex gap-2 w-full max-w-sm" action="/newsletter">
-                  <input type="email" placeholder="Votre email" required
-                    className="flex-1 border border-[#2a2a2a] rounded-lg px-4 py-2.5 text-sm bg-[#0a0a0a] text-white placeholder-[#444] focus:outline-none focus:border-white transition-colors" />
-                  <button type="submit"
-                    className="bg-white text-black font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-[#e5e5e5] transition-colors whitespace-nowrap">
-                    S&apos;abonner
-                  </button>
-                </form>
+                <BeehiivEmbed />
               </div>
             </div>
           </AnimateIn>

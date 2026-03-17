@@ -14,7 +14,7 @@ Publie dans l'ordre indiqué. 1 thread Twitter = 1 post LinkedIn par jour.
 >
 > Voici 7 outils IA 100% gratuits qui peuvent transformer votre façon de travailler.
 >
-> (Thread) 🧵
+> (Thread) 🧵C
 
 > Tweet 2/8
 > 1. ChatGPT (gratuit)
