@@ -15,7 +15,18 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug)
   if (!post) return {}
-  return { title: `${post.title} — Standard IA`, description: post.excerpt }
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      url: `https://standard-ia.pro/posts/${post.slug}`,
+    },
+    twitter: { card: "summary_large_image", title: post.title, description: post.excerpt },
+  }
 }
 
 function inline(text: string) {

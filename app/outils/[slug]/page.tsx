@@ -10,7 +10,16 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const tool = getToolBySlug(params.slug)
   if (!tool) return {}
-  return { title: `${tool.name} — Avis Standard IA`, description: tool.tagline }
+  return {
+    title: `${tool.name} — Avis`,
+    description: tool.tagline,
+    openGraph: {
+      title: `${tool.name} — Avis Standard IA`,
+      description: tool.tagline,
+      url: `https://standard-ia.pro/outils/${tool.slug}`,
+    },
+    twitter: { card: "summary_large_image", title: `${tool.name} — Avis Standard IA`, description: tool.tagline },
+  }
 }
 
 function inline(text: string) {
