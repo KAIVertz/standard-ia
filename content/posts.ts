@@ -8,7 +8,6 @@ export const posts: Post[] = [
     type: 'article',
     date: '2026-03-16',
     readTime: 5,
-    featured: true,
     content: `
 La majorité des utilisateurs de ChatGPT posent des questions simples et obtiennent des réponses simples. C'est gâcher l'outil.
 
@@ -147,6 +146,192 @@ La différence de productivité entre quelqu'un qui maîtrise ces outils et quel
 4. **Restez curieux** — le domaine évolue chaque semaine
 
 L'IA n'est pas une menace. C'est un levier. La question est : est-ce que vous allez l'utiliser ?
+
+*Standard IA — L'IA expliquée simplement.*
+    `.trim(),
+  },
+  {
+    slug: 'meilleurs-outils-ia-gratuits-2026',
+    title: 'Les 7 meilleurs outils IA gratuits en 2026',
+    excerpt: 'Pas besoin de payer pour utiliser l\'IA. Voici les outils gratuits les plus puissants, testés et classés.',
+    type: 'article',
+    date: '2026-03-17',
+    readTime: 5,
+    featured: true,
+    content: `
+Tout le monde parle des outils IA payants. Mais les meilleurs résultats ne nécessitent pas forcément un abonnement.
+
+Voici 7 outils IA gratuits que vous pouvez utiliser dès aujourd'hui.
+
+## 1. ChatGPT (version gratuite)
+
+Le modèle de base d'OpenAI reste incroyablement puissant. La version gratuite donne accès à GPT-4o mini, qui suffit pour 90% des usages : rédaction, brainstorming, analyse de texte, traduction.
+
+**Le tip :** Soyez précis dans vos prompts. Plus vous donnez de contexte, meilleure sera la réponse.
+
+## 2. Perplexity AI
+
+Le moteur de recherche du futur. Perplexity donne des réponses sourcées, avec des liens vers les articles originaux. Parfait pour la veille et la recherche d'informations.
+
+**Gratuit :** 5 recherches "Pro" par jour, recherches standard illimitées.
+
+## 3. Gamma
+
+Créer des présentations professionnelles en 30 secondes. Décrivez votre sujet, Gamma génère un deck complet avec mise en page, icônes et structure.
+
+**Gratuit :** 10 crédits par mois — suffisant pour 2-3 présentations.
+
+## 4. Canva AI
+
+Canva a intégré l'IA partout : génération d'images, retouche, suppression d'arrière-plan, rédaction de texte. Le plan gratuit inclut la plupart de ces fonctions.
+
+**Le tip :** Utilisez "Magic Write" pour générer du texte marketing directement dans vos designs.
+
+## 5. Claude (Anthropic)
+
+L'alternative sérieuse à ChatGPT. Claude excelle dans l'analyse de longs documents, la rédaction nuancée et les tâches complexes. Version gratuite disponible sur claude.ai.
+
+**Le tip :** Envoyez-lui un PDF ou un document à analyser — c'est là qu'il brille le plus.
+
+## 6. Hugging Face
+
+La plateforme open source de l'IA. Des milliers de modèles gratuits : génération d'images, classification de texte, traduction, reconnaissance vocale. Plus technique, mais entièrement gratuit.
+
+**Pour qui :** Les curieux qui veulent aller plus loin que les chatbots.
+
+## 7. NotebookLM (Google)
+
+Transformez vos documents en assistant personnel. Uploadez vos PDFs, notes, articles — NotebookLM les analyse et répond à vos questions sur le contenu. Gratuit et puissant.
+
+**Le tip :** Parfait pour les étudiants et les chercheurs.
+
+---
+
+Ces 7 outils couvrent la majorité des besoins : rédaction, recherche, présentation, design, analyse. Commencez par celui qui correspond le plus à votre travail quotidien.
+
+*Standard IA — L'IA expliquée simplement.*
+    `.trim(),
+  },
+  {
+    slug: 'google-gemini-2-revolution-ia',
+    title: 'Google Gemini 2 : ce que ça change pour vous',
+    excerpt: 'Google vient de lancer Gemini 2, son nouveau modèle IA. Plus rapide, plus intelligent, plus intégré. Voici ce qu\'il faut retenir.',
+    type: 'article',
+    date: '2026-03-17',
+    readTime: 4,
+    content: `
+Google frappe fort avec Gemini 2. Le nouveau modèle arrive directement dans Gmail, Docs, Sheets et Search. Voici pourquoi c'est important.
+
+## Ce qui est nouveau
+
+Gemini 2 apporte trois avancées majeures par rapport à son prédécesseur :
+
+**La vitesse.** Les réponses sont 3x plus rapides. En pratique, cela signifie que l'IA dans Gmail ou Docs répond quasi instantanément.
+
+**Le contexte.** Gemini 2 peut traiter jusqu'à 2 millions de tokens — l'équivalent de 15 livres entiers. Vous pouvez lui donner des documents massifs sans le perdre.
+
+**L'intégration native.** Plus besoin de copier-coller entre ChatGPT et vos outils Google. Gemini est directement dans votre workflow : il rédige vos emails, résume vos documents, analyse vos tableurs.
+
+## Ce que ça change concrètement
+
+Pour un professionnel qui utilise Google Workspace au quotidien, l'impact est immédiat :
+
+- **Gmail** : résumé automatique des longs fils de discussion, suggestion de réponses contextuelles
+- **Docs** : rédaction assistée, reformulation, traduction intégrée
+- **Sheets** : analyse de données en langage naturel ("montre-moi les ventes qui baissent")
+- **Slides** : génération de présentations à partir d'un brief
+
+## ChatGPT vs Gemini : qui gagne ?
+
+La réponse dépend de votre usage :
+
+- **ChatGPT** reste meilleur pour les conversations libres, le brainstorming et les tâches créatives
+- **Gemini** prend l'avantage pour tout ce qui est intégré à votre travail Google quotidien
+
+La vraie conclusion ? Utilisez les deux. Ils sont complémentaires.
+
+## Ce qu'il faut retenir
+
+L'IA n'est plus un outil séparé qu'on ouvre dans un onglet. Elle s'intègre directement dans les outils que vous utilisez déjà. C'est la tendance majeure de 2026, et Gemini 2 en est l'illustration parfaite.
+
+*Standard IA — L'IA expliquée simplement.*
+    `.trim(),
+  },
+  {
+    slug: 'automatiser-business-ia-guide',
+    title: 'Comment automatiser son business avec l\'IA (guide pas à pas)',
+    excerpt: 'L\'IA peut faire gagner des heures chaque semaine à n\'importe quel entrepreneur. Voici comment commencer, même sans compétence technique.',
+    type: 'analyse',
+    date: '2026-03-17',
+    readTime: 7,
+    content: `
+Vous entendez parler d'automatisation IA partout. Mais par où commencer quand on n'est pas développeur et qu'on n'a pas de budget ?
+
+Ce guide vous montre exactement comment faire, étape par étape.
+
+## Étape 1 : Identifiez vos tâches répétitives
+
+Prenez une feuille et listez tout ce que vous faites plus de 3 fois par semaine :
+
+- Répondre aux mêmes questions clients
+- Rédiger des emails de relance
+- Publier sur les réseaux sociaux
+- Créer des devis ou factures
+- Faire de la veille sur votre marché
+
+Chacune de ces tâches est une candidate à l'automatisation.
+
+## Étape 2 : Choisissez vos outils (gratuits)
+
+Vous n'avez besoin que de 3 outils pour commencer :
+
+**ChatGPT** — pour générer du contenu (emails, posts, réponses clients). Gratuit.
+
+**Make.com** — pour connecter vos outils entre eux (quand X arrive, fais Y automatiquement). Gratuit jusqu'à 1000 opérations/mois.
+
+**Google Sheets** — comme base de données simple pour stocker vos contacts, contenus, et suivre vos process.
+
+## Étape 3 : Votre première automatisation
+
+Voici un exemple concret que vous pouvez mettre en place en 20 minutes :
+
+**Objectif :** Publier automatiquement sur les réseaux sociaux.
+
+1. Créez un Google Sheet avec les colonnes : Date, Texte, Plateforme, Statut
+2. Remplissez une semaine de posts (utilisez ChatGPT pour les générer)
+3. Connectez Make.com à votre Sheet et à vos réseaux sociaux
+4. Configurez : "Chaque jour à 9h, publie le post du jour"
+
+Résultat : vos réseaux sociaux fonctionnent en pilote automatique.
+
+## Étape 4 : Automatisez les réponses clients
+
+Si vous recevez souvent les mêmes questions :
+
+1. Listez les 10 questions les plus fréquentes
+2. Demandez à ChatGPT de rédiger des réponses types
+3. Créez des modèles de réponse dans votre email
+4. Optionnel : intégrez un chatbot IA sur votre site
+
+## Étape 5 : Mesurez et améliorez
+
+Après 2 semaines d'automatisation, posez-vous ces questions :
+
+- Combien de temps ai-je gagné par semaine ?
+- Quelles tâches prennent encore trop de temps ?
+- Quels résultats l'automatisation a produit (plus de clients, moins d'erreurs) ?
+
+Puis passez au niveau suivant : automatisez une nouvelle tâche.
+
+---
+
+## Les erreurs à éviter
+
+- **Tout automatiser d'un coup.** Commencez par une seule tâche. Maîtrisez-la. Puis passez à la suivante.
+- **Oublier de vérifier.** L'IA fait des erreurs. Relisez toujours avant d'envoyer.
+- **Ignorer la personnalisation.** Un email généré par IA sans touche personnelle se voit. Ajoutez toujours un détail humain.
+
+L'automatisation IA n'est pas de la magie. C'est de la méthode. Et avec les bons outils, n'importe qui peut commencer aujourd'hui.
 
 *Standard IA — L'IA expliquée simplement.*
     `.trim(),
