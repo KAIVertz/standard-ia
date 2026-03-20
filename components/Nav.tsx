@@ -16,7 +16,7 @@ export default function Nav() {
       className={`sticky top-0 z-50 transition-all duration-200 ${scrolled ? "bg-[#0a0a0a]/95 backdrop-blur border-b border-[#1f1f1f]" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <img src="/logos/logo.png" alt="Standard IA Logo" className="w-8 h-8" />
+          <img src="/logos/logo.png" alt="Standard IA Logo" className="w-8 h-8 rounded-lg bg-[#6366f1]" />
           <span className="font-display font-bold text-white text-sm tracking-tight">Standard IA</span>
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm text-[#666]">
