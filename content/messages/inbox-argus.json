@@ -35,5 +35,17 @@
     },
     "timestamp": "2026-03-20T16:46:02.159Z",
     "read": false
+  },
+  {
+    "id": "1774025284583-p5b8",
+    "from": "DÉVA",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Échec : Déploiement Vercel",
+      "command": "vercel --prod --yes"
+    },
+    "timestamp": "2026-03-20T16:48:04.583Z",
+    "read": false
   }
 ]
