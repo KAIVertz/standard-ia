@@ -1,12 +1,12 @@
-name: "Agent 1 : Génération hebdomadaire (posts sociaux + newsletter)"
+name: "Agent 1 : Génération quotidienne (RSS → article)"
 
 on:
   schedule:
-    - cron: "0 5 * * 1"  # Chaque lundi à 6h UTC (7h française)
+    - cron: "0 6 * * *"  # Chaque jour à 7h (heure française)
   workflow_dispatch:
 
 jobs:
-  generate-weekly:
+  generate-daily:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,15 +18,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: "🤖 Agent 1 : Générer posts sociaux + newsletter depuis RSS"
+      - name: "🤖 Agent 1 : Lire RSS + générer l'article du jour"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: npx tsx scripts/generate-content.ts --weekly
+        run: npx tsx scripts/generate-content.ts --daily
 
-      - name: Commit le contenu social
+      - name: Commit l'article en queue
         run: |
           git config user.name "Standard IA Bot"
           git config user.email "bot@standard-ia.pro"
           git add -A
-          git diff --staged --quiet || git commit -m "🤖 Contenu social semaine $(date +%V) généré"
+          git diff --staged --quiet || git commit -m "🤖 Article $(date +%Y-%m-%d) généré depuis RSS"
           git push
