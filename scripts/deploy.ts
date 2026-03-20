@@ -42,7 +42,8 @@ async function main() {
   }
 
   run("npm run build", "Build Next.js")
-  run("vercel --prod --yes", "Déploiement Vercel")
+  // Deploy via git push → Vercel auto-deploys via GitHub integration
+  run("git add -A && git diff --staged --quiet || git commit -m '🚀 DÉVA: auto-deploy' && git push origin main || git push origin main", "Push GitHub → Vercel auto-déploie")
 
   // Notifier ARGUS
   logAgentMessage("DÉVA", "ARGUS", "DEPLOY_DONE", { url: "standard-ia.pro", timestamp: new Date().toISOString() })

@@ -10,7 +10,7 @@
       "date": "2026-03-20"
     },
     "timestamp": "2026-03-20T16:45:20.196Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1774025131560-tktw",
@@ -22,7 +22,7 @@
       "file": "content/social/tweet-today.txt"
     },
     "timestamp": "2026-03-20T16:45:31.560Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1774025162159-cjyj",
@@ -34,7 +34,7 @@
       "command": "vercel --prod --yes"
     },
     "timestamp": "2026-03-20T16:46:02.159Z",
-    "read": false
+    "read": true
   },
   {
     "id": "1774025284583-p5b8",
@@ -46,6 +46,6 @@
       "command": "vercel --prod --yes"
     },
     "timestamp": "2026-03-20T16:48:04.583Z",
-    "read": false
+    "read": true
   }
 ]
