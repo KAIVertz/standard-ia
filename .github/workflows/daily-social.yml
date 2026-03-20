@@ -39,9 +39,15 @@ jobs:
 
           if [ -f "$SOCIAL_FILE" ]; then
             echo "📱 Contenu trouvé : $SOCIAL_FILE"
-            # Extraire le premier tweet non encore posté
-            # Pour l'instant, on poste le fichier complet en thread
-            npx tsx scripts/post-twitter.ts "$SOCIAL_FILE" --thread
+            npx tsx scripts/post-twitter.ts "$SOCIAL_FILE" --auto
           else
             echo "⚠️ Pas de contenu social pour la semaine $WEEK"
+            # Fallback: tweet promo
+            echo "L'IA évolue vite. Très vite.
+
+Chaque semaine, on décrypte le meilleur de l'IA — en français, sans jargon.
+
+Rejoins la newsletter gratuite 👇
+standard-ia.pro" > /tmp/promo-tweet.txt
+            npx tsx scripts/post-twitter.ts /tmp/promo-tweet.txt
           fi

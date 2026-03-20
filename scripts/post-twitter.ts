@@ -1,11 +1,11 @@
 /**
  * Agent 3 : Social Poster
- * Poste un tweet ou thread sur Twitter
- * Usage: npx tsx scripts/post-twitter.ts <fichier.md> [--thread]
+ * Poste un tweet ou thread sur Twitter — un contenu différent chaque jour
  *
- * Exemples:
- *   npx tsx scripts/post-twitter.ts content/social/tweet-lundi.txt
- *   npx tsx scripts/post-twitter.ts content/social/thread-lundi.txt --thread
+ * Usage:
+ *   npx tsx scripts/post-twitter.ts <fichier>              → tweet simple
+ *   npx tsx scripts/post-twitter.ts <fichier> --thread      → thread
+ *   npx tsx scripts/post-twitter.ts <fichier.md> --auto     → choisit auto selon le jour
  */
 
 const TWITTER_API_KEY = process.env.TWITTER_API_KEY
@@ -39,7 +39,7 @@ function generateOAuthSignature(
   return crypto.createHmac("sha1", signingKey).update(baseString).digest("base64")
 }
 
-function getOAuthHeader(method: string, url: string, body?: string): string {
+function getOAuthHeader(method: string, url: string): string {
   const oauthParams: Record<string, string> = {
     oauth_consumer_key: TWITTER_API_KEY!,
     oauth_nonce: crypto.randomBytes(16).toString("hex"),
@@ -105,10 +105,73 @@ async function postThread(tweets: string[]) {
     previousId = await postTweet(tweet, previousId)
     console.log(`  ✅ Tweet ${i + 1} posté (ID: ${previousId})`)
 
-    // Wait between tweets to avoid rate limiting
     if (i < tweets.length - 1) {
       await new Promise(r => setTimeout(r, 2000))
     }
+  }
+}
+
+// ─── Parse social file into sections ───
+
+function parseSocialFile(content: string): { thread: string[], tweets: string[] } {
+  const sections = content.split(/^---$/m).map(s => s.trim()).filter(Boolean)
+
+  let thread: string[] = []
+  const tweets: string[] = []
+
+  for (const section of sections) {
+    if (section.includes("# Thread Twitter")) {
+      // Extract thread tweets
+      const tweetMatches = section.split(/^Tweet \d+\/\d+:?\s*$/m).slice(1)
+      thread = tweetMatches.map(t => t.trim()).filter(Boolean)
+      // Truncate tweets > 280 chars
+      thread = thread.map(t => t.length > 280 ? t.slice(0, 277) + "..." : t)
+    } else if (section.includes("# Tweets individuels")) {
+      // Extract individual tweets
+      const tweetMatches = section.split(/^Tweet \d+:?\s*$/m).slice(1)
+      for (const t of tweetMatches) {
+        const clean = t.trim()
+        if (clean) tweets.push(clean.length > 280 ? clean.slice(0, 277) + "..." : clean)
+      }
+    }
+    // LinkedIn posts are ignored for Twitter
+  }
+
+  return { thread, tweets }
+}
+
+// ─── Auto mode: pick content based on day of week ───
+
+function getAutoContent(content: string): { text: string[], isThread: boolean } {
+  const { thread, tweets } = parseSocialFile(content)
+  const day = new Date().getDay() // 0=Sun, 1=Mon, ..., 6=Sat
+
+  // Schedule:
+  // Mon (1) → Thread
+  // Tue (2) → Tweet 1
+  // Wed (3) → Tweet 2
+  // Thu (4) → Tweet 3
+  // Fri (5) → Tweet 4
+  // Sat (6) → Tweet 5
+  // Sun (0) → Promo tweet
+
+  if (day === 1 && thread.length > 0) {
+    console.log(`  📅 Lundi → Thread (${thread.length} tweets)`)
+    return { text: thread, isThread: true }
+  }
+
+  const tweetIndex = day >= 2 ? day - 2 : tweets.length - 1 // Sun → last tweet
+  if (tweetIndex < tweets.length) {
+    const dayNames = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"]
+    console.log(`  📅 ${dayNames[day]} → Tweet ${tweetIndex + 1}`)
+    return { text: [tweets[tweetIndex]], isThread: false }
+  }
+
+  // Fallback: promo tweet
+  console.log(`  📅 Fallback → Tweet promo`)
+  return {
+    text: ["L'IA évolue vite. Très vite.\n\nChaque semaine, on décrypte le meilleur de l'IA — en français, sans jargon.\n\nRejoins la newsletter gratuite 👇\nstandard-ia.pro"],
+    isThread: false
   }
 }
 
@@ -120,33 +183,43 @@ async function main() {
 
   const args = process.argv.slice(2)
   const isThread = args.includes("--thread")
+  const isAuto = args.includes("--auto")
   const filePath = args.find(a => !a.startsWith("--"))
 
   if (!filePath) {
-    // Si pas de fichier, poster un tweet simple depuis stdin ou argument
     console.log("Usage:")
     console.log("  npx tsx scripts/post-twitter.ts <fichier>")
     console.log("  npx tsx scripts/post-twitter.ts <fichier> --thread")
-    console.log("")
-    console.log("Le fichier doit contenir :")
-    console.log("  - Un tweet par ligne (mode normal)")
-    console.log("  - Tweets séparés par '---' (mode thread)")
+    console.log("  npx tsx scripts/post-twitter.ts <fichier.md> --auto")
     process.exit(0)
   }
 
   const fs = await import("fs")
+
+  if (!fs.existsSync(filePath)) {
+    console.error(`❌ Fichier introuvable : ${filePath}`)
+    process.exit(1)
+  }
+
   const content = fs.readFileSync(filePath, "utf-8").trim()
 
-  if (isThread) {
-    // Split by --- or "Tweet X/Y:" pattern
+  if (isAuto) {
+    // Auto mode: pick content based on day of week
+    const { text, isThread: shouldThread } = getAutoContent(content)
+    if (shouldThread) {
+      await postThread(text)
+    } else {
+      console.log(`  ⏳ Posting tweet...`)
+      const id = await postTweet(text[0])
+      console.log(`  ✅ Tweet posté (ID: ${id})`)
+    }
+  } else if (isThread) {
     const tweets = content
       .split(/(?:^---$|^Tweet \d+\/\d+:?\s*$)/m)
       .map(t => t.trim())
       .filter(Boolean)
-
     await postThread(tweets)
   } else {
-    // Single tweet
     console.log(`  ⏳ Posting tweet...`)
     const id = await postTweet(content)
     console.log(`  ✅ Tweet posté (ID: ${id})`)
