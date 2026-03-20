@@ -32,10 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <head>
-        <script async src="https://subscribe-forms.beehiiv.com/embed.js" />
-        <script async src="https://subscribe-forms.beehiiv.com/attribution.js" />
-      </head>
+      <head />
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <Nav />
         {children}
