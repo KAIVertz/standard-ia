@@ -4,6 +4,33 @@
  * Usage: npx tsx scripts/generate-content.ts
  */
 
+// ─── Terminal colors ───
+const c = {
+  reset: "\x1b[0m",
+  bold: "\x1b[1m",
+  dim: "\x1b[2m",
+  cyan: "\x1b[36m",
+  green: "\x1b[32m",
+  yellow: "\x1b[33m",
+  red: "\x1b[31m",
+  purple: "\x1b[35m",
+  blue: "\x1b[34m",
+  white: "\x1b[37m",
+}
+
+function spinner(label: string): () => void {
+  const frames = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+  let i = 0
+  const interval = setInterval(() => {
+    process.stdout.write(`\r  ${c.cyan}${frames[i % frames.length]}${c.reset} ${label}...`)
+    i++
+  }, 80)
+  return () => {
+    clearInterval(interval)
+    process.stdout.write("\r")
+  }
+}
+
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY
 if (!GEMINI_API_KEY) {
   console.error("❌ GEMINI_API_KEY manquante. Ajoute-la dans .env.local ou en variable d'environnement.")
@@ -180,41 +207,48 @@ Règles :
 // ─── Main ───
 
 async function main() {
-  console.log("🤖 Agent 1 : Content Writer")
-  console.log("═══════════════════════════\n")
+  const startTime = Date.now()
+  console.log(`\n${c.purple}${c.bold}╔══════════════════════════════╗${c.reset}`)
+  console.log(`${c.purple}${c.bold}║  🤖  Agent 1 : Content Writer  ║${c.reset}`)
+  console.log(`${c.purple}${c.bold}╚══════════════════════════════╝${c.reset}\n`)
 
   const week = getWeekNumber()
   const fs = await import("fs")
   const path = await import("path")
 
   // 1. Generate articles
-  console.log("📝 Génération des articles...")
+  const stop1 = spinner("Gemini génère les articles")
   const articlesRaw = await generateArticles()
+  stop1()
   const articlesFile = path.join(process.cwd(), "content", "social", `articles-week${week}.txt`)
   fs.writeFileSync(articlesFile, articlesRaw)
-  console.log(`   ✅ Articles sauvegardés → ${articlesFile}`)
+  console.log(`  ${c.green}✅${c.reset} ${c.bold}Articles générés${c.reset} ${c.dim}→ articles-week${week}.txt${c.reset}`)
 
   // 2. Generate social posts
-  console.log("📱 Génération des posts sociaux...")
+  const stop2 = spinner("Gemini génère les posts sociaux")
   const socialRaw = await generateSocialPosts()
+  stop2()
   const socialFile = path.join(process.cwd(), "content", "social", `social-week${week}.md`)
   fs.writeFileSync(socialFile, socialRaw)
-  console.log(`   ✅ Posts sociaux sauvegardés → ${socialFile}`)
+  console.log(`  ${c.green}✅${c.reset} ${c.bold}Posts sociaux générés${c.reset} ${c.dim}→ social-week${week}.md${c.reset}`)
 
   // 3. Generate newsletter
-  console.log("📬 Génération de la newsletter...")
+  const stop3 = spinner("Gemini génère la newsletter")
   const newsletterRaw = await generateNewsletter()
+  stop3()
   const newsletterFile = path.join(process.cwd(), "content", "social", `newsletter-week${week}.md`)
   fs.writeFileSync(newsletterFile, newsletterRaw)
-  console.log(`   ✅ Newsletter sauvegardée → ${newsletterFile}`)
+  console.log(`  ${c.green}✅${c.reset} ${c.bold}Newsletter générée${c.reset} ${c.dim}→ newsletter-week${week}.md${c.reset}`)
 
-  console.log("\n═══════════════════════════")
-  console.log("✅ Contenu de la semaine généré !")
-  console.log(`   📂 Tout est dans content/social/`)
-  console.log(`\n⚠️  PROCHAINE ÉTAPE :`)
-  console.log(`   Vérifie le contenu dans content/social/articles-week${week}.txt`)
-  console.log(`   Puis copie les articles dans content/posts.ts`)
-  console.log(`   Puis lance : npx tsx scripts/deploy.ts`)
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
+  console.log(`\n${c.green}${c.bold}╔══════════════════════════════════════╗${c.reset}`)
+  console.log(`${c.green}${c.bold}║  ✅  Contenu semaine ${week} généré en ${elapsed}s  ║${c.reset}`)
+  console.log(`${c.green}${c.bold}╚══════════════════════════════════════╝${c.reset}`)
+  console.log(`\n  ${c.yellow}⚡ Prochaine étape :${c.reset}`)
+  console.log(`  ${c.dim}1. Vérifie content/social/articles-week${week}.txt${c.reset}`)
+  console.log(`  ${c.dim}2. Copie les articles dans content/posts.ts${c.reset}`)
+  console.log(`  ${c.dim}3. Lance : ${c.cyan}npm run deploy${c.reset}`)
+  console.log()
 }
 
 main().catch(err => {

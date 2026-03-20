@@ -175,11 +175,20 @@ function getAutoContent(content: string): { text: string[], isThread: boolean } 
   }
 }
 
+// ─── Terminal colors ───
+const c = {
+  reset: "\x1b[0m", bold: "\x1b[1m", dim: "\x1b[2m",
+  cyan: "\x1b[36m", green: "\x1b[32m", yellow: "\x1b[33m",
+  red: "\x1b[31m", blue: "\x1b[34m",
+}
+
 // ─── Main ───
 
 async function main() {
-  console.log("🐦 Agent 3 : Social Poster")
-  console.log("══════════════════════════\n")
+  const startTime = Date.now()
+  console.log(`\n${c.blue}${c.bold}╔════════════════════════════╗${c.reset}`)
+  console.log(`${c.blue}${c.bold}║  🐦  Agent 3 : Social Poster  ║${c.reset}`)
+  console.log(`${c.blue}${c.bold}╚════════════════════════════╝${c.reset}\n`)
 
   const args = process.argv.slice(2)
   const isThread = args.includes("--thread")
@@ -187,31 +196,30 @@ async function main() {
   const filePath = args.find(a => !a.startsWith("--"))
 
   if (!filePath) {
-    console.log("Usage:")
-    console.log("  npx tsx scripts/post-twitter.ts <fichier>")
-    console.log("  npx tsx scripts/post-twitter.ts <fichier> --thread")
-    console.log("  npx tsx scripts/post-twitter.ts <fichier.md> --auto")
+    console.log(`  ${c.yellow}Usage:${c.reset}`)
+    console.log(`  ${c.dim}npx tsx scripts/post-twitter.ts <fichier>${c.reset}`)
+    console.log(`  ${c.dim}npx tsx scripts/post-twitter.ts <fichier> --thread${c.reset}`)
+    console.log(`  ${c.dim}npx tsx scripts/post-twitter.ts <fichier.md> --auto${c.reset}`)
     process.exit(0)
   }
 
   const fs = await import("fs")
 
   if (!fs.existsSync(filePath)) {
-    console.error(`❌ Fichier introuvable : ${filePath}`)
+    console.error(`  ${c.red}❌ Fichier introuvable : ${filePath}${c.reset}`)
     process.exit(1)
   }
 
   const content = fs.readFileSync(filePath, "utf-8").trim()
 
   if (isAuto) {
-    // Auto mode: pick content based on day of week
     const { text, isThread: shouldThread } = getAutoContent(content)
     if (shouldThread) {
       await postThread(text)
     } else {
-      console.log(`  ⏳ Posting tweet...`)
+      process.stdout.write(`  ${c.cyan}⏳${c.reset} Posting tweet...`)
       const id = await postTweet(text[0])
-      console.log(`  ✅ Tweet posté (ID: ${id})`)
+      process.stdout.write(`\r  ${c.green}✅${c.reset} Tweet posté ${c.dim}(ID: ${id})${c.reset}\n`)
     }
   } else if (isThread) {
     const tweets = content
@@ -220,13 +228,15 @@ async function main() {
       .filter(Boolean)
     await postThread(tweets)
   } else {
-    console.log(`  ⏳ Posting tweet...`)
+    process.stdout.write(`  ${c.cyan}⏳${c.reset} Posting tweet...`)
     const id = await postTweet(content)
-    console.log(`  ✅ Tweet posté (ID: ${id})`)
+    process.stdout.write(`\r  ${c.green}✅${c.reset} Tweet posté ${c.dim}(ID: ${id})${c.reset}\n`)
   }
 
-  console.log("\n══════════════════════════")
-  console.log("✅ Posté sur Twitter !")
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
+  console.log(`\n${c.green}${c.bold}╔══════════════════════════════════╗${c.reset}`)
+  console.log(`${c.green}${c.bold}║  ✅  Posté sur Twitter en ${elapsed}s  ║${c.reset}`)
+  console.log(`${c.green}${c.bold}╚══════════════════════════════════╝${c.reset}\n`)
 }
 
 main().catch(err => {
