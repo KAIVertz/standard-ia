@@ -39,7 +39,7 @@ export default function BeehiivEmbed() {
         onChange={e => setEmail(e.target.value)}
         placeholder="ton@email.com"
         required
-        className="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-[#555] text-sm focus:outline-none focus:border-[#6366f1] transition-colors backdrop-blur-sm"
+        className="flex-1 px-4 py-3 bg-transparent border-b border-[#333] text-white placeholder-[#444] text-sm focus:outline-none focus:border-[#6366f1] transition-colors"
       />
       <button
         type="submit"
