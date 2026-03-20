@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Logo from "@/components/Logo"
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -15,8 +16,7 @@ export default function Nav() {
       className={`sticky top-0 z-50 transition-all duration-200 ${scrolled ? "bg-[#0a0a0a]/95 backdrop-blur border-b border-[#1f1f1f]" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logos/logo.png" alt="Standard IA" width={32} height={32} className="rounded-lg" />
+          <Logo />
           <span className="font-display font-bold text-white text-sm tracking-tight">Standard IA</span>
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm text-[#666]">
