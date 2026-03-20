@@ -1,196 +1,140 @@
 /**
- * Agent 5 : Debug Monitor
- * Vérifie que tous les agents fonctionnent correctement
- * Usage: npx tsx scripts/debug-check.ts
+ * ARGUS 👁️ — Gardien de Standard IA
  *
- * Checks:
- * 1. Gemini API → peut-on générer du contenu ?
- * 2. Twitter API → les credentials sont-ils valides ?
- * 3. Vercel → le site est-il en ligne ?
- * 4. Contenu → y a-t-il du contenu pour cette semaine ?
+ * Surveille l'équipe, lit les messages de tous les agents,
+ * vérifie que le site tourne, rapporte les erreurs
+ *
+ * Usage: npx tsx scripts/debug-check.ts
  */
 
-const CHECKS = {
-  gemini: { name: "Gemini API", status: "⏳", detail: "" },
-  twitter: { name: "Twitter API", status: "⏳", detail: "" },
-  vercel: { name: "Site en ligne", status: "⏳", detail: "" },
-  content: { name: "Contenu semaine", status: "⏳", detail: "" },
+import * as fs from "fs"
+import * as path from "path"
+import { readMessages, sendMessage } from "./agent-bus.js"
+
+const c = {
+  reset: "\x1b[0m", bold: "\x1b[1m", dim: "\x1b[2m",
+  cyan: "\x1b[36m", green: "\x1b[32m", yellow: "\x1b[33m",
+  red: "\x1b[31m", purple: "\x1b[35m", blue: "\x1b[34m",
 }
 
-type CheckKey = keyof typeof CHECKS
+function todayStr(): string { return new Date().toISOString().split("T")[0] }
 
-function pass(key: CheckKey, detail: string) {
-  CHECKS[key].status = "✅"
-  CHECKS[key].detail = detail
+function tomorrowStr(): string {
+  const d = new Date(); d.setDate(d.getDate() + 1)
+  return d.toISOString().split("T")[0]
 }
 
-function fail(key: CheckKey, detail: string) {
-  CHECKS[key].status = "❌"
-  CHECKS[key].detail = detail
-}
-
-function warn(key: CheckKey, detail: string) {
-  CHECKS[key].status = "⚠️"
-  CHECKS[key].detail = detail
-}
-
-// ─── Check 1: Gemini API ───
-
-async function checkGemini() {
-  const key = process.env.GEMINI_API_KEY
-  if (!key) { fail("gemini", "GEMINI_API_KEY manquante"); return }
-
+async function checkSite(): Promise<boolean> {
   try {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: "Dis juste 'ok'" }] }],
-          generationConfig: { maxOutputTokens: 10 },
-        }),
-      }
-    )
-    if (res.ok) {
-      pass("gemini", "API fonctionnelle")
-    } else {
-      const err = await res.text()
-      fail("gemini", `Erreur ${res.status}: ${err.slice(0, 100)}`)
-    }
-  } catch (e: any) {
-    fail("gemini", `Connexion échouée: ${e.message}`)
-  }
+    const res = await fetch("https://standard-ia.pro", { signal: AbortSignal.timeout(8000) })
+    return res.ok
+  } catch { return false }
 }
-
-// ─── Check 2: Twitter API ───
-
-async function checkTwitter() {
-  const apiKey = process.env.TWITTER_API_KEY
-  const apiSecret = process.env.TWITTER_API_SECRET
-  const accessToken = process.env.TWITTER_ACCESS_TOKEN
-  const accessSecret = process.env.TWITTER_ACCESS_SECRET
-
-  if (!apiKey || !apiSecret || !accessToken || !accessSecret) {
-    fail("twitter", "Clés Twitter manquantes")
-    return
-  }
-
-  try {
-    // Verify credentials via GET /2/users/me
-    const crypto = await import("crypto")
-
-    function percentEncode(str: string): string {
-      return encodeURIComponent(str).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase())
-    }
-
-    const url = "https://api.twitter.com/2/users/me"
-    const oauthParams: Record<string, string> = {
-      oauth_consumer_key: apiKey,
-      oauth_nonce: crypto.randomBytes(16).toString("hex"),
-      oauth_signature_method: "HMAC-SHA1",
-      oauth_timestamp: Math.floor(Date.now() / 1000).toString(),
-      oauth_token: accessToken,
-      oauth_version: "1.0",
-    }
-
-    const sortedParams = Object.keys(oauthParams).sort().map(k => `${percentEncode(k)}=${percentEncode(oauthParams[k])}`).join("&")
-    const baseString = `GET&${percentEncode(url)}&${percentEncode(sortedParams)}`
-    const signingKey = `${percentEncode(apiSecret)}&${percentEncode(accessSecret)}`
-    const signature = crypto.createHmac("sha1", signingKey).update(baseString).digest("base64")
-    oauthParams.oauth_signature = signature
-
-    const header = Object.keys(oauthParams).sort().map(k => `${percentEncode(k)}="${percentEncode(oauthParams[k])}"`).join(", ")
-
-    const res = await fetch(url, {
-      headers: { Authorization: `OAuth ${header}` },
-    })
-
-    if (res.ok) {
-      const data = await res.json()
-      pass("twitter", `Connecté en tant que @${data.data?.username || "?"}`)
-    } else {
-      const err = await res.text()
-      fail("twitter", `Erreur ${res.status}: ${err.slice(0, 100)}`)
-    }
-  } catch (e: any) {
-    fail("twitter", `Connexion échouée: ${e.message}`)
-  }
-}
-
-// ─── Check 3: Site en ligne ───
-
-async function checkVercel() {
-  try {
-    const res = await fetch("https://standard-ia.pro", { method: "HEAD" })
-    if (res.ok) {
-      pass("vercel", `Site en ligne (status ${res.status})`)
-    } else {
-      fail("vercel", `Site répond avec status ${res.status}`)
-    }
-  } catch (e: any) {
-    fail("vercel", `Site inaccessible: ${e.message}`)
-  }
-}
-
-// ─── Check 4: Contenu de la semaine ───
-
-async function checkContent() {
-  const fs = await import("fs")
-  const path = await import("path")
-
-  const now = new Date()
-  const start = new Date(now.getFullYear(), 0, 1)
-  const days = Math.floor((now.getTime() - start.getTime()) / 86400000)
-  const week = Math.ceil((days + start.getDay() + 1) / 7)
-
-  const socialFile = path.join(process.cwd(), "content", "social", `social-week${week}.md`)
-  const articlesFile = path.join(process.cwd(), "content", "social", `articles-week${week}.txt`)
-
-  const hasSocial = fs.existsSync(socialFile)
-  const hasArticles = fs.existsSync(articlesFile)
-
-  if (hasSocial && hasArticles) {
-    pass("content", `Semaine ${week} : articles ✓ social ✓`)
-  } else if (hasSocial || hasArticles) {
-    warn("content", `Semaine ${week} : articles ${hasArticles ? "✓" : "✗"} social ${hasSocial ? "✓" : "✗"}`)
-  } else {
-    fail("content", `Aucun contenu pour la semaine ${week}`)
-  }
-}
-
-// ─── Main ───
 
 async function main() {
-  console.log("🔍 Agent 5 : Debug Monitor")
-  console.log("══════════════════════════\n")
+  const startTime = Date.now()
+  console.log(`\n${c.purple}${c.bold}╔══════════════════════════════════╗${c.reset}`)
+  console.log(`${c.purple}${c.bold}║  👁️   ARGUS — Gardien de l'équipe ║${c.reset}`)
+  console.log(`${c.purple}${c.bold}╚══════════════════════════════════╝${c.reset}\n`)
 
-  // Run all checks in parallel
-  await Promise.all([
-    checkGemini(),
-    checkTwitter(),
-    checkVercel(),
-    checkContent(),
-  ])
+  let allGood = true
+  const issues: string[] = []
 
-  // Print report
-  let hasErrors = false
-  for (const [, check] of Object.entries(CHECKS)) {
-    console.log(`  ${check.status} ${check.name} — ${check.detail}`)
-    if (check.status === "❌") hasErrors = true
+  // 1. Lire les messages de tous les agents
+  console.log(`${c.bold}📨 Messages de l'équipe :${c.reset}`)
+  const msgs = readMessages("ARGUS")
+  if (msgs.length === 0) {
+    console.log(`  ${c.dim}Aucun message récent${c.reset}`)
+  }
+  for (const msg of msgs) {
+    if (msg.type === "ERROR") {
+      console.log(`  ${c.red}🚨 ${msg.from} → ERREUR : ${msg.payload?.error}${c.reset}`)
+      issues.push(`${msg.from}: ${msg.payload?.error}`)
+      allGood = false
+    } else if (msg.type === "HEALTH_OK") {
+      console.log(`  ${c.green}✅ ${msg.from}${c.reset} ${c.dim}→ ${msg.payload?.action}${c.reset}`)
+    } else if (msg.type === "DEPLOY_DONE") {
+      console.log(`  ${c.green}🚀 DÉVA${c.reset} ${c.dim}→ Déploiement réussi${c.reset}`)
+    } else if (msg.type === "TWEET_DONE") {
+      console.log(`  ${c.green}⚡ FLASH${c.reset} ${c.dim}→ Tweet posté (${msg.payload?.tweetId})${c.reset}`)
+    } else if (msg.type === "ARTICLE_PUBLISHED") {
+      console.log(`  ${c.green}📰 ÉCHO${c.reset} ${c.dim}→ Article publié : "${msg.payload?.slug}"${c.reset}`)
+    } else if (msg.type === "CONTENT_READY") {
+      console.log(`  ${c.green}✍️  LÉON${c.reset} ${c.dim}→ Article prêt : "${msg.payload?.title}"${c.reset}`)
+    }
   }
 
-  console.log("\n══════════════════════════")
-
-  if (hasErrors) {
-    console.log("❌ Des problèmes ont été détectés !")
-    process.exit(1)
+  // 2. Vérifier la queue d'articles
+  console.log(`\n${c.bold}📂 Queue d'articles :${c.reset}`)
+  const queueDir = path.join(process.cwd(), "content", "queue")
+  if (fs.existsSync(queueDir)) {
+    const files = fs.readdirSync(queueDir).filter(f => f.endsWith(".json")).sort()
+    if (files.length === 0) {
+      console.log(`  ${c.yellow}⚠️  Queue vide — LÉON doit générer du contenu${c.reset}`)
+      issues.push("Queue vide")
+      allGood = false
+    } else {
+      console.log(`  ${c.green}✅${c.reset} ${files.length} article(s) programmé(s)`)
+      const tomorrow = tomorrowStr()
+      files.slice(0, 5).forEach(f => {
+        const date = f.replace(".json", "")
+        const article = JSON.parse(fs.readFileSync(path.join(queueDir, f), "utf-8"))
+        const tag = date === tomorrow ? `${c.cyan} ← demain${c.reset}` : ""
+        console.log(`  ${c.dim}  ${date}${c.reset} "${article.title.slice(0, 40)}..."${tag}`)
+      })
+    }
   } else {
-    console.log("✅ Tous les systèmes sont opérationnels !")
+    console.log(`  ${c.yellow}⚠️  Dossier queue introuvable${c.reset}`)
+    allGood = false
+  }
+
+  // 3. Article du jour
+  console.log(`\n${c.bold}📰 Article du jour (${todayStr()}) :${c.reset}`)
+  const publishedDir = path.join(process.cwd(), "content", "published")
+  const todayPublished = path.join(publishedDir, `${todayStr()}.json`)
+  if (fs.existsSync(todayPublished)) {
+    const article = JSON.parse(fs.readFileSync(todayPublished, "utf-8"))
+    console.log(`  ${c.green}✅${c.reset} Publié : "${article.title}"`)
+  } else {
+    console.log(`  ${c.yellow}⚠️  Pas encore publié aujourd'hui${c.reset}`)
+    issues.push("Article du jour non publié")
+  }
+
+  // 4. Ping le site
+  console.log(`\n${c.bold}🌐 Statut du site :${c.reset}`)
+  const siteOk = await checkSite()
+  if (siteOk) {
+    console.log(`  ${c.green}✅${c.reset} standard-ia.pro répond correctement`)
+  } else {
+    console.log(`  ${c.red}🚨 standard-ia.pro ne répond pas !${c.reset}`)
+    issues.push("Site inaccessible")
+    allGood = false
+  }
+
+  // 5. Équipe
+  console.log(`\n${c.bold}👥 L'équipe Standard IA :${c.reset}`)
+  console.log(`  ${c.green}✅${c.reset} LÉON  ✍️  — Lit les RSS, rédige les articles`)
+  console.log(`  ${c.green}✅${c.reset} ÉCHO  📰 — Publie l'article du jour`)
+  console.log(`  ${c.green}✅${c.reset} FLASH ⚡ — Poste sur Twitter`)
+  console.log(`  ${c.green}✅${c.reset} DÉVA  🚀 — Build et déploie sur Vercel`)
+  console.log(`  ${c.green}✅${c.reset} ARGUS 👁️  — Surveille tout (c'est moi)`)
+
+  // 6. Rapport final
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
+  console.log()
+  if (allGood) {
+    console.log(`${c.green}${c.bold}╔══════════════════════════════════════════════╗${c.reset}`)
+    console.log(`${c.green}${c.bold}║  ✅  ARGUS : Tout va bien ! (${elapsed}s)          ║${c.reset}`)
+    console.log(`${c.green}${c.bold}╚══════════════════════════════════════════════╝${c.reset}\n`)
+  } else {
+    console.log(`${c.red}${c.bold}╔══════════════════════════════════════════════╗${c.reset}`)
+    console.log(`${c.red}${c.bold}║  🚨  ARGUS : ${issues.length} problème(s) détecté(s)      ║${c.reset}`)
+    issues.forEach(i => console.log(`${c.red}${c.bold}║  ❌  ${i.slice(0, 42).padEnd(42)}  ║${c.reset}`))
+    console.log(`${c.red}${c.bold}╚══════════════════════════════════════════════╝${c.reset}\n`)
   }
 }
 
 main().catch(err => {
-  console.error("❌ Erreur Debug Monitor :", err.message)
+  console.error(`❌ ARGUS — Erreur critique :`, err.message)
   process.exit(1)
 })

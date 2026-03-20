@@ -1,9 +1,11 @@
 /**
- * Agent 1 : Content Writer
+ * LÉON ✍️ — Rédacteur en chef de Standard IA
  *
- * Deux modes :
- *   --daily   → Lit les flux RSS IA du jour → génère 1 article pour demain
- *   --weekly  → Génère posts sociaux + newsletter de la semaine (lundi)
+ * Lit les vrais flux RSS IA → génère du contenu avec Gemini
+ *
+ * Modes :
+ *   --daily   → 1 article pour demain basé sur les actus du jour
+ *   --weekly  → posts sociaux + newsletter de la semaine
  *
  * Usage:
  *   npx tsx scripts/generate-content.ts --daily
@@ -12,6 +14,7 @@
 
 import * as fs from "fs"
 import * as path from "path"
+import { sendMessage, logAgentMessage, readMessages } from "./agent-bus.js"
 
 // ─── Terminal colors ───
 const c = {
@@ -53,20 +56,16 @@ async function askGemini(prompt: string): Promise<string> {
 }
 
 function tomorrowStr(): string {
-  const d = new Date()
-  d.setDate(d.getDate() + 1)
+  const d = new Date(); d.setDate(d.getDate() + 1)
   return d.toISOString().split("T")[0]
 }
 
-function todayStr(): string {
-  return new Date().toISOString().split("T")[0]
-}
+function todayStr(): string { return new Date().toISOString().split("T")[0] }
 
 function getWeekNumber(): number {
   const now = new Date()
   const start = new Date(now.getFullYear(), 0, 1)
-  const days = Math.floor((now.getTime() - start.getTime()) / 86400000)
-  return Math.ceil((days + start.getDay() + 1) / 7)
+  return Math.ceil((Math.floor((now.getTime() - start.getTime()) / 86400000) + start.getDay() + 1) / 7)
 }
 
 // ─── RSS fetching ───
@@ -105,54 +104,56 @@ async function fetchRSSNews(): Promise<string> {
       })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const xml = await res.text()
-      const items = extractRSSItems(xml, 3)
-      return { name, items }
+      return { name, items: extractRSSItems(xml, 3) }
     })
   )
-
   for (const result of results) {
     if (result.status === "fulfilled" && result.value.items.length > 0) {
       headlines.push(`\n### ${result.value.name}`)
       result.value.items.forEach(item => headlines.push(`• ${item}`))
     }
   }
-
-  return headlines.length > 0
-    ? headlines.join("\n")
-    : "Pas d'actualités récupérées — génère un article de fond sur l'IA."
+  return headlines.length > 0 ? headlines.join("\n") : "Pas d'actualités — génère un article de fond."
 }
 
-// ─── Daily mode: 1 article based on real news ───
+// ─── Daily mode ───
 
 async function runDaily() {
-  console.log(`\n${c.purple}${c.bold}╔══════════════════════════════════════╗${c.reset}`)
-  console.log(`${c.purple}${c.bold}║  🤖  Agent 1 : Daily Content Writer   ║${c.reset}`)
-  console.log(`${c.purple}${c.bold}╚══════════════════════════════════════╝${c.reset}\n`)
+  console.log(`\n${c.purple}${c.bold}╔══════════════════════════════════╗${c.reset}`)
+  console.log(`${c.purple}${c.bold}║  ✍️   LÉON — Rédacteur en chef    ║${c.reset}`)
+  console.log(`${c.purple}${c.bold}║  Mode : Génération quotidienne    ║${c.reset}`)
+  console.log(`${c.purple}${c.bold}╚══════════════════════════════════╝${c.reset}\n`)
   const startTime = Date.now()
 
-  // 1. Fetch real AI news
+  // Check inbox — ÉCHO a-t-il demandé un article en urgence ?
+  const messages = readMessages("LÉON")
+  const urgentRequest = messages.find(m => m.type === "REQUEST_CONTENT")
+  if (urgentRequest) {
+    console.log(`  ${c.yellow}📨 Message de ${urgentRequest.from} : contenu urgent demandé !${c.reset}`)
+  }
+
+  // 1. Fetch RSS
   const stop1 = spinner("Lecture des flux RSS IA en temps réel")
   const news = await fetchRSSNews()
   stop1()
   const feedCount = (news.match(/###/g) || []).length
-  console.log(`  ${c.green}✅${c.reset} ${c.bold}${feedCount} sources RSS lues${c.reset} ${c.dim}(TechCrunch, Verge, VentureBeat, Le Monde, MIT)${c.reset}`)
+  console.log(`  ${c.green}✅${c.reset} ${feedCount} sources RSS lues ${c.dim}(TechCrunch, Verge, VentureBeat, Le Monde, MIT)${c.reset}`)
 
-  // 2. Generate 1 article based on that news
+  // 2. Generate article
   const tomorrow = tomorrowStr()
   const stop2 = spinner("Gemini analyse les actus et rédige l'article")
-  const raw = await askGemini(`Tu es le rédacteur en chef de Standard IA, un média IA francophone.
+  const raw = await askGemini(`Tu es LÉON, rédacteur en chef de Standard IA, un média IA francophone.
 
-Voici les vraies actualités IA d'aujourd'hui (${todayStr()}) récupérées en temps réel :
+Voici les vraies actualités IA d'aujourd'hui (${todayStr()}) :
 
 ${news}
 
-En te basant sur ces actualités, génère 1 article de fond pour demain (${tomorrow}).
-Choisis l'actu la plus pertinente ou combine plusieurs si c'est cohérent.
+Génère 1 article de fond pour demain (${tomorrow}).
+Choisis l'actu la plus pertinente ou combine plusieurs si cohérent.
 L'article doit analyser, contextualiser, donner un point de vue — pas juste résumer.
 
-IMPORTANT : Réponds UNIQUEMENT avec du JSON valide, sans blocs markdown, sans \`\`\`, juste le JSON brut.
+IMPORTANT : Réponds UNIQUEMENT avec du JSON valide, sans \`\`\`, juste le JSON brut.
 
-Format exact :
 {
   "slug": "slug-en-kebab-case",
   "title": "Titre accrocheur en français",
@@ -166,7 +167,7 @@ Format exact :
 Règles :
 - Tout en français, ton direct et accessible
 - Minimum 500 mots dans content (\\n pour les sauts de ligne)
-- Angle original : que signifie cette actu pour les PME françaises ?
+- Angle : que signifie cette actu pour les entrepreneurs et PME français ?
 - Slug unique en kebab-case`)
   stop2()
 
@@ -176,95 +177,95 @@ Règles :
   const queueDir = path.join(process.cwd(), "content", "queue")
   if (!fs.existsSync(queueDir)) fs.mkdirSync(queueDir, { recursive: true })
   fs.writeFileSync(path.join(queueDir, `${tomorrow}.json`), JSON.stringify(article, null, 2))
+
   console.log(`  ${c.green}✅${c.reset} ${c.bold}"${article.title}"${c.reset}`)
-  console.log(`  ${c.dim}→ Publié demain : ${tomorrow}${c.reset}`)
+  console.log(`  ${c.dim}→ Publication prévue : ${tomorrow}${c.reset}`)
+
+  // 3. Notifier ÉCHO que le contenu est prêt
+  logAgentMessage("LÉON", "ÉCHO", "CONTENT_READY", { date: tomorrow, slug: article.slug, title: article.title })
+  // Notifier ARGUS
+  sendMessage("LÉON", "ARGUS", "HEALTH_OK", { action: "daily_generation", date: tomorrow })
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
   console.log(`\n${c.green}${c.bold}╔══════════════════════════════════════════╗${c.reset}`)
-  console.log(`${c.green}${c.bold}║  ✅  Article du jour généré en ${elapsed}s        ║${c.reset}`)
+  console.log(`${c.green}${c.bold}║  ✅  LÉON a terminé en ${elapsed}s              ║${c.reset}`)
   console.log(`${c.green}${c.bold}╚══════════════════════════════════════════╝${c.reset}\n`)
 }
 
-// ─── Weekly mode: social posts + newsletter ───
+// ─── Weekly mode ───
 
 async function runWeekly() {
-  console.log(`\n${c.blue}${c.bold}╔══════════════════════════════════════╗${c.reset}`)
-  console.log(`${c.blue}${c.bold}║  🤖  Agent 1 : Weekly Content Writer  ║${c.reset}`)
-  console.log(`${c.blue}${c.bold}╚══════════════════════════════════════╝${c.reset}\n`)
+  console.log(`\n${c.blue}${c.bold}╔══════════════════════════════════╗${c.reset}`)
+  console.log(`${c.blue}${c.bold}║  ✍️   LÉON — Rédacteur en chef    ║${c.reset}`)
+  console.log(`${c.blue}${c.bold}║  Mode : Génération hebdomadaire   ║${c.reset}`)
+  console.log(`${c.blue}${c.bold}╚══════════════════════════════════╝${c.reset}\n`)
   const startTime = Date.now()
   const week = getWeekNumber()
 
-  // Fetch news for weekly context too
   const stop0 = spinner("Lecture des flux RSS pour contexte hebdomadaire")
   const news = await fetchRSSNews()
   stop0()
-  console.log(`  ${c.green}✅${c.reset} ${c.bold}Actus de la semaine récupérées${c.reset}`)
+  console.log(`  ${c.green}✅${c.reset} Actus de la semaine récupérées`)
 
   const socialDir = path.join(process.cwd(), "content", "social")
   if (!fs.existsSync(socialDir)) fs.mkdirSync(socialDir, { recursive: true })
 
   // Social posts
-  const stop1 = spinner("Gemini génère les posts sociaux de la semaine")
-  const socialRaw = await askGemini(`Tu es le community manager de Standard IA.
+  const stop1 = spinner("Génération des posts sociaux de la semaine")
+  const socialRaw = await askGemini(`Tu es LÉON, community manager de Standard IA.
 Voici les actus IA de cette semaine :
 
 ${news}
 
-Génère le contenu social de la semaine en te basant sur ces vraies actus :
-
-1. UN thread Twitter (8 tweets) sur le sujet le plus fort de la semaine
-2. 5 tweets individuels (tips, stats, angles différents)
+Génère le contenu social basé sur ces vraies actus :
 
 # Thread Twitter — [SUJET]
 
 Tweet 1/8:
 [contenu < 280 caractères]
 
-...
+...jusqu'à Tweet 8/8
 
 # Tweets individuels
 
 Tweet 1:
 [contenu < 280 caractères]
 
-...
+...jusqu'à Tweet 5
 
 Règles : tout en français, tweets < 280 caractères, hooks forts, mentionner standard-ia.pro`)
   stop1()
   fs.writeFileSync(path.join(socialDir, `social-week${week}.md`), socialRaw)
-  console.log(`  ${c.green}✅${c.reset} ${c.bold}Posts sociaux générés${c.reset} ${c.dim}→ social-week${week}.md${c.reset}`)
+  console.log(`  ${c.green}✅${c.reset} Posts sociaux → ${c.dim}social-week${week}.md${c.reset}`)
 
   // Newsletter
-  const stop2 = spinner("Gemini génère la newsletter")
-  const newsletterRaw = await askGemini(`Tu es le rédacteur de la newsletter Standard IA.
-Voici les vraies actus IA de cette semaine :
+  const stop2 = spinner("Génération de la newsletter")
+  const newsletterRaw = await askGemini(`Tu es LÉON, rédacteur de la newsletter Standard IA.
+Voici les actus IA de cette semaine :
 
 ${news}
 
-Génère l'édition #${week} basée sur ces vraies actualités.
+Génère l'édition #${week} :
 
 # Newsletter Standard IA — Édition #${week}
 
 ## L'actu IA de la semaine
-[3 actus réelles tirées des flux ci-dessus, résumées en 2-3 phrases chacune]
+[3 actus réelles résumées en 2-3 phrases chacune]
 
 ## L'outil de la semaine : [Nom]
-[Description courte + pourquoi c'est utile]
-
 ## Le hack de la semaine
-[1 conseil concret, prompt ou technique]
-
 ## Le mot de la fin
-[1-2 phrases + CTA newsletter]
 
-Règles : tout en français, ton direct, 800-1000 mots total`)
+Règles : tout en français, ton direct, 800-1000 mots`)
   stop2()
   fs.writeFileSync(path.join(socialDir, `newsletter-week${week}.md`), newsletterRaw)
-  console.log(`  ${c.green}✅${c.reset} ${c.bold}Newsletter générée${c.reset} ${c.dim}→ newsletter-week${week}.md${c.reset}`)
+  console.log(`  ${c.green}✅${c.reset} Newsletter → ${c.dim}newsletter-week${week}.md${c.reset}`)
+
+  sendMessage("LÉON", "ARGUS", "HEALTH_OK", { action: "weekly_generation", week })
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
   console.log(`\n${c.green}${c.bold}╔══════════════════════════════════════════╗${c.reset}`)
-  console.log(`${c.green}${c.bold}║  ✅  Contenu semaine ${week} généré en ${elapsed}s      ║${c.reset}`)
+  console.log(`${c.green}${c.bold}║  ✅  LÉON a terminé semaine ${week} en ${elapsed}s   ║${c.reset}`)
   console.log(`${c.green}${c.bold}╚══════════════════════════════════════════╝${c.reset}\n`)
 }
 
@@ -272,8 +273,15 @@ Règles : tout en français, ton direct, 800-1000 mots total`)
 
 const args = process.argv.slice(2)
 if (args.includes("--weekly")) {
-  runWeekly().catch(err => { console.error(`❌ Erreur :`, err.message); process.exit(1) })
+  runWeekly().catch(err => {
+    sendMessage("LÉON", "ARGUS", "ERROR", { error: err.message, mode: "weekly" })
+    console.error(`❌ LÉON — Erreur :`, err.message)
+    process.exit(1)
+  })
 } else {
-  // Default: --daily
-  runDaily().catch(err => { console.error(`❌ Erreur :`, err.message); process.exit(1) })
+  runDaily().catch(err => {
+    sendMessage("LÉON", "ARGUS", "ERROR", { error: err.message, mode: "daily" })
+    console.error(`❌ LÉON — Erreur :`, err.message)
+    process.exit(1)
+  })
 }
