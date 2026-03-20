@@ -41,9 +41,10 @@ async function main() {
     console.log(`\n  ${c.cyan}📨 Message d'ÉCHO : article "${deployMsg.payload?.slug}" publié, déploiement demandé${c.reset}`)
   }
 
-  run("npm run build", "Build Next.js")
-  // Deploy via git push → Vercel auto-deploys via GitHub integration
-  run("git add -A && git diff --staged --quiet || git commit -m '🚀 DÉVA: auto-deploy' && git push origin main || git push origin main", "Push GitHub → Vercel auto-déploie")
+  // Build pour Vercel (prod) + deploy prebuilt → bypass le cache cassé
+  const token = process.env.VERCEL_TOKEN ? `--token=${process.env.VERCEL_TOKEN}` : ""
+  run(`npx vercel build --prod ${token}`, "Vercel build (prod)")
+  run(`npx vercel deploy --prebuilt --prod ${token}`, "Déploiement Vercel")
 
   // Notifier ARGUS
   logAgentMessage("DÉVA", "ARGUS", "DEPLOY_DONE", { url: "standard-ia.pro", timestamp: new Date().toISOString() })
