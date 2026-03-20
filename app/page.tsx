@@ -192,10 +192,8 @@ export default function Home() {
       {/* ═══════════════════════════════════════
           7. MID-PAGE CTA — Newsletter
       ═══════════════════════════════════════ */}
-      <section className="py-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0d0f1a] to-[#0a0a0a]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
-        <div className="relative max-w-2xl mx-auto text-center">
+      <section className="py-24 px-6 border-t border-[#1a1a1a]">
+        <div className="max-w-2xl mx-auto text-center">
           <AnimateIn>
             <h2 className="font-display font-black text-white text-3xl md:text-4xl mb-4">
               Rejoins la newsletter.

@@ -113,7 +113,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
       </article>
 
       {/* Newsletter CTA */}
-      <section className="py-14 px-6" style={{ background: "#0f0f0f", borderTop: "1px solid #1a1a1a" }}>
+      <section className="py-14 px-6 border-t border-[#1a1a1a]">
         <div className="max-w-xl mx-auto text-center">
           <h3 className="font-display font-black text-white text-2xl mb-3">Reçois chaque édition dans ta boîte mail.</h3>
           <p className="text-[#555] text-sm mb-6">Gratuit · Sans spam · Résiliable en un clic</p>
