@@ -24,10 +24,6 @@ export default function Nav() {
           <Link href="/outils" className="hover:text-white transition-colors">Outils</Link>
           <Link href="/newsletter" className="hover:text-white transition-colors">Newsletter</Link>
         </div>
-        <Link href="/newsletter"
-          className="text-sm font-semibold bg-white hover:bg-[#e5e5e5] text-black px-4 py-2 rounded-lg transition-colors">
-          S&apos;abonner
-        </Link>
       </div>
     </nav>
   )

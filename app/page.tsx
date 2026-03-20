@@ -5,6 +5,11 @@ import PostCard from "@/components/PostCard"
 import ToolCard from "@/components/ToolCard"
 import BeehiivEmbed from "@/components/BeehiivEmbed"
 import AnimateIn from "@/components/AnimateIn"
+import RotatingWords from "@/components/RotatingWords"
+import NewsTicker from "@/components/NewsTicker"
+import CountUp from "@/components/CountUp"
+import TiltCard from "@/components/TiltCard"
+import GlowButton from "@/components/GlowButton"
 
 export default function Home() {
   const featured = getFeaturedPost()
@@ -13,20 +18,191 @@ export default function Home() {
   return (
     <main>
 
-      {/* Hero */}
-      <section className="pt-24 pb-28 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
+      {/* ═══════════════════════════════════════
+          1. HERO — The Hook
+      ═══════════════════════════════════════ */}
+      <section className="relative pt-28 pb-24 px-6 overflow-hidden">
+        {/* Animated grid background */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+          backgroundSize: "40px 40px",
+        }} />
+        {/* Glow orbs */}
+        <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-40 left-1/4 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
+
+        <div className="relative max-w-4xl mx-auto text-center">
           <AnimateIn>
-            <h1 className="font-display font-black text-white text-5xl md:text-6xl leading-tight tracking-tight mb-6">
-              L&apos;intelligence artificielle<br />expliquée simplement.
+            <h1 className="font-display font-black text-white text-5xl md:text-7xl leading-[1.05] tracking-tight mb-10">
+              L&apos;IA va changer<br />
+              <RotatingWords />
             </h1>
           </AnimateIn>
-          <AnimateIn delay={120}>
-            <p className="text-[#555] text-xl mb-10 leading-relaxed">
-              Chaque semaine, les meilleurs outils, les actualités et les conseils IA — directement dans ta boîte mail. En français.
-            </p>
+
+          <AnimateIn delay={150}>
+            <div className="flex justify-center mb-6">
+              <BeehiivEmbed />
+            </div>
+            <p className="text-xs text-[#333]">Gratuit · Pas de spam · Désinscription en 1 clic</p>
           </AnimateIn>
-          <AnimateIn delay={220}>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          2. NEWS TICKER — Scrolling headlines
+      ═══════════════════════════════════════ */}
+      <NewsTicker />
+
+      {/* ═══════════════════════════════════════
+          3. WHAT YOU GET — Value proposition
+      ═══════════════════════════════════════ */}
+      <section className="py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <AnimateIn>
+            <p className="text-xs font-semibold text-[#444] uppercase tracking-[0.2em] mb-4 text-center">Ce que tu reçois</p>
+            <h2 className="font-display font-black text-white text-3xl md:text-4xl text-center mb-16">
+              5 minutes de lecture.<br />Des heures de valeur.
+            </h2>
+          </AnimateIn>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                ),
+                title: "1 outil IA testé",
+                desc: "Chaque semaine, on teste un outil et on te dit honnêtement s'il vaut le coup — ou pas.",
+              },
+              {
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                ),
+                title: "L'actu IA en 5 min",
+                desc: "Les 3 news les plus importantes de la semaine, résumées sans jargon technique.",
+              },
+              {
+                icon: (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                ),
+                title: "1 hack actionnable",
+                desc: "Un prompt, une technique, un workflow — quelque chose que tu peux appliquer immédiatement.",
+              },
+            ].map((item, i) => (
+              <AnimateIn key={i} delay={i * 100}>
+                <TiltCard className="h-full">
+                  <div className="h-full bg-[#111] border border-[#1f1f1f] rounded-2xl p-8 hover:border-[#2a2a2a] transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-[#1a1a1a] border border-[#222] flex items-center justify-center text-white mb-5">
+                      {item.icon}
+                    </div>
+                    <h3 className="font-display font-bold text-white text-lg mb-3">{item.title}</h3>
+                    <p className="text-sm text-[#555] leading-relaxed">{item.desc}</p>
+                  </div>
+                </TiltCard>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          4. STATS — Animated numbers
+      ═══════════════════════════════════════ */}
+      <section className="py-16 px-6 border-y border-[#1a1a1a]">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { n: 6, s: "+", label: "Articles publiés" },
+            { n: 3, s: "", label: "Outils testés" },
+            { n: 2, s: "", label: "Newsletters envoyées" },
+            { n: 50, s: "+", label: "Lecteurs" },
+          ].map((stat, i) => (
+            <AnimateIn key={i} delay={i * 80}>
+              <div>
+                <p className="font-display font-black text-white text-3xl md:text-4xl">
+                  <CountUp target={stat.n} />{stat.s}
+                </p>
+                <p className="text-xs text-[#444] mt-2 uppercase tracking-widest">{stat.label}</p>
+              </div>
+            </AnimateIn>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          5. FEATURED ARTICLE — Big card
+      ═══════════════════════════════════════ */}
+      {featured && (
+        <section className="py-24 px-6">
+          <div className="max-w-5xl mx-auto">
+            <AnimateIn>
+              <p className="text-xs font-semibold text-[#444] uppercase tracking-[0.2em] mb-8">À la une</p>
+            </AnimateIn>
+            <AnimateIn delay={80}>
+              <TiltCard>
+                <Link href={`/posts/${featured.slug}`}
+                  className="group block relative bg-[#111] rounded-2xl border border-[#1f1f1f] p-10 md:p-14 hover:border-[#2a2a2a] transition-all duration-300 overflow-hidden">
+                  {/* Subtle glow */}
+                  <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[80px] pointer-events-none" />
+                  <div className="relative">
+                    <span className="text-xs font-semibold text-blue-400/70 uppercase tracking-widest">{featured.type}</span>
+                    <h2 className="font-display font-black text-white text-3xl md:text-5xl mt-4 mb-6 leading-tight group-hover:text-[#ccc] transition-colors">
+                      {featured.title}
+                    </h2>
+                    <p className="text-[#555] text-base md:text-lg leading-relaxed mb-8 max-w-2xl">{featured.excerpt}</p>
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:gap-3 transition-all">
+                      Lire l&apos;article
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
+                  </div>
+                </Link>
+              </TiltCard>
+            </AnimateIn>
+          </div>
+        </section>
+      )}
+
+      {/* ═══════════════════════════════════════
+          6. LATEST ARTICLES — Grid
+      ═══════════════════════════════════════ */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <AnimateIn>
+            <div className="flex items-center justify-between mb-10">
+              <div>
+                <p className="text-xs font-semibold text-[#444] uppercase tracking-[0.2em] mb-2">Derniers articles</p>
+                <h2 className="font-display font-bold text-white text-2xl">Ce qu&apos;on a écrit récemment</h2>
+              </div>
+              <Link href="/posts" className="text-sm text-[#555] hover:text-white transition-colors">
+                Tout voir →
+              </Link>
+            </div>
+          </AnimateIn>
+          <div className="grid md:grid-cols-2 gap-5">
+            {latestPosts.map((p, i) => (
+              <AnimateIn key={p.slug} delay={i * 100}>
+                <TiltCard className="h-full">
+                  <PostCard post={p} />
+                </TiltCard>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          7. MID-PAGE CTA — Newsletter
+      ═══════════════════════════════════════ */}
+      <section className="py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0d0f1a] to-[#0a0a0a]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="relative max-w-2xl mx-auto text-center">
+          <AnimateIn>
+            <h2 className="font-display font-black text-white text-3xl md:text-4xl mb-4">
+              Rejoins la newsletter.
+            </h2>
+            <p className="text-[#555] text-base mb-8">
+              1 email par semaine. Le meilleur de l&apos;IA, résumé en français.
+            </p>
             <div className="flex justify-center">
               <BeehiivEmbed />
             </div>
@@ -34,82 +210,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div style={{ borderTop: "1px solid #1a1a1a" }} />
-
-      <div className="max-w-6xl mx-auto px-6">
-
-        {/* Featured article */}
-        {featured && (
-          <div className="py-14" style={{ borderBottom: "1px solid #1a1a1a" }}>
-            <AnimateIn>
-              <p className="text-xs font-semibold text-[#444] uppercase tracking-widest mb-6">À la une</p>
-              <Link href={`/posts/${featured.slug}`}
-                className="group grid md:grid-cols-5 gap-8 bg-[#111] rounded-2xl border border-[#1f1f1f] p-8 hover:border-[#2a2a2a] transition-all duration-200">
-                <div className="md:col-span-3">
-                  <span className="text-xs font-semibold text-[#555] uppercase tracking-widest">Article</span>
-                  <h2 className="font-display font-black text-white text-3xl mt-4 mb-4 leading-tight group-hover:text-[#ccc] transition-colors">
-                    {featured.title}
-                  </h2>
-                  <p className="text-[#555] text-sm leading-relaxed mb-6">{featured.excerpt}</p>
-                  <span className="text-sm font-semibold text-white">Lire l&apos;article →</span>
-                </div>
-                <div className="hidden md:flex md:col-span-2 items-center justify-center bg-[#0f0f0f] rounded-xl border border-[#1a1a1a]">
-                  <span className="font-display font-black text-[#1a1a1a] text-[7rem] select-none leading-none">IA</span>
-                </div>
-              </Link>
-            </AnimateIn>
-          </div>
-        )}
-
-        {/* Latest articles */}
-        <div className="py-14" style={{ borderBottom: "1px solid #1a1a1a" }}>
+      {/* ═══════════════════════════════════════
+          8. TOOLS — Tested tools
+      ═══════════════════════════════════════ */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
           <AnimateIn>
-            <div className="flex items-center justify-between mb-8">
-              <p className="font-display font-bold text-white text-lg">Derniers articles</p>
-              <Link href="/posts" className="text-sm text-[#555] hover:text-white transition-colors">Tout voir →</Link>
-            </div>
-          </AnimateIn>
-          <div className="grid md:grid-cols-2 gap-4">
-            {latestPosts.map((p, i) => (
-              <AnimateIn key={p.slug} delay={i * 80}>
-                <PostCard post={p} />
-              </AnimateIn>
-            ))}
-          </div>
-        </div>
-
-        {/* Newsletter mid-page */}
-        <div className="py-14" style={{ borderBottom: "1px solid #1a1a1a" }}>
-          <AnimateIn>
-            <div className="rounded-2xl border border-[#1f1f1f] bg-[#111] px-10 py-12 text-center">
-              <h3 className="font-display font-black text-white text-3xl mb-3">Ne manque aucune édition.</h3>
-              <p className="text-[#555] text-sm mb-6">Chaque semaine dans ta boîte mail. Gratuit.</p>
-              <div className="flex justify-center">
-                <BeehiivEmbed />
+            <div className="flex items-center justify-between mb-10">
+              <div>
+                <p className="text-xs font-semibold text-[#444] uppercase tracking-[0.2em] mb-2">Outils</p>
+                <h2 className="font-display font-bold text-white text-2xl">On les a testés pour toi</h2>
               </div>
+              <Link href="/outils" className="text-sm text-[#555] hover:text-white transition-colors">
+                Tous les outils →
+              </Link>
             </div>
           </AnimateIn>
-        </div>
-
-        {/* Tool reviews */}
-        <div className="py-14">
-          <AnimateIn>
-            <div className="flex items-center justify-between mb-8">
-              <p className="font-display font-bold text-white text-lg">Outils testés</p>
-              <Link href="/outils" className="text-sm text-[#555] hover:text-white transition-colors">Tout voir →</Link>
-            </div>
-          </AnimateIn>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-5">
             {tools.map((t, i) => (
-              <AnimateIn key={t.slug} delay={i * 80}>
-                <ToolCard tool={t} />
+              <AnimateIn key={t.slug} delay={i * 100}>
+                <TiltCard className="h-full">
+                  <ToolCard tool={t} />
+                </TiltCard>
               </AnimateIn>
             ))}
           </div>
         </div>
+      </section>
 
-      </div>
+      {/* ═══════════════════════════════════════
+          9. FINAL CTA — Last chance
+      ═══════════════════════════════════════ */}
+      <section className="py-28 px-6 relative overflow-hidden border-t border-[#1a1a1a]">
+        <div className="absolute inset-0 opacity-[0.02]" style={{
+          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+          backgroundSize: "32px 32px",
+        }} />
+        <div className="relative max-w-3xl mx-auto text-center">
+          <AnimateIn>
+            <h2 className="font-display font-black text-white text-4xl md:text-5xl leading-tight mb-6">
+              L&apos;IA n&apos;attend pas.<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Toi non plus.</span>
+            </h2>
+            <p className="text-[#555] text-lg mb-10 max-w-xl mx-auto">
+              Chaque semaine, ceux qui lisent Standard IA ont une longueur d&apos;avance.
+            </p>
+            <div className="flex justify-center">
+              <BeehiivEmbed />
+            </div>
+          </AnimateIn>
+        </div>
+      </section>
+
     </main>
   )
 }

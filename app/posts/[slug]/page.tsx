@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { posts, getPostBySlug } from "@/content/posts"
 import { PostType } from "@/types"
-import SubscribeForm from "@/components/SubscribeForm"
+import BeehiivEmbed from "@/components/BeehiivEmbed"
 
 const typeLabel: Record<PostType, string> = {
   post: 'Post', article: 'Article', analyse: 'Analyse',
@@ -38,15 +38,35 @@ function inline(text: string) {
 }
 
 function renderContent(content: string) {
-  return content.split('\n').map((line, i) => {
-    if (line.startsWith('## '))  return <h2 key={i}>{line.slice(3)}</h2>
-    if (line.startsWith('### ')) return <h3 key={i}>{line.slice(4)}</h3>
-    if (/^\d+\.\s/.test(line))   return <li key={i}>{inline(line.replace(/^\d+\.\s/, ''))}</li>
-    if (line.startsWith('- '))   return <li key={i}>{inline(line.slice(2))}</li>
-    if (line === '---') return <hr key={i} />
-    if (line === '')   return <br key={i} />
-    return <p key={i}>{inline(line)}</p>
-  })
+  const lines = content.split('\n')
+  const elements: React.ReactNode[] = []
+  let i = 0
+
+  while (i < lines.length) {
+    const line = lines[i]
+
+    if (line.startsWith('## '))  { elements.push(<h2 key={i}>{line.slice(3)}</h2>); i++; continue }
+    if (line.startsWith('### ')) { elements.push(<h3 key={i}>{line.slice(4)}</h3>); i++; continue }
+    if (line === '---') { elements.push(<hr key={i} />); i++; continue }
+    if (line === '')   { i++; continue }
+
+    if (line.startsWith('- ') || /^\d+\.\s/.test(line)) {
+      const items: React.ReactNode[] = []
+      const start = i
+      while (i < lines.length && (lines[i].startsWith('- ') || /^\d+\.\s/.test(lines[i]))) {
+        const text = lines[i].startsWith('- ') ? lines[i].slice(2) : lines[i].replace(/^\d+\.\s/, '')
+        items.push(<li key={i}>{inline(text)}</li>)
+        i++
+      }
+      elements.push(<ul key={`ul-${start}`}>{items}</ul>)
+      continue
+    }
+
+    elements.push(<p key={i}>{inline(line)}</p>)
+    i++
+  }
+
+  return elements
 }
 
 export default function PostPage({ params }: { params: { slug: string } }) {
@@ -90,7 +110,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         <div className="max-w-xl mx-auto text-center">
           <h3 className="font-display font-black text-white text-2xl mb-3">Reçois chaque édition dans ta boîte mail.</h3>
           <p className="text-[#555] text-sm mb-6">Gratuit · Sans spam · Résiliable en un clic</p>
-          <div className="flex justify-center"><SubscribeForm /></div>
+          <div className="flex justify-center"><BeehiivEmbed /></div>
         </div>
       </section>
 

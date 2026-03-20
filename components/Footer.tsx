@@ -16,7 +16,6 @@ export default function Footer() {
           <Link href="/posts" className="hover:text-white transition-colors">Articles</Link>
           <Link href="/outils" className="hover:text-white transition-colors">Outils</Link>
           <Link href="/newsletter" className="hover:text-white transition-colors">Newsletter</Link>
-          <a href="mailto:contact@standard-ia.pro" className="hover:text-white transition-colors">Contact</a>
         </div>
         <p className="text-xs text-[#2a2a2a]">© {new Date().getFullYear()} Standard IA</p>
       </div>

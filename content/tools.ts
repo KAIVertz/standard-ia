@@ -4,7 +4,7 @@ export const tools: Tool[] = [
   {
     slug: 'chatgpt',
     name: 'ChatGPT',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/240px-ChatGPT_logo.svg.png',
+    logo: '/logos/chatgpt.png',
     category: 'Productivité',
     tagline: 'L\'assistant IA de référence. Le point de départ obligatoire.',
     rating: 5,
@@ -55,7 +55,7 @@ Si vous ne devez commencer qu'avec un seul outil IA, c'est ChatGPT. Commencez pa
   {
     slug: 'perplexity',
     name: 'Perplexity AI',
-    logo: 'https://www.perplexity.ai/favicon.ico',
+    logo: '/logos/perplexity.png',
     category: 'Productivité',
     tagline: 'Le moteur de recherche IA qui cite ses sources. Google version 2.0.',
     rating: 4,
@@ -102,7 +102,7 @@ Utilisez Perplexity pour tout ce qui touche à la recherche d'informations. Util
   {
     slug: 'make',
     name: 'Make.com',
-    logo: 'https://www.make.com/en/help/image/uuid-d56e970a-7218-4141-aa17-d6cf5f8aaa75.png',
+    logo: '/logos/make.png',
     category: 'Automatisation',
     tagline: 'Automatisez tout sans coder. Connectez vos outils entre eux en quelques clics.',
     rating: 5,
