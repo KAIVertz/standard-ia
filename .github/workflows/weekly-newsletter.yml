@@ -1,0 +1,25 @@
+name: "MILO : Newsletter hebdomadaire Beehiiv"
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Chaque lundi à 7h UTC (après LÉON)
+  workflow_dispatch:
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: "📧 MILO — Créer le brouillon newsletter"
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+        run: npx tsx scripts/milo.ts

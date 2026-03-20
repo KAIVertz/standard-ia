@@ -12,6 +12,9 @@
     "publish": "tsx scripts/publish-today.ts",
     "deploy": "tsx scripts/deploy.ts",
     "tweet": "tsx scripts/post-twitter.ts",
+    "scout": "tsx scripts/scout.ts",
+    "nova": "tsx scripts/nova.ts",
+    "milo": "tsx scripts/milo.ts",
     "debug": "tsx scripts/debug-check.ts"
   },
   "dependencies": {

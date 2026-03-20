@@ -1,0 +1,45 @@
+name: "SCOUT + NOVA : Analyse marché + amélioration site"
+
+on:
+  schedule:
+    - cron: "0 4 * * 0"  # Chaque dimanche à 5h UTC (avant la semaine)
+  workflow_dispatch:
+
+jobs:
+  scout-and-improve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: "🔍 SCOUT — Analyser les concurrents"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npx tsx scripts/scout.ts
+
+      - name: "✨ NOVA — Implémenter une amélioration"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npx tsx scripts/nova.ts
+
+      - name: Commit les améliorations
+        run: |
+          git config user.name "Standard IA Bot"
+          git config user.email "bot@standard-ia.pro"
+          git add -A
+          git diff --staged --quiet || git commit -m "✨ NOVA: amélioration hebdomadaire du site"
+          git push
+
+      - name: "🚀 DÉVA — Déployer les améliorations"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npx vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+          npx vercel build --prod --token=$VERCEL_TOKEN
+          npx vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
