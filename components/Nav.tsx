@@ -13,7 +13,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-200 ${scrolled ? "bg-[#0a0a0a]/95 backdrop-blur border-b border-[#1f1f1f]" : "bg-transparent"}`}>
+      className={`sticky top-0 z-50 transition-all duration-200 ${scrolled ? "bg-black/95 backdrop-blur border-b border-[#1f1f1f]" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none">

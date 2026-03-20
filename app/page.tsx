@@ -27,10 +27,6 @@ export default function Home() {
           backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
           backgroundSize: "40px 40px",
         }} />
-        {/* Glow orbs */}
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-40 left-1/4 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
-
         <div className="relative max-w-4xl mx-auto text-center">
           <AnimateIn>
             <h1 className="font-display font-black text-white text-5xl md:text-7xl leading-[1.05] tracking-tight mb-10">

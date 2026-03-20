@@ -16,7 +16,7 @@ export default function NewsTicker() {
   const doubled = [...headlines, ...headlines]
 
   return (
-    <div className="relative overflow-hidden py-3 border-y border-[#1a1a1a] bg-[#0a0a0a]">
+    <div className="relative overflow-hidden py-3 border-y border-[#1a1a1a] bg-black">
       <motion.div
         className="flex gap-12 whitespace-nowrap"
         animate={{ x: ["0%", "-50%"] }}

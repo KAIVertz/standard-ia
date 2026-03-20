@@ -3,7 +3,7 @@ import Logo from "./Logo"
 
 export default function Footer() {
   return (
-    <footer style={{ borderTop: "1px solid #1f1f1f" }} className="bg-[#0a0a0a] py-10 px-6">
+    <footer style={{ borderTop: "1px solid #1f1f1f" }} className="bg-black py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2 mb-2">

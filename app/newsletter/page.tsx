@@ -10,9 +10,6 @@ export default function NewsletterPage() {
     <main>
       {/* Hero */}
       <section className="pt-28 pb-20 px-6 relative overflow-hidden">
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-40 right-1/4 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
-
         <div className="relative max-w-3xl mx-auto text-center">
           <AnimateIn>
             <h1 className="font-display font-black text-white text-5xl md:text-6xl leading-tight tracking-tight mb-6">
@@ -112,9 +109,8 @@ export default function NewsletterPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-6 relative overflow-hidden border-t border-[#1a1a1a]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
-        <div className="relative max-w-2xl mx-auto text-center">
+      <section className="py-20 px-6 border-t border-[#1a1a1a]">
+        <div className="max-w-2xl mx-auto text-center">
           <AnimateIn>
             <h2 className="font-display font-black text-white text-3xl mb-4">Prêt ?</h2>
             <div className="flex justify-center">
