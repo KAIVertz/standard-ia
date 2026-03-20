@@ -69,52 +69,57 @@ function todayStr(): string {
   return new Date().toISOString().split("T")[0]
 }
 
+function nextDays(n: number): string[] {
+  const dates: string[] = []
+  for (let i = 0; i < n; i++) {
+    const d = new Date()
+    d.setDate(d.getDate() + i)
+    dates.push(d.toISOString().split("T")[0])
+  }
+  return dates
+}
+
 // ─── Generate Articles ───
 
-async function generateArticles(): Promise<string> {
+async function generateArticles(): Promise<{ slug: string; title: string; excerpt: string; type: string; date: string; readTime: number; content: string }[]> {
+  const dates = nextDays(7)
   const prompt = `Tu es le rédacteur en chef de Standard IA, un média francophone sur l'intelligence artificielle.
-Génère exactement 3 articles pour cette semaine.
+Génère exactement 7 articles — un par jour pour les 7 prochains jours.
 
-IMPORTANT : Réponds UNIQUEMENT avec du code TypeScript valide, sans blocs markdown, sans \`\`\`, juste le code brut.
+IMPORTANT : Réponds UNIQUEMENT avec du JSON valide, sans blocs markdown, sans \`\`\`, juste le JSON brut.
 
-Le format doit être exactement celui-ci (un tableau d'objets) :
+Le format doit être exactement un tableau JSON :
 
 [
   {
-    slug: "slug-de-l-article",
-    title: "Titre de l'article",
-    excerpt: "Résumé en 1-2 phrases",
-    type: "article" as const,
-    date: "${todayStr()}",
-    readTime: 5,
-    content: \`
-## Sous-titre 1
-
-Paragraphe...
-
-## Sous-titre 2
-
-- Point 1
-- Point 2
-
-## Conclusion
-
-Paragraphe final.
-    \`.trim(),
-  },
+    "slug": "slug-de-l-article",
+    "title": "Titre de l'article",
+    "excerpt": "Résumé en 1-2 phrases.",
+    "type": "article",
+    "date": "${dates[0]}",
+    "readTime": 5,
+    "content": "## Sous-titre 1\\n\\nParagraphe...\\n\\n## Sous-titre 2\\n\\n- Point 1\\n- Point 2\\n\\n## Conclusion\\n\\nParagraphe final."
+  }
 ]
+
+Les 7 dates à utiliser (une par article dans l'ordre) :
+${dates.map((d, i) => `Article ${i + 1} → date: "${d}"`).join("\n")}
 
 Règles :
 - Tout en français
-- Sujets variés : 1 actu IA, 1 guide/tuto, 1 analyse/opinion
+- Sujets variés sur 7 jours : actu IA, guide/tuto, analyse, outil, opinion, cas pratique, interview fictive
 - Types possibles : "article", "post", "analyse"
 - Le contenu doit être utile, concret, pas générique
-- Minimum 400 mots par article
+- Minimum 400 mots par article (dans le champ content)
+- Dans content, utilise \\n pour les sauts de ligne
 - readTime entre 4 et 8 minutes
-- Les slugs doivent être en kebab-case
-- N'inclus PAS de featured: true`
+- Les slugs en kebab-case, uniques
+- Pas de featured`
 
-  return askGemini(prompt)
+  const raw = await askGemini(prompt)
+  // Clean potential markdown wrapping
+  const cleaned = raw.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim()
+  return JSON.parse(cleaned)
 }
 
 // ─── Generate Social Posts ───
@@ -216,13 +221,17 @@ async function main() {
   const fs = await import("fs")
   const path = await import("path")
 
-  // 1. Generate articles
-  const stop1 = spinner("Gemini génère les articles")
-  const articlesRaw = await generateArticles()
+  // 1. Generate articles (7, one per day)
+  const stop1 = spinner("Gemini génère 7 articles (un par jour)")
+  const articles = await generateArticles()
   stop1()
-  const articlesFile = path.join(process.cwd(), "content", "social", `articles-week${week}.txt`)
-  fs.writeFileSync(articlesFile, articlesRaw)
-  console.log(`  ${c.green}✅${c.reset} ${c.bold}Articles générés${c.reset} ${c.dim}→ articles-week${week}.txt${c.reset}`)
+  const queueDir = path.join(process.cwd(), "content", "queue")
+  if (!fs.existsSync(queueDir)) fs.mkdirSync(queueDir, { recursive: true })
+  for (const article of articles) {
+    const file = path.join(queueDir, `${article.date}.json`)
+    fs.writeFileSync(file, JSON.stringify(article, null, 2))
+  }
+  console.log(`  ${c.green}✅${c.reset} ${c.bold}7 articles en file d'attente${c.reset} ${c.dim}→ content/queue/${c.reset}`)
 
   // 2. Generate social posts
   const stop2 = spinner("Gemini génère les posts sociaux")
@@ -241,13 +250,12 @@ async function main() {
   console.log(`  ${c.green}✅${c.reset} ${c.bold}Newsletter générée${c.reset} ${c.dim}→ newsletter-week${week}.md${c.reset}`)
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
-  console.log(`\n${c.green}${c.bold}╔══════════════════════════════════════╗${c.reset}`)
-  console.log(`${c.green}${c.bold}║  ✅  Contenu semaine ${week} généré en ${elapsed}s  ║${c.reset}`)
-  console.log(`${c.green}${c.bold}╚══════════════════════════════════════╝${c.reset}`)
-  console.log(`\n  ${c.yellow}⚡ Prochaine étape :${c.reset}`)
-  console.log(`  ${c.dim}1. Vérifie content/social/articles-week${week}.txt${c.reset}`)
-  console.log(`  ${c.dim}2. Copie les articles dans content/posts.ts${c.reset}`)
-  console.log(`  ${c.dim}3. Lance : ${c.cyan}npm run deploy${c.reset}`)
+  console.log(`\n${c.green}${c.bold}╔════════════════════════════════════════════╗${c.reset}`)
+  console.log(`${c.green}${c.bold}║  ✅  Contenu semaine ${week} généré en ${elapsed}s         ║${c.reset}`)
+  console.log(`${c.green}${c.bold}╚════════════════════════════════════════════╝${c.reset}`)
+  console.log(`\n  ${c.yellow}⚡ Publication automatique :${c.reset}`)
+  console.log(`  ${c.dim}→ 1 article publié chaque jour via Agent 4${c.reset}`)
+  console.log(`  ${c.dim}→ 1 tweet posté chaque jour via Agent 3${c.reset}`)
   console.log()
 }
 

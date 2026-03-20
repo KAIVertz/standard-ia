@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "generate": "tsx scripts/generate-content.ts",
+    "publish": "tsx scripts/publish-today.ts",
     "deploy": "tsx scripts/deploy.ts",
     "tweet": "tsx scripts/post-twitter.ts",
     "debug": "tsx scripts/debug-check.ts"

@@ -1,0 +1,55 @@
+name: "Agent 4+2+3 : Publication quotidienne"
+
+on:
+  schedule:
+    - cron: "0 8 * * *"  # Chaque jour à 9h (heure française, UTC+1)
+  workflow_dispatch:
+
+jobs:
+  publish-and-tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: "📰 Agent 4 : Publier l'article du jour"
+        run: npx tsx scripts/publish-today.ts
+
+      - name: Commit & push l'article
+        run: |
+          git config user.name "Standard IA Bot"
+          git config user.email "bot@standard-ia.pro"
+          git add -A
+          git diff --staged --quiet || git commit -m "📰 Article du jour publié ($(date +%Y-%m-%d))"
+          git push
+
+      - name: "🚀 Agent 2 : Déployer le site"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx vercel --prod --yes --token=$VERCEL_TOKEN
+
+      - name: "🐦 Agent 3 : Tweeter l'article"
+        env:
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+        run: |
+          # Tweeter l'article si tweet-today.txt existe
+          if [ -f "content/social/tweet-today.txt" ]; then
+            echo "🐦 Tweet article du jour..."
+            npx tsx scripts/post-twitter.ts content/social/tweet-today.txt
+          else
+            # Fallback: tweet depuis le fichier social de la semaine
+            WEEK=$(date +%V)
+            SOCIAL_FILE="content/social/social-week${WEEK}.md"
+            if [ -f "$SOCIAL_FILE" ]; then
+              npx tsx scripts/post-twitter.ts "$SOCIAL_FILE" --auto
+            fi
+          fi

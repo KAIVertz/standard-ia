@@ -1,12 +1,12 @@
-name: "Agent 1+2 : Génération + Déploiement hebdomadaire"
+name: "Agent 1 : Génération hebdomadaire de contenu"
 
 on:
   schedule:
-    - cron: "0 7 * * 1"  # Chaque lundi à 8h (heure française, UTC+1)
-  workflow_dispatch:  # Permet de lancer manuellement
+    - cron: "0 6 * * 1"  # Chaque lundi à 7h UTC (8h française)
+  workflow_dispatch:
 
 jobs:
-  generate-and-deploy:
+  generate-content:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,20 +18,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: "🤖 Agent 1 : Générer le contenu"
+      - name: "🤖 Agent 1 : Générer 7 articles + contenu social"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: npx tsx scripts/generate-content.ts
 
-      - name: Commit new content
+      - name: Commit le contenu généré
         run: |
           git config user.name "Standard IA Bot"
           git config user.email "bot@standard-ia.pro"
           git add -A
-          git diff --staged --quiet || git commit -m "🤖 Contenu semaine auto-généré"
+          git diff --staged --quiet || git commit -m "🤖 Contenu semaine $(date +%V) généré automatiquement"
           git push
-
-      - name: "🚀 Agent 2 : Déployer"
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel --prod --yes --token=$VERCEL_TOKEN
