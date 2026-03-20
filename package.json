@@ -15,6 +15,7 @@
     "scout": "tsx scripts/scout.ts",
     "nova": "tsx scripts/nova.ts",
     "milo": "tsx scripts/milo.ts",
+    "rex": "tsx scripts/rex.ts",
     "debug": "tsx scripts/debug-check.ts"
   },
   "dependencies": {
