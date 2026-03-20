@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1774025120196-m0b3",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "test-pipeline-standard-ia"
+    },
+    "timestamp": "2026-03-20T16:45:20.196Z",
+    "read": true
+  }
+]

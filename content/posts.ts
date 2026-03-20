@@ -2,6 +2,37 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'test-pipeline-standard-ia',
+    title: 'Comment l\'IA générative transforme le travail des PME françaises en 2026',
+    excerpt: 'Les PME françaises adoptent l\'IA à un rythme accéléré. Voici ce que ça change concrètement.',
+    type: 'article',
+    date: '2026-03-20',
+    readTime: 5,
+    content: `
+## L'IA entre dans les bureaux français
+
+En 2026, l'intelligence artificielle n'est plus réservée aux grandes entreprises tech. Les PME françaises — coiffeurs, agences marketing, cabinets comptables — intègrent des outils IA dans leur quotidien à une vitesse surprenante.
+
+Selon les dernières études, 38% des PME de moins de 50 salariés utilisent au moins un outil IA de façon régulière. En 2024, ce chiffre n'était que de 12%.
+
+## Ce qui change vraiment
+
+La différence n'est pas dans les outils — ChatGPT, Gemini, Claude sont accessibles à tous. Elle est dans l'usage.
+
+Les PME qui réussissent leur transition IA font une chose simple : elles identifient les tâches répétitives qui prennent du temps et les automatisent. Réponses emails, synthèses de réunions, rédaction de devis, analyse de chiffres.
+
+- Un cabinet comptable de Lyon a réduit le temps de saisie de 60%
+- Une agence de communication à Bordeaux génère ses briefs clients en 10 minutes au lieu de 2 heures
+- Un e-commerce nantais automatise 80% de ses réponses service client
+
+## Ce que ça signifie pour vous
+
+Si vous êtes dirigeant d'une PME et que vous n'avez pas encore intégré l'IA dans vos processus, vous n'êtes pas en retard — mais la fenêtre se ferme. Les outils sont matures, les prix sont accessibles, et vos concurrents commencent à accélérer.
+
+La bonne nouvelle : vous n'avez pas besoin d'un informaticien. Juste de 2 heures pour identifier vos 3 tâches les plus chronophages.
+    `.trim(),
+  },
+  {
     slug: 'chatgpt-10-prompts-secrets',
     title: 'ChatGPT : 10 prompts que personne n\'utilise mais qui changent tout',
     excerpt: 'La plupart des gens utilisent ChatGPT comme un moteur de recherche amélioré. Voici comment l\'utiliser vraiment.',

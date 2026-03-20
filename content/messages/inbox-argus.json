@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1774025120196-t2gi",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "test-pipeline-standard-ia",
+      "date": "2026-03-20"
+    },
+    "timestamp": "2026-03-20T16:45:20.196Z",
+    "read": false
+  },
+  {
+    "id": "1774025131560-tktw",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "TWEET_DONE",
+    "payload": {
+      "tweetId": "2035035015080264154",
+      "file": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-20T16:45:31.560Z",
+    "read": false
+  },
+  {
+    "id": "1774025162159-cjyj",
+    "from": "DÉVA",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Échec : Déploiement Vercel",
+      "command": "vercel --prod --yes"
+    },
+    "timestamp": "2026-03-20T16:46:02.159Z",
+    "read": false
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1774025120196-r8sw",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "test-pipeline-standard-ia",
+      "title": "Comment l'IA générative transforme le travail des PME françaises en 2026",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-20T16:45:20.196Z",
+    "read": true
+  }
+]
