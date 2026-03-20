@@ -47,5 +47,18 @@
     },
     "timestamp": "2026-03-20T16:48:04.583Z",
     "read": true
+  },
+  {
+    "id": "1774028128104-t3le",
+    "from": "REX",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "task": "le logo n'apparaît pas dans la navbar",
+      "attempts": 1,
+      "result": "Logo trouvé dans le HTML"
+    },
+    "timestamp": "2026-03-20T17:35:28.104Z",
+    "read": false
   }
 ]
