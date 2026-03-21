@@ -171,7 +171,10 @@ Règles :
 - Slug unique en kebab-case`)
   stop2()
 
-  const cleaned = raw.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim()
+  const cleaned = raw
+    .replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim()
+    // Remove control characters that break JSON.parse (except \n \r \t)
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
   const article = JSON.parse(cleaned)
 
   const queueDir = path.join(process.cwd(), "content", "queue")
