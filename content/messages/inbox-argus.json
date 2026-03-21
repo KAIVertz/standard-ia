@@ -147,5 +147,98 @@
     },
     "timestamp": "2026-03-21T09:39:11.849Z",
     "read": false
+  },
+  {
+    "id": "1774086198215-cfxt",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Twitter 403: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}"
+    },
+    "timestamp": "2026-03-21T09:43:18.215Z",
+    "read": false
+  },
+  {
+    "id": "1774086548677-3n3l",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Twitter 403: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}"
+    },
+    "timestamp": "2026-03-21T09:49:08.677Z",
+    "read": false
+  },
+  {
+    "id": "1774087128834-mq5y",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Twitter 403: {\"detail\":\"You are not permitted to perform this action.\",\"type\":\"about:blank\",\"title\":\"Forbidden\",\"status\":403}"
+    },
+    "timestamp": "2026-03-21T09:58:48.834Z",
+    "read": false
+  },
+  {
+    "id": "1774087156143-a6ly",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "TWEET_DONE",
+    "payload": {
+      "tweetId": "2035295164780904489",
+      "file": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-21T09:59:16.143Z",
+    "read": false
+  },
+  {
+    "id": "1774092188588-56w6",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "generate_tweets",
+      "count": 3
+    },
+    "timestamp": "2026-03-21T11:23:08.588Z",
+    "read": false
+  },
+  {
+    "id": "1774092201838-0nh4",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "TWEET_DONE",
+    "payload": {
+      "tweetId": "2035316327976493541",
+      "file": "content/social/tweet-midi.txt"
+    },
+    "timestamp": "2026-03-21T11:23:21.838Z",
+    "read": false
+  },
+  {
+    "id": "1774092208302-fdo2",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "TWEET_DONE",
+    "payload": {
+      "tweetId": "2035316355231048044",
+      "file": "content/social/tweet-soir.txt"
+    },
+    "timestamp": "2026-03-21T11:23:28.302Z",
+    "read": false
+  },
+  {
+    "id": "1774092211054-dc1w",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "TWEET_DONE",
+    "payload": {
+      "tweetId": "2035316366861799705",
+      "file": "content/social/tweet-nuit.txt"
+    },
+    "timestamp": "2026-03-21T11:23:31.054Z",
+    "read": false
   }
 ]
