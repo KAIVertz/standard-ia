@@ -1,12 +1,38 @@
 name: "FLASH : Tweets bonus (3x/jour)"
 
+# Horaires optimaux pour le public français (UTC → heure FR)
+# Semaine : pros/entrepreneurs consultent X pendant les trajets et pauses
+# Weekend : audience plus détendue, engagement le matin et soir
+#
+# Lun-Ven :
+#   - 7h30 UTC = 8h30 FR (trajet matin, pic d'ouverture)
+#   - 11h00 UTC = 12h FR (pause déjeuner, gros pic engagement)
+#   - 16h30 UTC = 17h30 FR (fin de journée, scroll avant de partir)
+#   - 19h30 UTC = 20h30 FR (soirée canapé, dernier scroll)
+#
+# Sam-Dim :
+#   - 8h00 UTC = 9h FR (grasse mat + café)
+#   - 13h00 UTC = 14h FR (après-midi détente)
+#   - 19h00 UTC = 20h FR (soirée)
+
 on:
   schedule:
-    - cron: "0 7 * * *"   # 8h FR — Générer les 3 tweets bonus
-    - cron: "0 11 * * *"  # 12h FR — Tweet midi
-    - cron: "0 16 * * *"  # 17h FR — Tweet soir
-    - cron: "0 20 * * *"  # 21h FR — Tweet nuit
+    # Génération des tweets (tous les jours à 7h UTC = 8h FR)
+    - cron: "0 7 * * *"
+    # Semaine : Lun-Ven
+    - cron: "30 11 * * 1-5"   # 12h30 FR — pause déjeuner (pic engagement)
+    - cron: "30 16 * * 1-5"   # 17h30 FR — fin de journée
+    - cron: "30 19 * * 1-5"   # 20h30 FR — soirée
+    # Weekend : Sam-Dim
+    - cron: "0 13 * * 0,6"    # 14h FR — après-midi détente
+    - cron: "0 19 * * 0,6"    # 20h FR — soirée weekend
   workflow_dispatch:
+
+env:
+  TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+  TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+  TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+  TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
 
 jobs:
   generate-tweets:
@@ -34,57 +60,39 @@ jobs:
 
   tweet-midi:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 11 * * *'
+    if: github.event.schedule == '30 11 * * 1-5' || github.event.schedule == '0 13 * * 0,6'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
       - run: npm ci
-
       - name: "⚡ FLASH — Tweet midi"
-        env:
-          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
         run: |
           [ -f content/social/tweet-midi.txt ] && npx tsx scripts/post-twitter.ts content/social/tweet-midi.txt || echo "Pas de tweet midi"
 
   tweet-soir:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 16 * * *'
+    if: github.event.schedule == '30 16 * * 1-5' || github.event.schedule == '0 19 * * 0,6'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
       - run: npm ci
-
       - name: "⚡ FLASH — Tweet soir"
-        env:
-          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
         run: |
           [ -f content/social/tweet-soir.txt ] && npx tsx scripts/post-twitter.ts content/social/tweet-soir.txt || echo "Pas de tweet soir"
 
   tweet-nuit:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 20 * * *'
+    if: github.event.schedule == '30 19 * * 1-5'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
       - run: npm ci
-
       - name: "⚡ FLASH — Tweet nuit"
-        env:
-          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
         run: |
           [ -f content/social/tweet-nuit.txt ] && npx tsx scripts/post-twitter.ts content/social/tweet-nuit.txt || echo "Pas de tweet nuit"
