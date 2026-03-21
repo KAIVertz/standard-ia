@@ -171,11 +171,34 @@ Règles :
 - Slug unique en kebab-case`)
   stop2()
 
-  const cleaned = raw
+  let cleaned = raw
     .replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim()
     // Remove control characters that break JSON.parse (except \n \r \t)
     .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
-  const article = JSON.parse(cleaned)
+
+  // Fix unescaped newlines inside JSON string values:
+  // Replace real newlines inside strings with \\n
+  cleaned = cleaned.replace(/"(?:[^"\\]|\\.)*"/g, (match) => {
+    return match.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t")
+  })
+
+  let article: Record<string, unknown>
+  try {
+    article = JSON.parse(cleaned)
+  } catch {
+    // Last resort: extract fields manually with regex
+    const slug = cleaned.match(/"slug"\s*:\s*"([^"]+)"/)?.[1] || `article-${tomorrowStr()}`
+    const title = cleaned.match(/"title"\s*:\s*"([^"]+)"/)?.[1] || "Article du jour"
+    const excerpt = cleaned.match(/"excerpt"\s*:\s*"([^"]+)"/)?.[1] || ""
+    const readTime = Number(cleaned.match(/"readTime"\s*:\s*(\d+)/)?.[1] || "5")
+    // Extract content between "content": " and the last "
+    const contentMatch = cleaned.match(/"content"\s*:\s*"([\s\S]*)"[\s\n]*\}/)
+    const content = contentMatch
+      ? contentMatch[1].replace(/\\n/g, "\n").replace(/\\"/g, '"').slice(0, 5000)
+      : "Contenu indisponible."
+    article = { slug, title, excerpt, type: "article", date: tomorrowStr(), readTime, content }
+    console.log(`  ${c.yellow}⚠️  JSON mal formé — extraction manuelle utilisée${c.reset}`)
+  }
 
   const queueDir = path.join(process.cwd(), "content", "queue")
   if (!fs.existsSync(queueDir)) fs.mkdirSync(queueDir, { recursive: true })

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1774085920104-hqnt",
+    "from": "ÉCHO",
+    "to": "LÉON",
+    "type": "REQUEST_CONTENT",
+    "payload": {
+      "date": "2026-03-21",
+      "urgent": true
+    },
+    "timestamp": "2026-03-21T09:38:40.104Z",
+    "read": true
+  }
+]

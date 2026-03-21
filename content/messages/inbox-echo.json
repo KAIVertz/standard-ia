@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1774085913830-cmu1",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-03-22",
+      "slug": "l-ia-democratisation-ou-piege-pour-les-pme",
+      "title": "L'IA : Démocratisation à petit budget ou piège pour les PME françaises ?"
+    },
+    "timestamp": "2026-03-21T09:38:33.830Z",
+    "read": true
+  },
+  {
+    "id": "1774085940499-l6ol",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-03-22",
+      "slug": "la-france-se-prepare-a-lia-opportunites-et-defis-pour-les-pme",
+      "title": "La France se prépare à l'IA : Opportunités et Défis pour les PME"
+    },
+    "timestamp": "2026-03-21T09:39:00.499Z",
+    "read": true
+  }
+]

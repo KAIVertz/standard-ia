@@ -59,6 +59,93 @@
       "result": "Logo trouvé dans le HTML"
     },
     "timestamp": "2026-03-20T17:35:28.104Z",
+    "read": true
+  },
+  {
+    "id": "1774028707870-pgji",
+    "from": "REX",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "task": "le logo SVG n'est pas visible dans la navbar, il faut afficher le vrai logo image /logos/logo.png avec une balise img",
+      "attempts": 1,
+      "result": "Logo trouvé dans le HTML"
+    },
+    "timestamp": "2026-03-20T17:45:07.870Z",
+    "read": true
+  },
+  {
+    "id": "1774033467620-v4fq",
+    "from": "REX",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "task": "Le formulaire BeehiivEmbed apparaît comme un bloc noir qui ne se fond pas dans le site. Changer le fond des sections qui contiennent le formulaire pour qu'elles soient aussi noires (#0a0a0a), et s'assurer que le formulaire n'a pas de bordure ou fond distinct. Le formulaire doit se fondre complètement dans le background du site partout où il apparaît (homepage, newsletter, posts, outils).",
+      "attempts": 5,
+      "lastError": "JSON invalide"
+    },
+    "timestamp": "2026-03-20T19:04:27.620Z",
+    "read": true
+  },
+  {
+    "id": "1774085872025-pio5",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Unterminated string in JSON at position 976 (line 8 column 445)",
+      "mode": "daily"
+    },
+    "timestamp": "2026-03-21T09:37:52.025Z",
+    "read": false
+  },
+  {
+    "id": "1774085913830-0xyk",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-03-22"
+    },
+    "timestamp": "2026-03-21T09:38:33.830Z",
+    "read": false
+  },
+  {
+    "id": "1774085940500-hdgc",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-03-22"
+    },
+    "timestamp": "2026-03-21T09:39:00.500Z",
+    "read": false
+  },
+  {
+    "id": "1774085940532-9sgv",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "ERROR",
+    "payload": {
+      "error": "Aucun article après génération urgente",
+      "date": "2026-03-21"
+    },
+    "timestamp": "2026-03-21T09:39:00.532Z",
+    "read": false
+  },
+  {
+    "id": "1774085951849-vdud",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "la-france-se-prepare-a-lia-opportunites-et-defis-pour-les-pme",
+      "date": "2026-03-21"
+    },
+    "timestamp": "2026-03-21T09:39:11.849Z",
     "read": false
   }
 ]

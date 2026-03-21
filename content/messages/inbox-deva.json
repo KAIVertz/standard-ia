@@ -9,5 +9,16 @@
     },
     "timestamp": "2026-03-20T16:45:20.196Z",
     "read": true
+  },
+  {
+    "id": "1774085951848-7scn",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "la-france-se-prepare-a-lia-opportunites-et-defis-pour-les-pme"
+    },
+    "timestamp": "2026-03-21T09:39:11.848Z",
+    "read": false
   }
 ]
