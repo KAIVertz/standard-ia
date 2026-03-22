@@ -20,5 +20,16 @@
     },
     "timestamp": "2026-03-21T09:39:11.848Z",
     "read": false
+  },
+  {
+    "id": "1774168819922-xjev",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-nouvelle-frontiere-ou-champ-de-mines-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-03-22T08:40:19.922Z",
+    "read": false
   }
 ]

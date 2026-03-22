@@ -288,5 +288,54 @@
     },
     "timestamp": "2026-03-21T11:30:36.921Z",
     "read": false
+  },
+  {
+    "id": "1774168811621-pfei",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-03-23"
+    },
+    "timestamp": "2026-03-22T08:40:11.621Z",
+    "read": false
+  },
+  {
+    "id": "1774168819922-kkft",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-nouvelle-frontiere-ou-champ-de-mines-pour-les-pme-francaises",
+      "date": "2026-03-22"
+    },
+    "timestamp": "2026-03-22T08:40:19.922Z",
+    "read": false
+  },
+  {
+    "id": "1774168840363-aay4",
+    "from": "FLASH",
+    "to": "ARGUS",
+    "type": "TWEET_DONE",
+    "payload": {
+      "tweetId": "2035637773579796869",
+      "file": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-22T08:40:40.363Z",
+    "read": false
+  },
+  {
+    "id": "1774168852106-8f7n",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "generate_tweets",
+      "count": 3
+    },
+    "timestamp": "2026-03-22T08:40:52.106Z",
+    "read": false
   }
 ]

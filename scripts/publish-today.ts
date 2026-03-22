@@ -104,8 +104,16 @@ ${article.content}
   fs.renameSync(queueFile, path.join(publishedDir, `${today}.json`))
   console.log(`  ${c.green}✅${c.reset} Archivé dans ${c.dim}content/published/${today}.json${c.reset}`)
 
-  // Générer le tweet pour FLASH
-  const tweetText = `📰 Nouvel article sur Standard IA :\n\n"${article.title}"\n\n${article.excerpt}\n\n👉 standard-ia.pro/posts/${article.slug}`
+  // Générer le tweet pour FLASH (max 280 chars)
+  const link = `standard-ia.pro/posts/${article.slug}`
+  const maxTextLen = 275 - link.length
+  let tweetBody = `📰 ${article.title}`
+  if (tweetBody.length < maxTextLen - 20) {
+    // Add short excerpt if space allows
+    const excerptShort = article.excerpt?.slice(0, maxTextLen - tweetBody.length - 5) || ""
+    if (excerptShort.length > 20) tweetBody += `\n\n${excerptShort}`
+  }
+  const tweetText = `${tweetBody}\n\n👉 ${link}`
   const socialDir = path.join(process.cwd(), "content", "social")
   if (!fs.existsSync(socialDir)) fs.mkdirSync(socialDir, { recursive: true })
   fs.writeFileSync(path.join(socialDir, "tweet-today.txt"), tweetText)

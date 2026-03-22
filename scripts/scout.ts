@@ -152,8 +152,19 @@ Réponds UNIQUEMENT en JSON brut :
   const date = new Date().toISOString().split("T")[0]
   const reportFile = path.join(reportsDir, `report-${date}.json`)
 
-  const cleaned = report.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim()
-  const reportData = JSON.parse(cleaned)
+  let cleaned = report.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim()
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
+  // Fix unescaped newlines inside JSON strings
+  cleaned = cleaned.replace(/"(?:[^"\\]|\\.)*"/g, (match) =>
+    match.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t")
+  )
+  let reportData: Record<string, unknown>
+  try {
+    reportData = JSON.parse(cleaned)
+  } catch {
+    console.log(`  ${c.yellow}⚠️  JSON mal formé — tentative de récupération${c.reset}`)
+    reportData = { opportunities: [], site_improvements: [], raw: cleaned.slice(0, 2000) }
+  }
   fs.writeFileSync(reportFile, JSON.stringify(reportData, null, 2))
 
   // Toujours garder un "latest" pour NOVA

@@ -24,5 +24,18 @@
     },
     "timestamp": "2026-03-21T09:39:11.848Z",
     "read": true
+  },
+  {
+    "id": "1774168819922-9i0e",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-nouvelle-frontiere-ou-champ-de-mines-pour-les-pme-francaises",
+      "title": "L'IA : Nouvelle Frontière ou Champ de Mines pour les PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-22T08:40:19.922Z",
+    "read": true
   }
 ]

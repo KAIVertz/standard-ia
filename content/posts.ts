@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-nouvelle-frontiere-ou-champ-de-mines-pour-les-pme-francaises',
+    title: 'L\'IA : Nouvelle Frontière ou Champ de Mines pour les PME Françaises ?',
+    excerpt: 'Entre opportunités de croissance massives et pièges éthiques ou de conformité, les entrepreneurs français doivent naviguer un paysage IA en pleine mutation, où l\'accès aux outils se démocratise mais les compétences et la vigilance restent clés.',
+    type: 'article',
+    date: '2026-03-23',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'la-france-se-prepare-a-lia-opportunites-et-defis-pour-les-pme',
     title: 'La France se prépare à l\'IA : Opportunités et Défis pour les PME',
     excerpt: 'Alors qu\'Orange mise massivement sur l\'IA pour doper ses revenus et que des centres comme Le Wagon forment la nouvelle garde de l\'intelligence artificielle, la France est en pleine mutation. Mais que signifie cette accélération pour les entrepreneurs et les PME français, confrontés aux coûts et à la nécessité d\'acquérir de nouvelles compétences ?',

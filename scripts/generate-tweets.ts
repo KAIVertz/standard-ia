@@ -46,9 +46,9 @@ function getLatestArticleSlug(): string {
   if (!fs.existsSync(postsPath)) return ""
   const content = fs.readFileSync(postsPath, "utf-8")
   // Find the last slug in the file
-  const slugs = [...content.matchAll(/slug:\s*"([^"]+)"/g)]
+  const slugs = [...content.matchAll(/slug:\s*['"]([^'"]+)['"]/g)]
   if (slugs.length === 0) return ""
-  return slugs[slugs.length - 1][1]
+  return slugs[0][1] // first = most recent (prepended at top)
 }
 
 /** Find the latest article title from posts.ts */
@@ -56,9 +56,9 @@ function getLatestArticleTitle(): string {
   const postsPath = path.join(process.cwd(), "content", "posts.ts")
   if (!fs.existsSync(postsPath)) return ""
   const content = fs.readFileSync(postsPath, "utf-8")
-  const titles = [...content.matchAll(/title:\s*"([^"]+)"/g)]
+  const titles = [...content.matchAll(/title:\s*['"]([^'"]+)['"]/g)]
   if (titles.length === 0) return ""
-  return titles[titles.length - 1][1]
+  return titles[0][1] // first = most recent
 }
 
 async function main() {
