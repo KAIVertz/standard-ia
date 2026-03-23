@@ -361,5 +361,17 @@
     },
     "timestamp": "2026-03-23T06:57:57.362Z",
     "read": false
+  },
+  {
+    "id": "1774256144172-oc8s",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "already_published",
+      "slug": "l-ia-nouvelle-frontiere-ou-champ-de-mines-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-03-23T08:55:44.172Z",
+    "read": false
   }
 ]
