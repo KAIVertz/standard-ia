@@ -385,5 +385,18 @@
     },
     "timestamp": "2026-03-24T06:52:12.183Z",
     "read": false
+  },
+  {
+    "id": "1774342401609-s842",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-nouvelle-donne-competences-couts-ethique",
+      "date": "2026-03-24"
+    },
+    "timestamp": "2026-03-24T08:53:21.609Z",
+    "read": false
   }
 ]

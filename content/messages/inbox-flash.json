@@ -37,5 +37,18 @@
     },
     "timestamp": "2026-03-22T08:40:19.922Z",
     "read": true
+  },
+  {
+    "id": "1774342401608-rqsp",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-nouvelle-donne-competences-couts-ethique",
+      "title": "IA 2026 : Compétences, Coûts et Éthique – La Nouvelle Donne pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-24T08:53:21.608Z",
+    "read": false
   }
 ]

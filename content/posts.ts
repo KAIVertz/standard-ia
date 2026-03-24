@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-pme-nouvelle-donne-competences-couts-ethique',
+    title: 'IA 2026 : Compétences, Coûts et Éthique – La Nouvelle Donne pour les PME Françaises',
+    excerpt: 'Alors que l\'IA redéfinit le travail et l\'innovation, les PME françaises doivent naviguer entre l\'acquisition de talents, la maîtrise des coûts des outils et les impératifs éthiques. Un tournant décisif pour la compétitivité.',
+    type: 'article',
+    date: '2026-03-24',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-nouvelle-frontiere-ou-champ-de-mines-pour-les-pme-francaises',
     title: 'L\'IA : Nouvelle Frontière ou Champ de Mines pour les PME Françaises ?',
     excerpt: 'Entre opportunités de croissance massives et pièges éthiques ou de conformité, les entrepreneurs français doivent naviguer un paysage IA en pleine mutation, où l\'accès aux outils se démocratise mais les compétences et la vigilance restent clés.',
