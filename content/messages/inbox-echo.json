@@ -50,5 +50,18 @@
     },
     "timestamp": "2026-03-23T06:57:57.361Z",
     "read": true
+  },
+  {
+    "id": "1774335132183-osaq",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-03-25",
+      "slug": "ia-accessibilite-cout-opportunites-pme-2026",
+      "title": "IA en 2026 : Levier de Croissance ou Gouffre Financier pour les PME Françaises ?"
+    },
+    "timestamp": "2026-03-24T06:52:12.183Z",
+    "read": false
   }
 ]
