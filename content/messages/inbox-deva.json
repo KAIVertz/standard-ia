@@ -42,5 +42,16 @@
     },
     "timestamp": "2026-03-24T08:53:21.609Z",
     "read": false
+  },
+  {
+    "id": "1774428711959-a5z3",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-accessibilite-cout-opportunites-pme-2026"
+    },
+    "timestamp": "2026-03-25T08:51:51.959Z",
+    "read": false
   }
 ]

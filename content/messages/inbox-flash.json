@@ -50,5 +50,18 @@
     },
     "timestamp": "2026-03-24T08:53:21.608Z",
     "read": false
+  },
+  {
+    "id": "1774428711959-qyoo",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-accessibilite-cout-opportunites-pme-2026",
+      "title": "IA en 2026 : Levier de Croissance ou Gouffre Financier pour les PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-25T08:51:51.959Z",
+    "read": false
   }
 ]
