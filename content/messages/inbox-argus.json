@@ -435,5 +435,18 @@
     },
     "timestamp": "2026-03-26T06:57:14.367Z",
     "read": false
+  },
+  {
+    "id": "1774515347000-006n",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-mature-adieu-gadgets-bonjour-valeur-business",
+      "date": "2026-03-26"
+    },
+    "timestamp": "2026-03-26T08:55:47.000Z",
+    "read": false
   }
 ]
