@@ -76,5 +76,18 @@
     },
     "timestamp": "2026-03-25T06:50:57.429Z",
     "read": true
+  },
+  {
+    "id": "1774508234367-6wei",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-03-27",
+      "slug": "ia-pme-fracture-numerique-opportunites",
+      "title": "IA en 2026 : Le paradoxe des PME entre un fossé des compétences et l'opportunité des outils démocratisés"
+    },
+    "timestamp": "2026-03-26T06:57:14.367Z",
+    "read": false
   }
 ]
