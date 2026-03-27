@@ -64,5 +64,16 @@
     },
     "timestamp": "2026-03-26T08:55:47.000Z",
     "read": false
+  },
+  {
+    "id": "1774601601629-shpc",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-fracture-numerique-opportunites"
+    },
+    "timestamp": "2026-03-27T08:53:21.629Z",
+    "read": false
   }
 ]

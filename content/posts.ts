@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-pme-fracture-numerique-opportunites',
+    title: 'IA en 2026 : Le paradoxe des PME entre un fossé des compétences et l\'opportunité des outils démocratisés',
+    excerpt: 'Alors que l\'IA creuse un fossé entre utilisateurs aguerris et novices, de nouvelles solutions gratuites émergent, offrant un espoir aux PME françaises pour rester compétitives face aux géants tech.',
+    type: 'article',
+    date: '2026-03-27',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-mature-adieu-gadgets-bonjour-valeur-business',
     title: 'L\'IA mature : Adieu les gadgets, bonjour la valeur business pour nos PME ?',
     excerpt: 'OpenAI ferme son application Sora, tandis que des milliards affluent vers l\'IA d\'entreprise. Le marché de l\'intelligence artificielle se réoriente vers le pragmatisme. Que signifie cette mue profonde pour les entrepreneurs et PME français ?',

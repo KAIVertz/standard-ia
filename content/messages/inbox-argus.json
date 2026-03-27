@@ -460,5 +460,18 @@
     },
     "timestamp": "2026-03-27T06:56:10.060Z",
     "read": false
+  },
+  {
+    "id": "1774601601629-vt7j",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-fracture-numerique-opportunites",
+      "date": "2026-03-27"
+    },
+    "timestamp": "2026-03-27T08:53:21.629Z",
+    "read": false
   }
 ]

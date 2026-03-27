@@ -76,5 +76,18 @@
     },
     "timestamp": "2026-03-26T08:55:47.000Z",
     "read": false
+  },
+  {
+    "id": "1774601601629-z1tn",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-fracture-numerique-opportunites",
+      "title": "IA en 2026 : Le paradoxe des PME entre un fossé des compétences et l'opportunité des outils démocratisés",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-03-27T08:53:21.629Z",
+    "read": false
   }
 ]
