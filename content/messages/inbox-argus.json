@@ -448,5 +448,17 @@
     },
     "timestamp": "2026-03-26T08:55:47.000Z",
     "read": false
+  },
+  {
+    "id": "1774594570060-zevh",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-03-28"
+    },
+    "timestamp": "2026-03-27T06:56:10.060Z",
+    "read": false
   }
 ]

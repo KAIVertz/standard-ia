@@ -89,5 +89,18 @@
     },
     "timestamp": "2026-03-26T06:57:14.367Z",
     "read": true
+  },
+  {
+    "id": "1774594570060-9cr9",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-03-28",
+      "slug": "l-ia-democratise-son-acces-nouvelles-opportunites-pme",
+      "title": "L'IA démocratise son accès : Cloud spécialisé et outils gratuits, une aubaine pour les PME françaises ?"
+    },
+    "timestamp": "2026-03-27T06:56:10.060Z",
+    "read": false
   }
 ]
