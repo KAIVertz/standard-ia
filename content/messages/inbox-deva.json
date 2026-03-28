@@ -75,5 +75,16 @@
     },
     "timestamp": "2026-03-27T08:53:21.629Z",
     "read": false
+  },
+  {
+    "id": "1774687101581-3uyu",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-democratise-son-acces-nouvelles-opportunites-pme"
+    },
+    "timestamp": "2026-03-28T08:38:21.581Z",
+    "read": false
   }
 ]

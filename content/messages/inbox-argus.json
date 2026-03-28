@@ -485,5 +485,18 @@
     },
     "timestamp": "2026-03-28T06:45:00.041Z",
     "read": false
+  },
+  {
+    "id": "1774687101581-8i5d",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-democratise-son-acces-nouvelles-opportunites-pme",
+      "date": "2026-03-28"
+    },
+    "timestamp": "2026-03-28T08:38:21.581Z",
+    "read": false
   }
 ]

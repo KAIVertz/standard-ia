@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-democratise-son-acces-nouvelles-opportunites-pme',
+    title: 'L\'IA démocratise son accès : Cloud spécialisé et outils gratuits, une aubaine pour les PME françaises ?',
+    excerpt: 'Entre l\'émergence de plateformes cloud \',
+    type: 'article',
+    date: '2026-03-28',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-pme-fracture-numerique-opportunites',
     title: 'IA en 2026 : Le paradoxe des PME entre un fossé des compétences et l\'opportunité des outils démocratisés',
     excerpt: 'Alors que l\'IA creuse un fossé entre utilisateurs aguerris et novices, de nouvelles solutions gratuites émergent, offrant un espoir aux PME françaises pour rester compétitives face aux géants tech.',
