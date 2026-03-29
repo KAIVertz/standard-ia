@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1774763042451-ccg9",
+    "from": "SCOUT",
+    "to": "NOVA",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "report_ready",
+      "file": "content/scout/report-2026-03-29.json",
+      "improvements": 0
+    },
+    "timestamp": "2026-03-29T05:44:02.451Z",
+    "read": true
+  }
+]
