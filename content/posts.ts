@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'retrait-sora-openai-signal-alarme-pme-francaises',
+    title: 'Le Retrait de Sora par OpenAI : Un Signal d\'Alarme pour l\'IA et les PME Françaises ?',
+    excerpt: 'Alors que les capitaux affluent massivement vers l\'IA, la décision d\'OpenAI d\'abandonner son modèle révolutionnaire de génération de vidéo, Sora, interroge. Est-ce un signe des coûts cachés et des défis d\'infrastructure qui attendent les entrepreneurs et PME françaises ?',
+    type: 'article',
+    date: '2026-03-29',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-democratise-son-acces-nouvelles-opportunites-pme',
     title: 'L\'IA démocratise son accès : Cloud spécialisé et outils gratuits, une aubaine pour les PME françaises ?',
     excerpt: 'Entre l\'émergence de plateformes cloud \',
