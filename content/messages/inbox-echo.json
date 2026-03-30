@@ -128,5 +128,18 @@
     },
     "timestamp": "2026-03-29T06:52:51.374Z",
     "read": true
+  },
+  {
+    "id": "1774854922587-ohkp",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-03-31",
+      "slug": "l-arret-de-sora-le-choc-de-realite-pour-l-ia-gen",
+      "title": "L'arrêt de Sora : le choc de réalité de l'IA générative pour les PME françaises"
+    },
+    "timestamp": "2026-03-30T07:15:22.587Z",
+    "read": false
   }
 ]
