@@ -97,5 +97,16 @@
     },
     "timestamp": "2026-03-29T08:39:24.164Z",
     "read": false
+  },
+  {
+    "id": "1774861906098-1wjy",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-defie-les-createurs-opportunites-et-couts-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-03-30T09:11:46.098Z",
+    "read": false
   }
 ]
