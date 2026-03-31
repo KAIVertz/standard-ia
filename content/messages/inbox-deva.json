@@ -108,5 +108,16 @@
     },
     "timestamp": "2026-03-30T09:11:46.098Z",
     "read": false
+  },
+  {
+    "id": "1774947564219-gpkd",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-arret-de-sora-le-choc-de-realite-pour-l-ia-gen"
+    },
+    "timestamp": "2026-03-31T08:59:24.219Z",
+    "read": false
   }
 ]

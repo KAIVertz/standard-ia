@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-arret-de-sora-le-choc-de-realite-pour-l-ia-gen',
+    title: 'L\'arrêt de Sora : le choc de réalité de l\'IA générative pour les PME françaises',
+    excerpt: 'La fermeture inattendue de Sora par OpenAI marque un tournant. Pour les entrepreneurs et PME français, c\'est l\'heure d\'une évaluation pragmatique des promesses et des coûts de l\'IA générative.',
+    type: 'article',
+    date: '2026-03-31',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-defie-les-createurs-opportunites-et-couts-pour-les-pme-francaises',
     title: 'L\'IA bouscule les Créateurs : Menaces, Opportunités et Choix Stratégiques pour les PME Françaises',
     excerpt: 'L\'intelligence artificielle inonde les plateformes de contenu avec des créations générées, tandis que de nouvelles infrastructures cloud émergent. Comment les PME et créateurs français peuvent-ils naviguer ce paysage en pleine mutation, entre défis économiques et opportunités technologiques ?',
