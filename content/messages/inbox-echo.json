@@ -141,5 +141,18 @@
     },
     "timestamp": "2026-03-30T07:15:22.587Z",
     "read": true
+  },
+  {
+    "id": "1774940509230-wuts",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-01",
+      "slug": "mistral-ia-infrastructure-pme-francaises-defis-opportunites",
+      "title": "Mistral AI muscle son jeu : l'infrastructure souveraine, le coût de l'IA et les défis des PME françaises"
+    },
+    "timestamp": "2026-03-31T07:01:49.230Z",
+    "read": false
   }
 ]
