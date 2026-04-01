@@ -119,5 +119,16 @@
     },
     "timestamp": "2026-03-31T08:59:24.219Z",
     "read": false
+  },
+  {
+    "id": "1775034220367-5qm0",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "mistral-ia-infrastructure-pme-francaises-defis-opportunites"
+    },
+    "timestamp": "2026-04-01T09:03:40.367Z",
+    "read": false
   }
 ]

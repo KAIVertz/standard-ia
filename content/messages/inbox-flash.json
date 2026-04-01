@@ -141,5 +141,18 @@
     },
     "timestamp": "2026-03-31T08:59:24.219Z",
     "read": false
+  },
+  {
+    "id": "1775034220367-j961",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "mistral-ia-infrastructure-pme-francaises-defis-opportunites",
+      "title": "Mistral AI muscle son jeu : l'infrastructure souveraine, le coût de l'IA et les défis des PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-01T09:03:40.367Z",
+    "read": false
   }
 ]

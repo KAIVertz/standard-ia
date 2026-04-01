@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'mistral-ia-infrastructure-pme-francaises-defis-opportunites',
+    title: 'Mistral AI muscle son jeu : l\'infrastructure souveraine, le coût de l\'IA et les défis des PME françaises',
+    excerpt: 'Alors que Mistral AI investit massivement dans ses data centers, redessinant la carte de l\'infrastructure IA européenne, les PME françaises doivent naviguer entre l\'accès à des outils puissants, la question cruciale des coûts et un besoin croissant de confiance dans l\'IA.',
+    type: 'article',
+    date: '2026-04-01',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-arret-de-sora-le-choc-de-realite-pour-l-ia-gen',
     title: 'L\'arrêt de Sora : le choc de réalité de l\'IA générative pour les PME françaises',
     excerpt: 'La fermeture inattendue de Sora par OpenAI marque un tournant. Pour les entrepreneurs et PME français, c\'est l\'heure d\'une évaluation pragmatique des promesses et des coûts de l\'IA générative.',

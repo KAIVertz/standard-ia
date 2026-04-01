@@ -609,5 +609,18 @@
     },
     "timestamp": "2026-04-01T07:08:13.724Z",
     "read": false
+  },
+  {
+    "id": "1775034220367-8zvd",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "mistral-ia-infrastructure-pme-francaises-defis-opportunites",
+      "date": "2026-04-01"
+    },
+    "timestamp": "2026-04-01T09:03:40.367Z",
+    "read": false
   }
 ]
