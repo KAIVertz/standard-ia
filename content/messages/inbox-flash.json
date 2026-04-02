@@ -154,5 +154,18 @@
     },
     "timestamp": "2026-04-01T09:03:40.367Z",
     "read": false
+  },
+  {
+    "id": "1775120170051-0j0h",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-au-quotidien-des-pme-entre-adoption-sauvage-couts-caches-et-securite",
+      "title": "L'IA au Quotidien des PME : Naviguer entre Adoption Sauvage, Coûts et Sécurité",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-02T08:56:10.051Z",
+    "read": false
   }
 ]

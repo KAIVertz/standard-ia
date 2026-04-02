@@ -634,5 +634,18 @@
     },
     "timestamp": "2026-04-02T07:00:14.581Z",
     "read": false
+  },
+  {
+    "id": "1775120170052-4dwp",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-au-quotidien-des-pme-entre-adoption-sauvage-couts-caches-et-securite",
+      "date": "2026-04-02"
+    },
+    "timestamp": "2026-04-02T08:56:10.052Z",
+    "read": false
   }
 ]

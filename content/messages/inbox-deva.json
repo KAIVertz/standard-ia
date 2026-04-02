@@ -130,5 +130,16 @@
     },
     "timestamp": "2026-04-01T09:03:40.367Z",
     "read": false
+  },
+  {
+    "id": "1775120170051-rkxn",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-au-quotidien-des-pme-entre-adoption-sauvage-couts-caches-et-securite"
+    },
+    "timestamp": "2026-04-02T08:56:10.051Z",
+    "read": false
   }
 ]
