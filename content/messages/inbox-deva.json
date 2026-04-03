@@ -141,5 +141,16 @@
     },
     "timestamp": "2026-04-02T08:56:10.051Z",
     "read": false
+  },
+  {
+    "id": "1775206432176-eedx",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-accessibilite-cout-pme-francaises"
+    },
+    "timestamp": "2026-04-03T08:53:52.176Z",
+    "read": false
   }
 ]

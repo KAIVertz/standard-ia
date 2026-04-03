@@ -167,5 +167,18 @@
     },
     "timestamp": "2026-04-02T08:56:10.051Z",
     "read": false
+  },
+  {
+    "id": "1775206432175-xka5",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-accessibilite-cout-pme-francaises",
+      "title": "L'IA est-elle un luxe ou une nécessité abordable pour les PME françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-03T08:53:52.176Z",
+    "read": false
   }
 ]

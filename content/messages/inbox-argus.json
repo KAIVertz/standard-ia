@@ -659,5 +659,18 @@
     },
     "timestamp": "2026-04-03T06:57:14.995Z",
     "read": false
+  },
+  {
+    "id": "1775206432176-sgkd",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-accessibilite-cout-pme-francaises",
+      "date": "2026-04-03"
+    },
+    "timestamp": "2026-04-03T08:53:52.176Z",
+    "read": false
   }
 ]
