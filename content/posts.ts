@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-multimodale-democratisation-et-enjeux-pour-les-pme',
+    title: 'L\'IA multimodale se démocratise : une révolution à portée de main pour les entrepreneurs français ?',
+    excerpt: 'Microsoft et Google lancent des outils IA multimodaux puissants et accessibles, tandis que de nouvelles infrastructures cloud émergent. Que signifient ces avancées pour les PME françaises face aux défis de coût et d\'intégration ?',
+    type: 'article',
+    date: '2026-04-04',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-accessibilite-cout-pme-francaises',
     title: 'L\'IA est-elle un luxe ou une nécessité abordable pour les PME françaises ?',
     excerpt: 'Alors que l\'IA promet de transformer chaque secteur, son coût d\'adoption reste une préoccupation majeure. De nouvelles dynamiques émergent, entre services premiums coûteux et alternatives innovantes, redéfinissant l\'accessibilité pour les entrepreneurs et les PME françaises.',

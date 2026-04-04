@@ -152,5 +152,16 @@
     },
     "timestamp": "2026-04-03T08:53:52.176Z",
     "read": false
+  },
+  {
+    "id": "1775292021520-uy8w",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-multimodale-democratisation-et-enjeux-pour-les-pme"
+    },
+    "timestamp": "2026-04-04T08:40:21.520Z",
+    "read": false
   }
 ]

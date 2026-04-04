@@ -684,5 +684,18 @@
     },
     "timestamp": "2026-04-04T06:46:17.915Z",
     "read": false
+  },
+  {
+    "id": "1775292021520-ov7z",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-multimodale-democratisation-et-enjeux-pour-les-pme",
+      "date": "2026-04-04"
+    },
+    "timestamp": "2026-04-04T08:40:21.520Z",
+    "read": false
   }
 ]

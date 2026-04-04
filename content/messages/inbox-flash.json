@@ -180,5 +180,18 @@
     },
     "timestamp": "2026-04-03T08:53:52.176Z",
     "read": false
+  },
+  {
+    "id": "1775292021520-28e9",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-multimodale-democratisation-et-enjeux-pour-les-pme",
+      "title": "L'IA multimodale se démocratise : une révolution à portée de main pour les entrepreneurs français ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-04T08:40:21.520Z",
+    "read": false
   }
 ]
