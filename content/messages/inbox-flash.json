@@ -193,5 +193,18 @@
     },
     "timestamp": "2026-04-04T08:40:21.520Z",
     "read": false
+  },
+  {
+    "id": "1775378532372-awmv",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-virage-ia-strategies-et-couts-pour-les-pme-francaises",
+      "title": "Le Grand Virage de l'IA : Stratégies et Coûts pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-05T08:42:12.372Z",
+    "read": false
   }
 ]

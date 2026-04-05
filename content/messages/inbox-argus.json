@@ -733,5 +733,18 @@
     },
     "timestamp": "2026-04-05T06:54:13.055Z",
     "read": false
+  },
+  {
+    "id": "1775378532373-0cx5",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "le-grand-virage-ia-strategies-et-couts-pour-les-pme-francaises",
+      "date": "2026-04-05"
+    },
+    "timestamp": "2026-04-05T08:42:12.373Z",
+    "read": false
   }
 ]

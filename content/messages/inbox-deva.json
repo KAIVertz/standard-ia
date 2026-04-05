@@ -174,5 +174,16 @@
     },
     "timestamp": "2026-04-05T05:45:16.477Z",
     "read": false
+  },
+  {
+    "id": "1775378532372-ol7j",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-virage-ia-strategies-et-couts-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-04-05T08:42:12.372Z",
+    "read": false
   }
 ]
