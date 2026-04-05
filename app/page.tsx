@@ -29,10 +29,13 @@ export default function Home() {
         }} />
         <div className="relative max-w-4xl mx-auto text-center">
           <AnimateIn>
-            <h1 className="font-display font-black text-white text-5xl md:text-7xl leading-[1.05] tracking-tight mb-10">
+            <h1 className="font-display font-black text-white text-5xl md:text-7xl leading-[1.05] tracking-tight mb-6">
               L&apos;IA va changer<br />
               <RotatingWords />
             </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
+              L&apos;IA pour votre PME française : analyses claires, outils testés et hacks actionnables, <br className="hidden md:inline"/>le tout en 5 minutes par semaine.
+            </p>
           </AnimateIn>
 
           <AnimateIn delay={150}>
