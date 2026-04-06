@@ -770,5 +770,18 @@
     },
     "timestamp": "2026-04-06T07:17:12.119Z",
     "read": false
+  },
+  {
+    "id": "1775466501047-wj17",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-couts-alternatives-infrastructure-pme-2026",
+      "date": "2026-04-06"
+    },
+    "timestamp": "2026-04-06T09:08:21.047Z",
+    "read": false
   }
 ]
