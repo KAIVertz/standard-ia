@@ -232,5 +232,18 @@
     },
     "timestamp": "2026-04-06T07:17:12.118Z",
     "read": true
+  },
+  {
+    "id": "1775545420189-naat",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-08",
+      "slug": "l-ia-a-portee-de-toutes-les-pme-entre-couts-et-opportunites",
+      "title": "L'IA à portée de toutes les PME : Naviguer entre coûts et opportunités"
+    },
+    "timestamp": "2026-04-07T07:03:40.189Z",
+    "read": false
   }
 ]
