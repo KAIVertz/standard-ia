@@ -795,5 +795,18 @@
     },
     "timestamp": "2026-04-07T07:03:40.189Z",
     "read": false
+  },
+  {
+    "id": "1775552579995-qkc9",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-entre-promesses-et-pieges-le-guide-des-pme-francaises",
+      "date": "2026-04-07"
+    },
+    "timestamp": "2026-04-07T09:02:59.995Z",
+    "read": false
   }
 ]

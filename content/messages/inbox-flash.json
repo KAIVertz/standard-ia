@@ -219,5 +219,18 @@
     },
     "timestamp": "2026-04-06T09:08:21.046Z",
     "read": false
+  },
+  {
+    "id": "1775552579995-3096",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-entre-promesses-et-pieges-le-guide-des-pme-francaises",
+      "title": "IA : Entre promesses d'efficacité et pièges juridiques, le guide des PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-07T09:02:59.995Z",
+    "read": false
   }
 ]

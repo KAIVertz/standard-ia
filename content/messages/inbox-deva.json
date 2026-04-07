@@ -196,5 +196,16 @@
     },
     "timestamp": "2026-04-06T09:08:21.047Z",
     "read": false
+  },
+  {
+    "id": "1775552579995-nw48",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-entre-promesses-et-pieges-le-guide-des-pme-francaises"
+    },
+    "timestamp": "2026-04-07T09:02:59.995Z",
+    "read": false
   }
 ]
