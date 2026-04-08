@@ -207,5 +207,16 @@
     },
     "timestamp": "2026-04-07T09:02:59.995Z",
     "read": false
+  },
+  {
+    "id": "1775638846308-65oy",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-a-portee-de-toutes-les-pme-entre-couts-et-opportunites"
+    },
+    "timestamp": "2026-04-08T09:00:46.308Z",
+    "read": false
   }
 ]

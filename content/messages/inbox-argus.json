@@ -808,5 +808,18 @@
     },
     "timestamp": "2026-04-07T09:02:59.995Z",
     "read": false
+  },
+  {
+    "id": "1775638846308-3isy",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-a-portee-de-toutes-les-pme-entre-couts-et-opportunites",
+      "date": "2026-04-08"
+    },
+    "timestamp": "2026-04-08T09:00:46.308Z",
+    "read": false
   }
 ]

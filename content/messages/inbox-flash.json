@@ -232,5 +232,18 @@
     },
     "timestamp": "2026-04-07T09:02:59.995Z",
     "read": false
+  },
+  {
+    "id": "1775638846307-veph",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-a-portee-de-toutes-les-pme-entre-couts-et-opportunites",
+      "title": "L'IA à portée de toutes les PME : Naviguer entre coûts et opportunités",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-08T09:00:46.307Z",
+    "read": false
   }
 ]
