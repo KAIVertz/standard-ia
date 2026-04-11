@@ -245,5 +245,18 @@
     },
     "timestamp": "2026-04-07T07:03:40.189Z",
     "read": true
+  },
+  {
+    "id": "1775890090140-2pjf",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-12",
+      "slug": "ia-pme-couts-infrastructures-revolutionnaires",
+      "title": "IA pour les PME : Naviguer entre Coûts Exorbitants et Infrastructures Révolutionnaires"
+    },
+    "timestamp": "2026-04-11T06:48:10.140Z",
+    "read": false
   }
 ]
