@@ -857,5 +857,18 @@
     },
     "timestamp": "2026-04-12T07:03:02.235Z",
     "read": false
+  },
+  {
+    "id": "1775983648615-rs74",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-couts-infrastructures-revolutionnaires",
+      "date": "2026-04-12"
+    },
+    "timestamp": "2026-04-12T08:47:28.615Z",
+    "read": false
   }
 ]

@@ -245,5 +245,18 @@
     },
     "timestamp": "2026-04-08T09:00:46.307Z",
     "read": false
+  },
+  {
+    "id": "1775983648615-1218",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-couts-infrastructures-revolutionnaires",
+      "title": "IA pour les PME : Naviguer entre Coûts Exorbitants et Infrastructures Révolutionnaires",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-12T08:47:28.615Z",
+    "read": false
   }
 ]

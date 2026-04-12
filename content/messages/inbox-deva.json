@@ -218,5 +218,16 @@
     },
     "timestamp": "2026-04-08T09:00:46.308Z",
     "read": false
+  },
+  {
+    "id": "1775983648615-kvnl",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-couts-infrastructures-revolutionnaires"
+    },
+    "timestamp": "2026-04-12T08:47:28.615Z",
+    "read": false
   }
 ]
