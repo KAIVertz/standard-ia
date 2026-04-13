@@ -258,5 +258,18 @@
     },
     "timestamp": "2026-04-12T08:47:28.615Z",
     "read": false
+  },
+  {
+    "id": "1776074089020-dn74",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "agents-ia-autonomes-openclaw-opportunites-risques-pme",
+      "title": "OpenClaw et l'Ère des Agents IA Autonomes : Opportunités et Vertiges Éthiques pour les Entreprises Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-13T09:54:49.020Z",
+    "read": false
   }
 ]

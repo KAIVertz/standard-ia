@@ -870,5 +870,18 @@
     },
     "timestamp": "2026-04-12T08:47:28.615Z",
     "read": false
+  },
+  {
+    "id": "1776074089021-2xb9",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "agents-ia-autonomes-openclaw-opportunites-risques-pme",
+      "date": "2026-04-13"
+    },
+    "timestamp": "2026-04-13T09:54:49.021Z",
+    "read": false
   }
 ]
