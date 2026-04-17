@@ -271,5 +271,18 @@
     },
     "timestamp": "2026-04-12T07:03:02.234Z",
     "read": true
+  },
+  {
+    "id": "1776410295707-475a",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-18",
+      "slug": "l-ia-entre-course-a-l-or-et-pieges-pour-les-pme-francaises",
+      "title": "L'IA : Entre course à l'or technologique et pièges pour les PME françaises"
+    },
+    "timestamp": "2026-04-17T07:18:15.707Z",
+    "read": false
   }
 ]
