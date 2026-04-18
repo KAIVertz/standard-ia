@@ -271,5 +271,18 @@
     },
     "timestamp": "2026-04-13T09:54:49.020Z",
     "read": false
+  },
+  {
+    "id": "1776502249992-mq3q",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-course-a-l-or-et-pieges-pour-les-pme-francaises",
+      "title": "L'IA : Entre course à l'or technologique et pièges pour les PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-18T08:50:49.992Z",
+    "read": false
   }
 ]

@@ -240,5 +240,16 @@
     },
     "timestamp": "2026-04-13T09:54:49.020Z",
     "read": false
+  },
+  {
+    "id": "1776502249992-8swc",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-course-a-l-or-et-pieges-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-04-18T08:50:49.992Z",
+    "read": false
   }
 ]

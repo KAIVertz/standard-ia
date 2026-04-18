@@ -907,5 +907,18 @@
     },
     "timestamp": "2026-04-18T06:56:16.689Z",
     "read": false
+  },
+  {
+    "id": "1776502249992-qs1w",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-course-a-l-or-et-pieges-pour-les-pme-francaises",
+      "date": "2026-04-18"
+    },
+    "timestamp": "2026-04-18T08:50:49.992Z",
+    "read": false
   }
 ]
