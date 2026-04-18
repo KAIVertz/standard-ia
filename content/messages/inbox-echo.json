@@ -284,5 +284,18 @@
     },
     "timestamp": "2026-04-17T07:18:15.707Z",
     "read": false
+  },
+  {
+    "id": "1776495376689-lkqp",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-19",
+      "slug": "le-grand-virage-de-l-ia-vers-l-entreprise-nouvelles-regles-pour-vos-pme",
+      "title": "Le Grand Virage de l'IA : d'OpenAI à l'Entreprise, de nouvelles règles pour vos PME"
+    },
+    "timestamp": "2026-04-18T06:56:16.689Z",
+    "read": false
   }
 ]
