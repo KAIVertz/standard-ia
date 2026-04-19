@@ -251,5 +251,16 @@
     },
     "timestamp": "2026-04-18T08:50:49.992Z",
     "read": false
+  },
+  {
+    "id": "1776588849563-6tei",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-virage-de-l-ia-vers-l-entreprise-nouvelles-regles-pour-vos-pme"
+    },
+    "timestamp": "2026-04-19T08:54:09.563Z",
+    "read": false
   }
 ]

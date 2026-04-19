@@ -944,5 +944,18 @@
     },
     "timestamp": "2026-04-19T07:06:35.552Z",
     "read": false
+  },
+  {
+    "id": "1776588849563-3nwo",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "le-grand-virage-de-l-ia-vers-l-entreprise-nouvelles-regles-pour-vos-pme",
+      "date": "2026-04-19"
+    },
+    "timestamp": "2026-04-19T08:54:09.563Z",
+    "read": false
   }
 ]

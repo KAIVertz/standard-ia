@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'le-grand-virage-de-l-ia-vers-l-entreprise-nouvelles-regles-pour-vos-pme',
+    title: 'Le Grand Virage de l\'IA : d\'OpenAI à l\'Entreprise, de nouvelles règles pour vos PME',
+    excerpt: 'Le paysage de l\'IA est en pleine mutation, signalant un pivot majeur des géants comme OpenAI vers l\'entreprise. Cette transition redéfinit les opportunités et les défis pour les entrepreneurs et PME françaises face à une technologie désormais mature et indispensable.',
+    type: 'article',
+    date: '2026-04-19',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-entre-course-a-l-or-et-pieges-pour-les-pme-francaises',
     title: 'L\'IA : Entre course à l\'or technologique et pièges pour les PME françaises',
     excerpt: 'Les investissements colossaux dans l\'IA redessinent le paysage tech à une vitesse vertigineuse. Mais pour les entrepreneurs et PME françaises, comment naviguer entre les opportunités de cette révolution et les défis liés aux coûts, à la complexité et à une cybersécurité plus que jamais critique ?',

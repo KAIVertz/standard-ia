@@ -284,5 +284,18 @@
     },
     "timestamp": "2026-04-18T08:50:49.992Z",
     "read": false
+  },
+  {
+    "id": "1776588849562-d99u",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-virage-de-l-ia-vers-l-entreprise-nouvelles-regles-pour-vos-pme",
+      "title": "Le Grand Virage de l'IA : d'OpenAI à l'Entreprise, de nouvelles règles pour vos PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-19T08:54:09.562Z",
+    "read": false
   }
 ]
