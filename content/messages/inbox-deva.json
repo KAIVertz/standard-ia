@@ -262,5 +262,16 @@
     },
     "timestamp": "2026-04-19T08:54:09.563Z",
     "read": false
+  },
+  {
+    "id": "1776679103719-xsbx",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-2026-entrepreneurs-choix-strategiques-couts-risques"
+    },
+    "timestamp": "2026-04-20T09:58:23.719Z",
+    "read": false
   }
 ]

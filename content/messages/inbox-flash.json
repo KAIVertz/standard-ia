@@ -297,5 +297,18 @@
     },
     "timestamp": "2026-04-19T08:54:09.562Z",
     "read": false
+  },
+  {
+    "id": "1776679103719-g6kf",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-2026-entrepreneurs-choix-strategiques-couts-risques",
+      "title": "IA en 2026 : Le grand écart entre coûts, opportunités et risques pour les entrepreneurs français",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-20T09:58:23.719Z",
+    "read": false
   }
 ]
