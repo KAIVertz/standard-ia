@@ -310,5 +310,18 @@
     },
     "timestamp": "2026-04-19T07:06:35.552Z",
     "read": true
+  },
+  {
+    "id": "1776842359968-e117",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-23",
+      "slug": "revolution-code-ia-entrepreneurs-choix-strategiques",
+      "title": "Révolution du Code par l'IA : Entre Coût Exorbitant et Alternatives Gratuites, Quel Chemin pour les Entrepreneurs Français ?"
+    },
+    "timestamp": "2026-04-22T07:19:19.968Z",
+    "read": false
   }
 ]
