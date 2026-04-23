@@ -273,5 +273,16 @@
     },
     "timestamp": "2026-04-20T09:58:23.719Z",
     "read": false
+  },
+  {
+    "id": "1776936456736-p6n5",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "revolution-code-ia-entrepreneurs-choix-strategiques"
+    },
+    "timestamp": "2026-04-23T09:27:36.736Z",
+    "read": false
   }
 ]

@@ -994,5 +994,18 @@
     },
     "timestamp": "2026-04-23T07:21:28.979Z",
     "read": false
+  },
+  {
+    "id": "1776936456736-z6zg",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "revolution-code-ia-entrepreneurs-choix-strategiques",
+      "date": "2026-04-23"
+    },
+    "timestamp": "2026-04-23T09:27:36.737Z",
+    "read": false
   }
 ]

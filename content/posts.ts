@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'revolution-code-ia-entrepreneurs-choix-strategiques',
+    title: 'Révolution du Code par l\'IA : Entre Coût Exorbitant et Alternatives Gratuites, Quel Chemin pour les Entrepreneurs Français ?',
+    excerpt: 'L\'IA transforme radicalement le développement logiciel, mais à quel prix ? Tandis que des outils premium comme Claude Code affichent des tarifs élevés, des solutions gratuites émergent, et de nouvelles infrastructures bousculent le marché. Décryptage des choix stratégiques pour les PME françaises.',
+    type: 'article',
+    date: '2026-04-23',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-2026-entrepreneurs-choix-strategiques-couts-risques',
     title: 'IA en 2026 : Le grand écart entre coûts, opportunités et risques pour les entrepreneurs français',
     excerpt: 'Alors que le paysage de l\'IA se complexifie, les PME françaises se retrouvent face à des choix stratégiques cruciaux. Entre outils coûteux et alternatives gratuites, nouvelles infrastructures cloud et menaces de sécurité, comment naviguer cette révolution pour rester compétitif ?',
