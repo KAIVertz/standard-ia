@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-votre-nouvel-associe-gratuit-et-ultra-performant',
+    title: 'L\'IA, Votre Nouvel Associé : Gratuit, Ultra-Performant et Indispensable pour les PME Françaises',
+    excerpt: 'L\'intelligence artificielle n\'est plus un luxe réservé aux géants de la tech. Entre les \'stagiaires IA\' de Google Workspace, les outils de code gratuits et l\'intégration fulgurante par les jeunes talents, l\'IA devient un levier de productivité et de compétitivité essentiel pour chaque entrepreneur et PME française.',
+    type: 'article',
+    date: '2026-04-24',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'revolution-code-ia-entrepreneurs-choix-strategiques',
     title: 'Révolution du Code par l\'IA : Entre Coût Exorbitant et Alternatives Gratuites, Quel Chemin pour les Entrepreneurs Français ?',
     excerpt: 'L\'IA transforme radicalement le développement logiciel, mais à quel prix ? Tandis que des outils premium comme Claude Code affichent des tarifs élevés, des solutions gratuites émergent, et de nouvelles infrastructures bousculent le marché. Décryptage des choix stratégiques pour les PME françaises.',

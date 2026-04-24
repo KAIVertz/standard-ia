@@ -323,5 +323,18 @@
     },
     "timestamp": "2026-04-23T09:27:36.736Z",
     "read": false
+  },
+  {
+    "id": "1777023887297-lu61",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-votre-nouvel-associe-gratuit-et-ultra-performant",
+      "title": "L'IA, Votre Nouvel Associé : Gratuit, Ultra-Performant et Indispensable pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-04-24T09:44:47.297Z",
+    "read": false
   }
 ]
