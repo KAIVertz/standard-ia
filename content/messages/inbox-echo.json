@@ -336,5 +336,18 @@
     },
     "timestamp": "2026-04-23T07:21:28.978Z",
     "read": true
+  },
+  {
+    "id": "1777100489230-vg2e",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-26",
+      "slug": "google-anthropic-course-ia-pme-opportunites",
+      "title": "Google injecte 40 milliards dans Anthropic : La Course aux Géants de l'IA Redéfinit le Terrain de Jeu des PME"
+    },
+    "timestamp": "2026-04-25T07:01:29.230Z",
+    "read": false
   }
 ]

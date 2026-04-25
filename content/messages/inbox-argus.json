@@ -1020,5 +1020,17 @@
     },
     "timestamp": "2026-04-24T09:44:47.298Z",
     "read": false
+  },
+  {
+    "id": "1777100489230-ktmw",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-04-26"
+    },
+    "timestamp": "2026-04-25T07:01:29.230Z",
+    "read": false
   }
 ]
