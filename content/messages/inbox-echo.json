@@ -349,5 +349,18 @@
     },
     "timestamp": "2026-04-25T07:01:29.230Z",
     "read": false
+  },
+  {
+    "id": "1777187752740-smmj",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-04-27",
+      "slug": "l-ia-se-democratise-vos-pme-pretes-pour-la-revolution-des-agents-et-du-gratuit",
+      "title": "L'IA se Démocratise : Vos PME Françaises Prêtes pour la Révolution des Agents Autonomes et des Outils Gratuits ?"
+    },
+    "timestamp": "2026-04-26T07:15:52.740Z",
+    "read": false
   }
 ]
