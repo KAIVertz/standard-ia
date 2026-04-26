@@ -1056,5 +1056,18 @@
     },
     "timestamp": "2026-04-26T07:15:52.740Z",
     "read": false
+  },
+  {
+    "id": "1777194017897-h17d",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-anthropic-course-ia-pme-opportunites",
+      "date": "2026-04-26"
+    },
+    "timestamp": "2026-04-26T09:00:17.897Z",
+    "read": false
   }
 ]

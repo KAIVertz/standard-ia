@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'google-anthropic-course-ia-pme-opportunites',
+    title: 'Google injecte 40 milliards dans Anthropic : La Course aux Géants de l\'IA Redéfinit le Terrain de Jeu des PME',
+    excerpt: 'L\'investissement colossal de Google dans Anthropic marque une nouvelle étape dans la course à la puissance IA. Comment les entrepreneurs et PME français peuvent-ils naviguer ce paysage dominé par les géants et transformer les défis en opportunités concrètes ?',
+    type: 'article',
+    date: '2026-04-26',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-votre-nouvel-associe-gratuit-et-ultra-performant',
     title: 'L\'IA, Votre Nouvel Associé : Gratuit, Ultra-Performant et Indispensable pour les PME Françaises',
     excerpt: 'L\'intelligence artificielle n\'est plus un luxe réservé aux géants de la tech. Entre les \'stagiaires IA\' de Google Workspace, les outils de code gratuits et l\'intégration fulgurante par les jeunes talents, l\'IA devient un levier de productivité et de compétitivité essentiel pour chaque entrepreneur et PME française.',
