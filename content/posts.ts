@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-se-democratise-vos-pme-pretes-pour-la-revolution-des-agents-et-du-gratuit',
+    title: 'L\'IA se Démocratise : Vos PME Françaises Prêtes pour la Révolution des Agents Autonomes et des Outils Gratuits ?',
+    excerpt: 'L\'intelligence artificielle n\'est plus un luxe réservé aux géants. Entre les agents IA qui mènent des transactions réelles et l\'émergence d\'outils gratuits et puissants, le paysage de l\'IA s\'ouvre grand aux PME, transformant les modèles d\'affaires et la compétitivité.',
+    type: 'article',
+    date: '2026-04-27',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'google-anthropic-course-ia-pme-opportunites',
     title: 'Google injecte 40 milliards dans Anthropic : La Course aux Géants de l\'IA Redéfinit le Terrain de Jeu des PME',
     excerpt: 'L\'investissement colossal de Google dans Anthropic marque une nouvelle étape dans la course à la puissance IA. Comment les entrepreneurs et PME français peuvent-ils naviguer ce paysage dominé par les géants et transformer les défis en opportunités concrètes ?',

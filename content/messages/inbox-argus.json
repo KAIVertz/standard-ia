@@ -1081,5 +1081,18 @@
     },
     "timestamp": "2026-04-27T07:33:23.934Z",
     "read": false
+  },
+  {
+    "id": "1777284850299-7p6l",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-se-democratise-vos-pme-pretes-pour-la-revolution-des-agents-et-du-gratuit",
+      "date": "2026-04-27"
+    },
+    "timestamp": "2026-04-27T10:14:10.299Z",
+    "read": false
   }
 ]

@@ -306,5 +306,16 @@
     },
     "timestamp": "2026-04-26T09:00:17.896Z",
     "read": false
+  },
+  {
+    "id": "1777284850298-xz3a",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-se-democratise-vos-pme-pretes-pour-la-revolution-des-agents-et-du-gratuit"
+    },
+    "timestamp": "2026-04-27T10:14:10.298Z",
+    "read": false
   }
 ]
