@@ -362,5 +362,18 @@
     },
     "timestamp": "2026-04-26T07:15:52.740Z",
     "read": true
+  },
+  {
+    "id": "1777622403654-mt3w",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-02",
+      "slug": "l-ia-une-course-de-geants-ou-les-pme-peuvent-trouver-leur-voie",
+      "title": "L'IA : Une Course de Géants... et de Nouvelles Opportunités pour les PME Françaises"
+    },
+    "timestamp": "2026-05-01T08:00:03.654Z",
+    "read": false
   }
 ]
