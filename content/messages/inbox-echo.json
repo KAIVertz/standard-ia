@@ -375,5 +375,18 @@
     },
     "timestamp": "2026-05-01T08:00:03.654Z",
     "read": false
+  },
+  {
+    "id": "1777706314997-yqq2",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-03",
+      "slug": "musk-openai-proces-consequences-pme",
+      "title": "Le Procès Musk vs. OpenAI : Quand les Géants se Déchirent, Quelles Leçons pour les PME Françaises ?"
+    },
+    "timestamp": "2026-05-02T07:18:34.997Z",
+    "read": false
   }
 ]
