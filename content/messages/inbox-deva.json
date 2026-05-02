@@ -317,5 +317,16 @@
     },
     "timestamp": "2026-04-27T10:14:10.298Z",
     "read": false
+  },
+  {
+    "id": "1777712730855-ebi9",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-une-course-de-geants-ou-les-pme-peuvent-trouver-leur-voie"
+    },
+    "timestamp": "2026-05-02T09:05:30.855Z",
+    "read": false
   }
 ]

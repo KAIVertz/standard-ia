@@ -1118,5 +1118,18 @@
     },
     "timestamp": "2026-05-02T07:18:34.998Z",
     "read": false
+  },
+  {
+    "id": "1777712730855-rs1c",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-une-course-de-geants-ou-les-pme-peuvent-trouver-leur-voie",
+      "date": "2026-05-02"
+    },
+    "timestamp": "2026-05-02T09:05:30.855Z",
+    "read": false
   }
 ]

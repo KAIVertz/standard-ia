@@ -362,5 +362,18 @@
     },
     "timestamp": "2026-04-27T10:14:10.298Z",
     "read": false
+  },
+  {
+    "id": "1777712730854-9oyf",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-une-course-de-geants-ou-les-pme-peuvent-trouver-leur-voie",
+      "title": "L'IA : Une Course de Géants... et de Nouvelles Opportunités pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-02T09:05:30.854Z",
+    "read": false
   }
 ]
