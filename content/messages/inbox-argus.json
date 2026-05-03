@@ -1155,5 +1155,18 @@
     },
     "timestamp": "2026-05-03T07:46:10.737Z",
     "read": false
+  },
+  {
+    "id": "1777800106421-a3dw",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "musk-openai-proces-consequences-pme",
+      "date": "2026-05-03"
+    },
+    "timestamp": "2026-05-03T09:21:46.421Z",
+    "read": false
   }
 ]

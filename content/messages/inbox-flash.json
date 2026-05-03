@@ -375,5 +375,18 @@
     },
     "timestamp": "2026-05-02T09:05:30.854Z",
     "read": false
+  },
+  {
+    "id": "1777800106420-tzkl",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "musk-openai-proces-consequences-pme",
+      "title": "Le Procès Musk vs. OpenAI : Quand les Géants se Déchirent, Quelles Leçons pour les PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-03T09:21:46.420Z",
+    "read": false
   }
 ]
