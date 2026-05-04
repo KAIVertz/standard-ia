@@ -1168,5 +1168,17 @@
     },
     "timestamp": "2026-05-03T09:21:46.421Z",
     "read": false
+  },
+  {
+    "id": "1777880773156-mfmp",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "weekly_generation",
+      "week": 19
+    },
+    "timestamp": "2026-05-04T07:46:13.157Z",
+    "read": false
   }
 ]
