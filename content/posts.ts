@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-double-tranchant-pme-francaises-couts-opportunites',
+    title: 'L\'IA à double tranchant pour les PME françaises : entre coûts cachés et opportunités inédites',
+    excerpt: 'L\'actualité récente met en lumière une fracture grandissante dans l\'accès à l\'IA : des solutions coûteuses réservées aux géants face à des alternatives gratuites et puissantes. Comment les PME françaises peuvent-elles tirer leur épingle du jeu sans se ruiner, tout en protégeant leurs données et leurs talents ?',
+    type: 'article',
+    date: '2026-05-04',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'musk-openai-proces-consequences-pme',
     title: 'Le Procès Musk vs. OpenAI : Quand les Géants se Déchirent, Quelles Leçons pour les PME Françaises ?',
     excerpt: 'Le duel judiciaire entre Elon Musk et OpenAI, teinté de révélations explosives, n\'est pas qu\'un feuilleton pour la Silicon Valley. Il redessine en profondeur le paysage de l\'IA, posant des questions cruciales pour l\'avenir des entrepreneurs et des PME français face à ces titans.',

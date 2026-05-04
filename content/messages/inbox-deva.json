@@ -339,5 +339,16 @@
     },
     "timestamp": "2026-05-03T09:21:46.421Z",
     "read": false
+  },
+  {
+    "id": "1777889596571-drin",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-double-tranchant-pme-francaises-couts-opportunites"
+    },
+    "timestamp": "2026-05-04T10:13:16.571Z",
+    "read": false
   }
 ]

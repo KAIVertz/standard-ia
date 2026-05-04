@@ -1192,5 +1192,18 @@
     },
     "timestamp": "2026-05-04T08:14:59.100Z",
     "read": false
+  },
+  {
+    "id": "1777889596572-dsye",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-double-tranchant-pme-francaises-couts-opportunites",
+      "date": "2026-05-04"
+    },
+    "timestamp": "2026-05-04T10:13:16.572Z",
+    "read": false
   }
 ]

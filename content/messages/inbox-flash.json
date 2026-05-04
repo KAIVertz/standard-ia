@@ -388,5 +388,18 @@
     },
     "timestamp": "2026-05-03T09:21:46.420Z",
     "read": false
+  },
+  {
+    "id": "1777889596571-0z7w",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-double-tranchant-pme-francaises-couts-opportunites",
+      "title": "L'IA à double tranchant pour les PME françaises : entre coûts cachés et opportunités inédites",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-04T10:13:16.571Z",
+    "read": false
   }
 ]
