@@ -1217,5 +1217,18 @@
     },
     "timestamp": "2026-05-05T07:52:54.345Z",
     "read": false
+  },
+  {
+    "id": "1777975332343-jxcj",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-entre-promesses-et-pieges-couts-ip",
+      "date": "2026-05-05"
+    },
+    "timestamp": "2026-05-05T10:02:12.343Z",
+    "read": false
   }
 ]

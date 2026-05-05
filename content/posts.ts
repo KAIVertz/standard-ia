@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-pme-entre-promesses-et-pieges-couts-ip',
+    title: 'IA : Le Double Tranchant pour les PME Françaises – Naviguer entre Opportunités et Pièges Cachés',
+    excerpt: 'L\'intelligence artificielle promet monts et merveilles, mais pour les entrepreneurs français, l\'adoption rime avec des décisions cruciales : équilibrer les coûts, protéger la propriété intellectuelle et sécuriser les données. Une navigation prudente est de mise pour transformer le potentiel en succès réel.',
+    type: 'article',
+    date: '2026-05-05',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-double-tranchant-pme-francaises-couts-opportunites',
     title: 'L\'IA à double tranchant pour les PME françaises : entre coûts cachés et opportunités inédites',
     excerpt: 'L\'actualité récente met en lumière une fracture grandissante dans l\'accès à l\'IA : des solutions coûteuses réservées aux géants face à des alternatives gratuites et puissantes. Comment les PME françaises peuvent-elles tirer leur épingle du jeu sans se ruiner, tout en protégeant leurs données et leurs talents ?',

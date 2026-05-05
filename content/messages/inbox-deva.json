@@ -350,5 +350,16 @@
     },
     "timestamp": "2026-05-04T10:13:16.571Z",
     "read": false
+  },
+  {
+    "id": "1777975332343-l7jv",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-entre-promesses-et-pieges-couts-ip"
+    },
+    "timestamp": "2026-05-05T10:02:12.343Z",
+    "read": false
   }
 ]

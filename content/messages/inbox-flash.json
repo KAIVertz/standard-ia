@@ -401,5 +401,18 @@
     },
     "timestamp": "2026-05-04T10:13:16.571Z",
     "read": false
+  },
+  {
+    "id": "1777975332342-zg93",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-entre-promesses-et-pieges-couts-ip",
+      "title": "IA : Le Double Tranchant pour les PME Françaises – Naviguer entre Opportunités et Pièges Cachés",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-05T10:02:12.342Z",
+    "read": false
   }
 ]
