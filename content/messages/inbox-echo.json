@@ -414,5 +414,18 @@
     },
     "timestamp": "2026-05-04T08:14:59.100Z",
     "read": true
+  },
+  {
+    "id": "1777967574344-zfpn",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-06",
+      "slug": "l-ia-entre-promesses-dempoi-et-defis-pour-les-pme-francaises",
+      "title": "L'IA : Entre Promesses d'Emploi et Défis Concrets pour les PME Françaises"
+    },
+    "timestamp": "2026-05-05T07:52:54.344Z",
+    "read": false
   }
 ]
