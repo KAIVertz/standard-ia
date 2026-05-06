@@ -1242,5 +1242,18 @@
     },
     "timestamp": "2026-05-06T08:05:10.120Z",
     "read": false
+  },
+  {
+    "id": "1778062643377-dm2p",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-promesses-dempoi-et-defis-pour-les-pme-francaises",
+      "date": "2026-05-06"
+    },
+    "timestamp": "2026-05-06T10:17:23.377Z",
+    "read": false
   }
 ]

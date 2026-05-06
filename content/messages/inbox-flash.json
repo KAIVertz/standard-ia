@@ -414,5 +414,18 @@
     },
     "timestamp": "2026-05-05T10:02:12.342Z",
     "read": false
+  },
+  {
+    "id": "1778062643376-vmf6",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-promesses-dempoi-et-defis-pour-les-pme-francaises",
+      "title": "L'IA : Entre Promesses d'Emploi et Défis Concrets pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-06T10:17:23.376Z",
+    "read": false
   }
 ]

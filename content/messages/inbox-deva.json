@@ -361,5 +361,16 @@
     },
     "timestamp": "2026-05-05T10:02:12.343Z",
     "read": false
+  },
+  {
+    "id": "1778062643376-z2hb",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-promesses-dempoi-et-defis-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-05-06T10:17:23.376Z",
+    "read": false
   }
 ]

@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-entre-promesses-dempoi-et-defis-pour-les-pme-francaises',
+    title: 'L\'IA : Entre Promesses d\'Emploi et Défis Concrets pour les PME Françaises',
+    excerpt: 'L\'intelligence artificielle continue de diviser : créatrice d\'emplois pour certains, menace pour d\'autres. Pour les PME françaises, il est temps de naviguer entre le coût des outils, les enjeux éthiques et la nécessité d\'une adaptation stratégique.',
+    type: 'article',
+    date: '2026-05-06',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-pme-entre-promesses-et-pieges-couts-ip',
     title: 'IA : Le Double Tranchant pour les PME Françaises – Naviguer entre Opportunités et Pièges Cachés',
     excerpt: 'L\'intelligence artificielle promet monts et merveilles, mais pour les entrepreneurs français, l\'adoption rime avec des décisions cruciales : équilibrer les coûts, protéger la propriété intellectuelle et sécuriser les données. Une navigation prudente est de mise pour transformer le potentiel en succès réel.',
