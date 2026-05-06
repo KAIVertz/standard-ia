@@ -1230,5 +1230,17 @@
     },
     "timestamp": "2026-05-05T10:02:12.343Z",
     "read": false
+  },
+  {
+    "id": "1778054710120-0fda",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-05-07"
+    },
+    "timestamp": "2026-05-06T08:05:10.120Z",
+    "read": false
   }
 ]

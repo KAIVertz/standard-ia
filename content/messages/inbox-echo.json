@@ -427,5 +427,18 @@
     },
     "timestamp": "2026-05-05T07:52:54.344Z",
     "read": true
+  },
+  {
+    "id": "1778054710120-9bqi",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-07",
+      "slug": "ia-vague-de-fond-pme-francaises-entre-opportunites-et-vigilance",
+      "title": "IA : Une vague de fond déferle, les PME françaises prêtes à surfer ou à couler ?"
+    },
+    "timestamp": "2026-05-06T08:05:10.120Z",
+    "read": false
   }
 ]
