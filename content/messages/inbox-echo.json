@@ -440,5 +440,18 @@
     },
     "timestamp": "2026-05-06T08:05:10.120Z",
     "read": true
+  },
+  {
+    "id": "1778141575030-bb3l",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-08",
+      "slug": "ia-couts-infrastructure-alternatives-pme-francaises",
+      "title": "Le prix de l'IA : entre mégastructures et solutions accessibles, comment les PME françaises peuvent-elles tirer leur épingle du jeu ?"
+    },
+    "timestamp": "2026-05-07T08:12:55.030Z",
+    "read": false
   }
 ]
