@@ -372,5 +372,16 @@
     },
     "timestamp": "2026-05-06T10:17:23.376Z",
     "read": false
+  },
+  {
+    "id": "1778149441317-ng0k",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-vague-de-fond-pme-francaises-entre-opportunites-et-vigilance"
+    },
+    "timestamp": "2026-05-07T10:24:01.317Z",
+    "read": false
   }
 ]

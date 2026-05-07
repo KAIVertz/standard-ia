@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-vague-de-fond-pme-francaises-entre-opportunites-et-vigilance',
+    title: 'IA : Une vague de fond déferle, les PME françaises prêtes à surfer ou à couler ?',
+    excerpt: 'Entre investissements colossaux, outils démocratisés et défis éthiques, l\'IA redéfinit le paysage entrepreneurial. Que signifie cette révolution pour les PME et entrepreneurs français ?',
+    type: 'article',
+    date: '2026-05-07',
+    readTime: 8,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-entre-promesses-dempoi-et-defis-pour-les-pme-francaises',
     title: 'L\'IA : Entre Promesses d\'Emploi et Défis Concrets pour les PME Françaises',
     excerpt: 'L\'intelligence artificielle continue de diviser : créatrice d\'emplois pour certains, menace pour d\'autres. Pour les PME françaises, il est temps de naviguer entre le coût des outils, les enjeux éthiques et la nécessité d\'une adaptation stratégique.',

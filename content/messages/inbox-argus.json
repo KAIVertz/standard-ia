@@ -1267,5 +1267,18 @@
     },
     "timestamp": "2026-05-07T08:12:55.031Z",
     "read": false
+  },
+  {
+    "id": "1778149441317-zo03",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-vague-de-fond-pme-francaises-entre-opportunites-et-vigilance",
+      "date": "2026-05-07"
+    },
+    "timestamp": "2026-05-07T10:24:01.317Z",
+    "read": false
   }
 ]
