@@ -440,5 +440,18 @@
     },
     "timestamp": "2026-05-07T10:24:01.316Z",
     "read": false
+  },
+  {
+    "id": "1778231983778-ukiz",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-couts-infrastructure-alternatives-pme-francaises",
+      "title": "Le prix de l'IA : entre mégastructures et solutions accessibles, comment les PME françaises peuvent-elles tirer leur épingle du jeu ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-08T09:19:43.778Z",
+    "read": false
   }
 ]

@@ -1292,5 +1292,18 @@
     },
     "timestamp": "2026-05-08T07:14:44.603Z",
     "read": false
+  },
+  {
+    "id": "1778231983779-zhnn",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-couts-infrastructure-alternatives-pme-francaises",
+      "date": "2026-05-08"
+    },
+    "timestamp": "2026-05-08T09:19:43.779Z",
+    "read": false
   }
 ]

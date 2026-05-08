@@ -383,5 +383,16 @@
     },
     "timestamp": "2026-05-07T10:24:01.317Z",
     "read": false
+  },
+  {
+    "id": "1778231983779-244c",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-couts-infrastructure-alternatives-pme-francaises"
+    },
+    "timestamp": "2026-05-08T09:19:43.779Z",
+    "read": false
   }
 ]
