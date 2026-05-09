@@ -394,5 +394,16 @@
     },
     "timestamp": "2026-05-08T09:19:43.779Z",
     "read": false
+  },
+  {
+    "id": "1778318356237-4ogj",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "projet-loi-darcos-ia-creation-pme-france"
+    },
+    "timestamp": "2026-05-09T09:19:16.237Z",
+    "read": false
   }
 ]

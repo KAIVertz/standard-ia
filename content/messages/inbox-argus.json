@@ -1317,5 +1317,18 @@
     },
     "timestamp": "2026-05-09T07:31:05.609Z",
     "read": false
+  },
+  {
+    "id": "1778318356238-htyf",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "projet-loi-darcos-ia-creation-pme-france",
+      "date": "2026-05-09"
+    },
+    "timestamp": "2026-05-09T09:19:16.238Z",
+    "read": false
   }
 ]

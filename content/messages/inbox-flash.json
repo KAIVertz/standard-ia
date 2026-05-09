@@ -453,5 +453,18 @@
     },
     "timestamp": "2026-05-08T09:19:43.778Z",
     "read": false
+  },
+  {
+    "id": "1778318356237-k88b",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "projet-loi-darcos-ia-creation-pme-france",
+      "title": "Le Projet de Loi Darcos : Épée de Damoclès ou Bouclier pour les Créateurs et PME Français face à l'IA ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-09T09:19:16.237Z",
+    "read": false
   }
 ]
