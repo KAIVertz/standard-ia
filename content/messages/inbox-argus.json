@@ -1354,5 +1354,18 @@
     },
     "timestamp": "2026-05-10T07:54:12.415Z",
     "read": false
+  },
+  {
+    "id": "1778405265973-mrw8",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-efficacite-licenciements-paradoxe-pme",
+      "date": "2026-05-10"
+    },
+    "timestamp": "2026-05-10T09:27:45.973Z",
+    "read": false
   }
 ]

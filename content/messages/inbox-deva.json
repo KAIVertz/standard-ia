@@ -405,5 +405,16 @@
     },
     "timestamp": "2026-05-09T09:19:16.237Z",
     "read": false
+  },
+  {
+    "id": "1778405265972-v559",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-efficacite-licenciements-paradoxe-pme"
+    },
+    "timestamp": "2026-05-10T09:27:45.972Z",
+    "read": false
   }
 ]

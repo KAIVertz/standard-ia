@@ -466,5 +466,18 @@
     },
     "timestamp": "2026-05-09T09:19:16.237Z",
     "read": false
+  },
+  {
+    "id": "1778405265972-2a7g",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-efficacite-licenciements-paradoxe-pme",
+      "title": "Le Paradoxe de l'IA : Quand l'Efficacité Record Rime avec Suppressions d'Emplois. Que Faire pour les PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-10T09:27:45.972Z",
+    "read": false
   }
 ]

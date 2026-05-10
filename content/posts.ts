@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-efficacite-licenciements-paradoxe-pme',
+    title: 'Le Paradoxe de l\'IA : Quand l\'Efficacité Record Rime avec Suppressions d\'Emplois. Que Faire pour les PME Françaises ?',
+    excerpt: 'Cloudflare licencie 1 100 employés à cause de l\'IA, malgré des revenus records. Cette actualité pose une question cruciale : comment les PME françaises peuvent-elles naviguer entre l\'opportunité de l\'IA et le défi de la gestion de l\'emploi ?',
+    type: 'article',
+    date: '2026-05-10',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'projet-loi-darcos-ia-creation-pme-france',
     title: 'Le Projet de Loi Darcos : Épée de Damoclès ou Bouclier pour les Créateurs et PME Français face à l\'IA ?',
     excerpt: 'Alors qu\'un projet de loi sur les créateurs et l\'IA secoue l\'Assemblée nationale, les PME et artistes français se retrouvent au cœur d\'un débat houleux. Entre lobbying intense des géants de l\'IA et impératif de protection, quel avenir pour l\'innovation et la propriété intellectuelle à l\'ère de l\'intelligence artificielle ?',
