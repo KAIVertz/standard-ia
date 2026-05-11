@@ -1,3 +1,3 @@
-💡 Pour protéger vos créations IA, pensez à bien documenter vos prompts et vos itérations. C'est clé avec les nouvelles lois ! Le projet Darcos change la donne pour vous, découvrez comment.
+💡 Pour automatiser une tâche répétitive sans remplacer un humain ? Utilise une IA générative pour créer un script Python ou une macro Excel. Décris la tâche, demande le code, puis collabore avec ton équipe pour ...
 
-👉 standard-ia.pro/posts/projet-loi-darcos-ia-creation-pme-france
+👉 standard-ia.pro/posts/ia-efficacite-licenciements-paradoxe-pme
