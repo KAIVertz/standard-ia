@@ -1379,5 +1379,17 @@
     },
     "timestamp": "2026-05-11T08:22:53.815Z",
     "read": false
+  },
+  {
+    "id": "1778489778165-roee",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-05-12"
+    },
+    "timestamp": "2026-05-11T08:56:18.165Z",
+    "read": false
   }
 ]

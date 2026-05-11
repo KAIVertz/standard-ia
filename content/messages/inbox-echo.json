@@ -492,5 +492,18 @@
     },
     "timestamp": "2026-05-10T07:54:12.414Z",
     "read": true
+  },
+  {
+    "id": "1778489778165-v3e5",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-12",
+      "slug": "ia-accessible-pme-francaises-cout-alternatives",
+      "title": "L'IA à Quel Prix ? Comment les PME Françaises Peuvent Démocratiser l'Intelligence Artificielle Sans Se Ruiner"
+    },
+    "timestamp": "2026-05-11T08:56:18.165Z",
+    "read": false
   }
 ]
