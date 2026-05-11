@@ -479,5 +479,18 @@
     },
     "timestamp": "2026-05-10T09:27:45.972Z",
     "read": false
+  },
+  {
+    "id": "1778498278471-0sxb",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-droit-auteur-pme-france-nouvelles-regles",
+      "title": "IA et Droit d'Auteur : Le Sénat Français Redessine les Règles du Jeu pour nos PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-11T11:17:58.471Z",
+    "read": false
   }
 ]

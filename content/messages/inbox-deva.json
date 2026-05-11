@@ -416,5 +416,16 @@
     },
     "timestamp": "2026-05-10T09:27:45.972Z",
     "read": false
+  },
+  {
+    "id": "1778498278472-64d9",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-droit-auteur-pme-france-nouvelles-regles"
+    },
+    "timestamp": "2026-05-11T11:17:58.472Z",
+    "read": false
   }
 ]

@@ -1391,5 +1391,18 @@
     },
     "timestamp": "2026-05-11T08:56:18.165Z",
     "read": false
+  },
+  {
+    "id": "1778498278472-t62b",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-droit-auteur-pme-france-nouvelles-regles",
+      "date": "2026-05-11"
+    },
+    "timestamp": "2026-05-11T11:17:58.472Z",
+    "read": false
   }
 ]
