@@ -427,5 +427,16 @@
     },
     "timestamp": "2026-05-11T11:17:58.472Z",
     "read": false
+  },
+  {
+    "id": "1778581877580-kwoj",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-accessible-pme-francaises-cout-alternatives"
+    },
+    "timestamp": "2026-05-12T10:31:17.580Z",
+    "read": false
   }
 ]

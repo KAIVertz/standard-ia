@@ -1416,5 +1416,18 @@
     },
     "timestamp": "2026-05-12T08:23:10.838Z",
     "read": false
+  },
+  {
+    "id": "1778581877581-fjqo",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-accessible-pme-francaises-cout-alternatives",
+      "date": "2026-05-12"
+    },
+    "timestamp": "2026-05-12T10:31:17.581Z",
+    "read": false
   }
 ]
