@@ -1429,5 +1429,17 @@
     },
     "timestamp": "2026-05-12T10:31:17.581Z",
     "read": false
+  },
+  {
+    "id": "1778661158714-ocdp",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-05-14"
+    },
+    "timestamp": "2026-05-13T08:32:38.714Z",
+    "read": false
   }
 ]
