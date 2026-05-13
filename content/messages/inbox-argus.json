@@ -1441,5 +1441,18 @@
     },
     "timestamp": "2026-05-13T08:32:38.714Z",
     "read": false
+  },
+  {
+    "id": "1778668023231-cu4q",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-rebat-cartes-pme-francaise-transformation-competences-couts",
+      "date": "2026-05-13"
+    },
+    "timestamp": "2026-05-13T10:27:03.231Z",
+    "read": false
   }
 ]

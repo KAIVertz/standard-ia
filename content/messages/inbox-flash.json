@@ -505,5 +505,18 @@
     },
     "timestamp": "2026-05-12T10:31:17.580Z",
     "read": false
+  },
+  {
+    "id": "1778668023230-or0r",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-rebat-cartes-pme-francaise-transformation-competences-couts",
+      "title": "L'IA Rebat les Cartes : Votre PME Française est-elle Prête à la Grande Transformation des Compétences et des Coûts ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-13T10:27:03.230Z",
+    "read": false
   }
 ]

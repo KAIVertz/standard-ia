@@ -438,5 +438,16 @@
     },
     "timestamp": "2026-05-12T10:31:17.580Z",
     "read": false
+  },
+  {
+    "id": "1778668023231-kj3l",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-rebat-cartes-pme-francaise-transformation-competences-couts"
+    },
+    "timestamp": "2026-05-13T10:27:03.231Z",
+    "read": false
   }
 ]
