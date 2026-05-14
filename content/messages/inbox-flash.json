@@ -518,5 +518,18 @@
     },
     "timestamp": "2026-05-13T10:27:03.230Z",
     "read": false
+  },
+  {
+    "id": "1778753634489-96wn",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "cout-ia-accessibilite-pme-francaises",
+      "title": "L'IA est-elle un luxe ou une nécessité ? Maîtriser les coûts pour les entrepreneurs français",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-14T10:13:54.489Z",
+    "read": false
   }
 ]
