@@ -460,5 +460,16 @@
     },
     "timestamp": "2026-05-14T10:13:54.489Z",
     "read": false
+  },
+  {
+    "id": "1778840537145-h0gu",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ere-des-agents-ia-l-integration-disrupte-les-pme-francaises"
+    },
+    "timestamp": "2026-05-15T10:22:17.145Z",
+    "read": false
   }
 ]

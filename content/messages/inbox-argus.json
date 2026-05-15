@@ -1479,5 +1479,18 @@
     },
     "timestamp": "2026-05-14T10:13:54.490Z",
     "read": false
+  },
+  {
+    "id": "1778840537145-ushl",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ere-des-agents-ia-l-integration-disrupte-les-pme-francaises",
+      "date": "2026-05-15"
+    },
+    "timestamp": "2026-05-15T10:22:17.145Z",
+    "read": false
   }
 ]

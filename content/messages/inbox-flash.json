@@ -531,5 +531,18 @@
     },
     "timestamp": "2026-05-14T10:13:54.489Z",
     "read": false
+  },
+  {
+    "id": "1778840537144-6mlt",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ere-des-agents-ia-l-integration-disrupte-les-pme-francaises",
+      "title": "L'Ère des Agents IA : Comment l'Intégration Disrupte les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-15T10:22:17.144Z",
+    "read": false
   }
 ]
