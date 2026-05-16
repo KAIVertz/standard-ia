@@ -544,5 +544,18 @@
     },
     "timestamp": "2026-05-14T08:26:29.126Z",
     "read": true
+  },
+  {
+    "id": "1778917672360-cwht",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-17",
+      "slug": "l-ia-entre-tension-energetique-et-opportunites-pour-les-pme",
+      "title": "L'IA sous tension : Comment les PME françaises naviguent entre explosion énergétique et outils accessibles"
+    },
+    "timestamp": "2026-05-16T07:47:52.360Z",
+    "read": false
   }
 ]
