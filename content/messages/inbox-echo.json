@@ -557,5 +557,18 @@
     },
     "timestamp": "2026-05-16T07:47:52.360Z",
     "read": false
+  },
+  {
+    "id": "1779005319531-yg8f",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-18",
+      "slug": "ia-pme-francaises-entre-gratuit-et-strategie",
+      "title": "L'IA enfin à la portée des PME françaises : entre outils gratuits et déploiement stratégique"
+    },
+    "timestamp": "2026-05-17T08:08:39.531Z",
+    "read": false
   }
 ]
