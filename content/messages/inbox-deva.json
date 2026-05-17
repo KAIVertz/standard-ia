@@ -471,5 +471,16 @@
     },
     "timestamp": "2026-05-15T10:22:17.145Z",
     "read": false
+  },
+  {
+    "id": "1779011191858-4osl",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-tension-energetique-et-opportunites-pour-les-pme"
+    },
+    "timestamp": "2026-05-17T09:46:31.858Z",
+    "read": false
   }
 ]

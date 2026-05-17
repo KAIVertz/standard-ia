@@ -544,5 +544,18 @@
     },
     "timestamp": "2026-05-15T10:22:17.144Z",
     "read": false
+  },
+  {
+    "id": "1779011191857-i5ov",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-tension-energetique-et-opportunites-pour-les-pme",
+      "title": "L'IA sous tension : Comment les PME françaises naviguent entre explosion énergétique et outils accessibles",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-17T09:46:31.857Z",
+    "read": false
   }
 ]

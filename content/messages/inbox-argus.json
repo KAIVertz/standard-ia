@@ -1528,5 +1528,18 @@
     },
     "timestamp": "2026-05-17T08:08:39.532Z",
     "read": false
+  },
+  {
+    "id": "1779011191858-b1p8",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-tension-energetique-et-opportunites-pour-les-pme",
+      "date": "2026-05-17"
+    },
+    "timestamp": "2026-05-17T09:46:31.858Z",
+    "read": false
   }
 ]

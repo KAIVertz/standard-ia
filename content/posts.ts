@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-entre-tension-energetique-et-opportunites-pour-les-pme',
+    title: 'L\'IA sous tension : Comment les PME françaises naviguent entre explosion énergétique et outils accessibles',
+    excerpt: 'L\'intelligence artificielle promet une révolution, mais elle soulève des défis majeurs pour les entreprises : des coûts énergétiques colossaux à la question de l\'accessibilité de ses outils. Un double enjeu crucial pour les PME françaises.',
+    type: 'article',
+    date: '2026-05-17',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ere-des-agents-ia-l-integration-disrupte-les-pme-francaises',
     title: 'L\'Ère des Agents IA : Comment l\'Intégration Disrupte les PME Françaises',
     excerpt: 'L\'intelligence artificielle se niche désormais au cœur de nos outils quotidiens via des agents autonomes. De Notion à Anthropic, cette évolution redéfinit la productivité et pose des défis stratégiques pour les entrepreneurs français, entre intégration transparente et optimisation des coûts.',
