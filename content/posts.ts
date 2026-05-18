@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-pme-francaises-entre-gratuit-et-strategie',
+    title: 'L\'IA enfin à la portée des PME françaises : entre outils gratuits et déploiement stratégique',
+    excerpt: 'La démocratisation des outils IA, illustrée par l\'émergence d\'alternatives gratuites et l\'adoption par le secteur du tourisme français, marque un tournant pour les PME. Mais comment naviguer cette \'ruée vers l\'or\' sans y laisser des plumes ?',
+    type: 'article',
+    date: '2026-05-18',
+    readTime: 8,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-entre-tension-energetique-et-opportunites-pour-les-pme',
     title: 'L\'IA sous tension : Comment les PME françaises naviguent entre explosion énergétique et outils accessibles',
     excerpt: 'L\'intelligence artificielle promet une révolution, mais elle soulève des défis majeurs pour les entreprises : des coûts énergétiques colossaux à la question de l\'accessibilité de ses outils. Un double enjeu crucial pour les PME françaises.',

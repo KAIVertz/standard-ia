@@ -482,5 +482,16 @@
     },
     "timestamp": "2026-05-17T09:46:31.858Z",
     "read": false
+  },
+  {
+    "id": "1779104616156-9k2m",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-francaises-entre-gratuit-et-strategie"
+    },
+    "timestamp": "2026-05-18T11:43:36.156Z",
+    "read": false
   }
 ]

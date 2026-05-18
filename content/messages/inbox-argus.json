@@ -1565,5 +1565,18 @@
     },
     "timestamp": "2026-05-18T09:37:55.406Z",
     "read": false
+  },
+  {
+    "id": "1779104616157-9ry5",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-francaises-entre-gratuit-et-strategie",
+      "date": "2026-05-18"
+    },
+    "timestamp": "2026-05-18T11:43:36.157Z",
+    "read": false
   }
 ]

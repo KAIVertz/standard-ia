@@ -557,5 +557,18 @@
     },
     "timestamp": "2026-05-17T09:46:31.857Z",
     "read": false
+  },
+  {
+    "id": "1779104616156-ynjd",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-francaises-entre-gratuit-et-strategie",
+      "title": "L'IA enfin à la portée des PME françaises : entre outils gratuits et déploiement stratégique",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-18T11:43:36.156Z",
+    "read": false
   }
 ]
