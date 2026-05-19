@@ -570,5 +570,18 @@
     },
     "timestamp": "2026-05-18T11:43:36.156Z",
     "read": false
+  },
+  {
+    "id": "1779189397265-x53e",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-agentique-fenetre-opportunite-france-pme",
+      "title": "IA Agentique : La France Face à une Fenêtre d'Opportunité Historique pour les PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-19T11:16:37.265Z",
+    "read": false
   }
 ]

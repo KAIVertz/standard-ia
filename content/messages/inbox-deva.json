@@ -493,5 +493,16 @@
     },
     "timestamp": "2026-05-18T11:43:36.156Z",
     "read": false
+  },
+  {
+    "id": "1779189397266-1pha",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-agentique-fenetre-opportunite-france-pme"
+    },
+    "timestamp": "2026-05-19T11:16:37.266Z",
+    "read": false
   }
 ]

@@ -1590,5 +1590,18 @@
     },
     "timestamp": "2026-05-19T08:56:42.928Z",
     "read": false
+  },
+  {
+    "id": "1779189397266-k44e",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-agentique-fenetre-opportunite-france-pme",
+      "date": "2026-05-19"
+    },
+    "timestamp": "2026-05-19T11:16:37.266Z",
+    "read": false
   }
 ]
