@@ -583,5 +583,18 @@
     },
     "timestamp": "2026-05-18T09:37:55.405Z",
     "read": true
+  },
+  {
+    "id": "1779181002927-j8df",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-20",
+      "slug": "ia-revolution-energivore-couteuse-pme",
+      "title": "L'IA, une révolution énergivore et coûteuse : Comment les PME françaises peuvent s'adapter"
+    },
+    "timestamp": "2026-05-19T08:56:42.927Z",
+    "read": false
   }
 ]
