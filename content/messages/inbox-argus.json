@@ -1603,5 +1603,17 @@
     },
     "timestamp": "2026-05-19T11:16:37.266Z",
     "read": false
+  },
+  {
+    "id": "1779267110075-apx4",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-05-21"
+    },
+    "timestamp": "2026-05-20T08:51:50.075Z",
+    "read": false
   }
 ]

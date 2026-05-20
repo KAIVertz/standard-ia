@@ -596,5 +596,18 @@
     },
     "timestamp": "2026-05-19T08:56:42.927Z",
     "read": true
+  },
+  {
+    "id": "1779267110074-y1vb",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-21",
+      "slug": "google-io-2026-l-ia-au-quotidien-pour-les-pme-francaises",
+      "title": "Google I/O 2026 : L'IA au Quotidien, la Révolution Silencieuse pour les PME Françaises"
+    },
+    "timestamp": "2026-05-20T08:51:50.074Z",
+    "read": false
   }
 ]
