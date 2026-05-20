@@ -1615,5 +1615,18 @@
     },
     "timestamp": "2026-05-20T08:51:50.075Z",
     "read": false
+  },
+  {
+    "id": "1779274165461-2xz5",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-revolution-energivore-couteuse-pme",
+      "date": "2026-05-20"
+    },
+    "timestamp": "2026-05-20T10:49:25.461Z",
+    "read": false
   }
 ]

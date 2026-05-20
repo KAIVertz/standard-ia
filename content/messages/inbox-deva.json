@@ -504,5 +504,16 @@
     },
     "timestamp": "2026-05-19T11:16:37.266Z",
     "read": false
+  },
+  {
+    "id": "1779274165460-ciil",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-revolution-energivore-couteuse-pme"
+    },
+    "timestamp": "2026-05-20T10:49:25.460Z",
+    "read": false
   }
 ]
