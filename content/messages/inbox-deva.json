@@ -515,5 +515,16 @@
     },
     "timestamp": "2026-05-20T10:49:25.460Z",
     "read": false
+  },
+  {
+    "id": "1779362579172-go9i",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-io-2026-l-ia-au-quotidien-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-05-21T11:22:59.172Z",
+    "read": false
   }
 ]
