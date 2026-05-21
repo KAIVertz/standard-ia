@@ -1,3 +1,3 @@
-💡 Pour profiter de l'IA agentique, commencez par définir une tâche répétitive claire. Imaginez un agent IA optimisant vos leads ou votre support client. Prêt à déléguer l'invisible?
+💡 Votre PME veut de l'IA sans exploser le budget énergie ? Utilisez ce prompt : "Listez 3 tâches quotidiennes de PME automatisables avec une IA open-source peu énergivore, et estimez le ROI."
 
-👉 standard-ia.pro/posts/ia-agentique-fenetre-opportunite-france-pme
+👉 standard-ia.pro/posts/ia-revolution-energivore-couteuse-pme
