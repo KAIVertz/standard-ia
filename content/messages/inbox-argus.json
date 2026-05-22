@@ -1641,5 +1641,17 @@
     },
     "timestamp": "2026-05-21T11:22:59.172Z",
     "read": false
+  },
+  {
+    "id": "1779439654140-stvn",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-05-23"
+    },
+    "timestamp": "2026-05-22T08:47:34.140Z",
+    "read": false
   }
 ]
