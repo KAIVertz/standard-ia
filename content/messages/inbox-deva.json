@@ -526,5 +526,16 @@
     },
     "timestamp": "2026-05-21T11:22:59.172Z",
     "read": false
+  },
+  {
+    "id": "1779529905745-haa2",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-revolution-ia-impact-pme-francaises"
+    },
+    "timestamp": "2026-05-23T09:51:45.745Z",
+    "read": false
   }
 ]

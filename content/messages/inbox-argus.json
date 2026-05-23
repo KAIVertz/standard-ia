@@ -1665,5 +1665,18 @@
     },
     "timestamp": "2026-05-23T08:05:11.527Z",
     "read": false
+  },
+  {
+    "id": "1779529905745-1opr",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-revolution-ia-impact-pme-francaises",
+      "date": "2026-05-23"
+    },
+    "timestamp": "2026-05-23T09:51:45.745Z",
+    "read": false
   }
 ]

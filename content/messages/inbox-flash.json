@@ -609,5 +609,18 @@
     },
     "timestamp": "2026-05-21T11:22:59.172Z",
     "read": false
+  },
+  {
+    "id": "1779529905744-6627",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-revolution-ia-impact-pme-francaises",
+      "title": "Google n'est plus Google : Ce que la révolution de la recherche IA signifie pour votre PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-23T09:51:45.744Z",
+    "read": false
   }
 ]
