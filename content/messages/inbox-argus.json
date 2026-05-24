@@ -1702,5 +1702,18 @@
     },
     "timestamp": "2026-05-24T08:15:27.418Z",
     "read": false
+  },
+  {
+    "id": "1779616403173-geik",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-cout-infrastructure-carbone-pme",
+      "date": "2026-05-24"
+    },
+    "timestamp": "2026-05-24T09:53:23.173Z",
+    "read": false
   }
 ]

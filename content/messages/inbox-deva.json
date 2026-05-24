@@ -537,5 +537,16 @@
     },
     "timestamp": "2026-05-23T09:51:45.745Z",
     "read": false
+  },
+  {
+    "id": "1779616403172-9t87",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-cout-infrastructure-carbone-pme"
+    },
+    "timestamp": "2026-05-24T09:53:23.172Z",
+    "read": false
   }
 ]

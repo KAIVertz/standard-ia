@@ -622,5 +622,18 @@
     },
     "timestamp": "2026-05-23T09:51:45.744Z",
     "read": false
+  },
+  {
+    "id": "1779616403172-3z1o",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-cout-infrastructure-carbone-pme",
+      "title": "L'IA à quel prix ? Coûts cachés, infrastructure et empreinte carbone : la feuille de route des PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-24T09:53:23.172Z",
+    "read": false
   }
 ]
