@@ -635,5 +635,18 @@
     },
     "timestamp": "2026-05-23T08:05:11.526Z",
     "read": true
+  },
+  {
+    "id": "1779610527417-yu8e",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-25",
+      "slug": "le-cout-cache-de-l-ia-opportunites-et-defis-pour-les-pme-francaises",
+      "title": "Le Coût Caché de l'IA : Opportunités Gratuites et Défis Énergétiques pour les PME Françaises"
+    },
+    "timestamp": "2026-05-24T08:15:27.417Z",
+    "read": false
   }
 ]
