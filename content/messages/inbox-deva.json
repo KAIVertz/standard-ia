@@ -548,5 +548,16 @@
     },
     "timestamp": "2026-05-24T09:53:23.172Z",
     "read": false
+  },
+  {
+    "id": "1779709967215-t1ia",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-cout-cache-de-l-ia-opportunites-et-defis-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-05-25T11:52:47.215Z",
+    "read": false
   }
 ]

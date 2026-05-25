@@ -1739,5 +1739,18 @@
     },
     "timestamp": "2026-05-25T09:45:49.558Z",
     "read": false
+  },
+  {
+    "id": "1779709967216-g0n5",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "le-cout-cache-de-l-ia-opportunites-et-defis-pour-les-pme-francaises",
+      "date": "2026-05-25"
+    },
+    "timestamp": "2026-05-25T11:52:47.216Z",
+    "read": false
   }
 ]
