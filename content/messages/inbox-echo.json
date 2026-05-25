@@ -648,5 +648,18 @@
     },
     "timestamp": "2026-05-24T08:15:27.417Z",
     "read": true
+  },
+  {
+    "id": "1779702349557-pmjp",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-26",
+      "slug": "ia-cout-accessibilite-pme-francaises",
+      "title": "L'IA est-elle un luxe ? Comment les PME françaises peuvent s'armer sans se ruiner"
+    },
+    "timestamp": "2026-05-25T09:45:49.557Z",
+    "read": false
   }
 ]
