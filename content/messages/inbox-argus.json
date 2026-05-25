@@ -1715,5 +1715,17 @@
     },
     "timestamp": "2026-05-24T09:53:23.173Z",
     "read": false
+  },
+  {
+    "id": "1779699251018-aztw",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "weekly_generation",
+      "week": 22
+    },
+    "timestamp": "2026-05-25T08:54:11.018Z",
+    "read": false
   }
 ]
