@@ -1752,5 +1752,17 @@
     },
     "timestamp": "2026-05-25T11:52:47.216Z",
     "read": false
+  },
+  {
+    "id": "1779788016551-msn9",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-05-27"
+    },
+    "timestamp": "2026-05-26T09:33:36.551Z",
+    "read": false
   }
 ]

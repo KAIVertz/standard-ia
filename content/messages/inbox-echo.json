@@ -661,5 +661,18 @@
     },
     "timestamp": "2026-05-25T09:45:49.557Z",
     "read": true
+  },
+  {
+    "id": "1779788016550-6fx9",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-27",
+      "slug": "agents-ia-revolution-emplois-pme-france-2026",
+      "title": "L'Ère des Agents IA : Entre licenciements massifs et opportunités inédites pour les PME françaises"
+    },
+    "timestamp": "2026-05-26T09:33:36.550Z",
+    "read": false
   }
 ]
