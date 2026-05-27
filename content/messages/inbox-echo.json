@@ -674,5 +674,18 @@
     },
     "timestamp": "2026-05-26T09:33:36.550Z",
     "read": false
+  },
+  {
+    "id": "1779872353020-r4or",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-05-28",
+      "slug": "la-revolte-des-utilisateurs-contre-l-ia-de-google-ce-que-les-pme-doivent-savoir",
+      "title": "La Révolte Silencieuse : Quand les Utilisateurs Rejettent l'IA de Google, et Ce Que Cela Signifie Pour Vos PME"
+    },
+    "timestamp": "2026-05-27T08:59:13.020Z",
+    "read": false
   }
 ]
