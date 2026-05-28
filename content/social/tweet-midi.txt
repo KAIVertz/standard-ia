@@ -1,3 +1,3 @@
-💡 Pour réduire l'empreinte carbone de votre IA, privilégiez les modèles plus légers et l'inférence locale quand c'est possible. Chaque choix compte pour votre budget et la planète.
+💡 Pour réduire le "coût caché" de l'IA, ne visez pas la lune ! Commencez par automatiser une tâche répétitive : gestion de mails, support client basique... Un petit pas, un grand gain ...
 
-👉 standard-ia.pro/posts/ia-cout-infrastructure-carbone-pme
+👉 standard-ia.pro/posts/le-cout-cache-de-l-ia-opportunites-et-defis-pour-les-pme-francaises
