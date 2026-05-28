@@ -559,5 +559,16 @@
     },
     "timestamp": "2026-05-25T11:52:47.215Z",
     "read": false
+  },
+  {
+    "id": "1779968282058-dann",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "la-revolte-des-utilisateurs-contre-l-ia-de-google-ce-que-les-pme-doivent-savoir"
+    },
+    "timestamp": "2026-05-28T11:38:02.058Z",
+    "read": false
   }
 ]

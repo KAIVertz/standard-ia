@@ -1776,5 +1776,18 @@
     },
     "timestamp": "2026-05-27T08:59:13.021Z",
     "read": false
+  },
+  {
+    "id": "1779968282058-4tfh",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "la-revolte-des-utilisateurs-contre-l-ia-de-google-ce-que-les-pme-doivent-savoir",
+      "date": "2026-05-28"
+    },
+    "timestamp": "2026-05-28T11:38:02.058Z",
+    "read": false
   }
 ]
