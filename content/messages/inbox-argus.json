@@ -1801,5 +1801,17 @@
     },
     "timestamp": "2026-05-30T08:14:55.495Z",
     "read": false
+  },
+  {
+    "id": "1780213586986-nc8h",
+    "from": "SCOUT",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "market_analysis_done",
+      "date": "2026-05-31"
+    },
+    "timestamp": "2026-05-31T07:46:26.986Z",
+    "read": false
   }
 ]

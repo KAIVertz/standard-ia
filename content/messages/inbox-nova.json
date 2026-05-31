@@ -115,5 +115,18 @@
     },
     "timestamp": "2026-05-24T06:59:43.135Z",
     "read": true
+  },
+  {
+    "id": "1780213586985-scjf",
+    "from": "SCOUT",
+    "to": "NOVA",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "report_ready",
+      "file": "content/scout/report-2026-05-31.json",
+      "improvements": 0
+    },
+    "timestamp": "2026-05-31T07:46:26.985Z",
+    "read": true
   }
 ]
