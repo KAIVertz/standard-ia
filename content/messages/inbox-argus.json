@@ -1825,5 +1825,18 @@
     },
     "timestamp": "2026-05-31T08:33:34.558Z",
     "read": false
+  },
+  {
+    "id": "1780222522230-5o3u",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-productivite-accrue-et-pieges-caches-pour-les-entrepreneurs-francais",
+      "date": "2026-05-31"
+    },
+    "timestamp": "2026-05-31T10:15:22.230Z",
+    "read": false
   }
 ]

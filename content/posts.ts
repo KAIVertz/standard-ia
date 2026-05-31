@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-entre-productivite-accrue-et-pieges-caches-pour-les-entrepreneurs-francais',
+    title: 'L\'IA : Le Double Tranchant de la Productivité pour les PME Françaises, Entre Promesses et Pièges Éthiques',
+    excerpt: 'L\'intelligence artificielle est devenue un impératif pour les PME, promettant efficacité mais recelant des risques de qualité, des défis éthiques et des coûts cachés. Comment les entrepreneurs français peuvent-ils naviguer entre l\'adoption stratégique et le piège de la \',
+    type: 'article',
+    date: '2026-05-31',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'la-revolte-des-utilisateurs-contre-l-ia-de-google-ce-que-les-pme-doivent-savoir',
     title: 'La Révolte Silencieuse : Quand les Utilisateurs Rejettent l\'IA de Google, et Ce Que Cela Signifie Pour Vos PME',
     excerpt: 'Google a osé le grand saut en remplaçant ses liens bleus par des agents IA, mais la réaction est inattendue : une fuite massive vers DuckDuckGo. Une révolution silencieuse qui redéfinit les stratégies digitales des PME françaises.',

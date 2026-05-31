@@ -661,5 +661,18 @@
     },
     "timestamp": "2026-05-28T11:38:02.057Z",
     "read": false
+  },
+  {
+    "id": "1780222522228-g1f8",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-productivite-accrue-et-pieges-caches-pour-les-entrepreneurs-francais",
+      "title": "L'IA : Le Double Tranchant de la Productivité pour les PME Françaises, Entre Promesses et Pièges Éthiques",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-05-31T10:15:22.228Z",
+    "read": false
   }
 ]

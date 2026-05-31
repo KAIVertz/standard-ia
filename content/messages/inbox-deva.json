@@ -570,5 +570,16 @@
     },
     "timestamp": "2026-05-28T11:38:02.058Z",
     "read": false
+  },
+  {
+    "id": "1780222522229-2lxa",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-productivite-accrue-et-pieges-caches-pour-les-entrepreneurs-francais"
+    },
+    "timestamp": "2026-05-31T10:15:22.229Z",
+    "read": false
   }
 ]
