@@ -1813,5 +1813,17 @@
     },
     "timestamp": "2026-05-31T07:46:26.986Z",
     "read": false
+  },
+  {
+    "id": "1780216414558-uqpt",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-06-01"
+    },
+    "timestamp": "2026-05-31T08:33:34.558Z",
+    "read": false
   }
 ]
