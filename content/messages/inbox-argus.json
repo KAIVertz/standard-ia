@@ -1838,5 +1838,18 @@
     },
     "timestamp": "2026-05-31T10:15:22.230Z",
     "read": false
+  },
+  {
+    "id": "1780320946292-rpiz",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "softbank-75-milliards-ia-france-opportunite-pme",
+      "date": "2026-06-01"
+    },
+    "timestamp": "2026-06-01T13:35:46.292Z",
+    "read": false
   }
 ]

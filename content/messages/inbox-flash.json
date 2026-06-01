@@ -674,5 +674,18 @@
     },
     "timestamp": "2026-05-31T10:15:22.228Z",
     "read": false
+  },
+  {
+    "id": "1780320946291-t3vf",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "softbank-75-milliards-ia-france-opportunite-pme",
+      "title": "SoftBank et ses 75 Milliards : Le Tremplin Inattendu pour l'IA des PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-01T13:35:46.291Z",
+    "read": false
   }
 ]

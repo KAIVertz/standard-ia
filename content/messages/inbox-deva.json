@@ -581,5 +581,16 @@
     },
     "timestamp": "2026-05-31T10:15:22.229Z",
     "read": false
+  },
+  {
+    "id": "1780320946292-nk09",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "softbank-75-milliards-ia-france-opportunite-pme"
+    },
+    "timestamp": "2026-06-01T13:35:46.292Z",
+    "read": false
   }
 ]
