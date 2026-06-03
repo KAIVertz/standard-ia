@@ -1851,5 +1851,17 @@
     },
     "timestamp": "2026-06-01T13:35:46.292Z",
     "read": false
+  },
+  {
+    "id": "1780482694082-fjel",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-06-04"
+    },
+    "timestamp": "2026-06-03T10:31:34.082Z",
+    "read": false
   }
 ]
