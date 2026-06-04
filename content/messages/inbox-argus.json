@@ -1863,5 +1863,17 @@
     },
     "timestamp": "2026-06-03T10:31:34.082Z",
     "read": false
+  },
+  {
+    "id": "1780566098866-1jpo",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-06-05"
+    },
+    "timestamp": "2026-06-04T09:41:38.866Z",
+    "read": false
   }
 ]

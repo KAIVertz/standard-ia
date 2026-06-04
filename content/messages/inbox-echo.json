@@ -726,5 +726,18 @@
     },
     "timestamp": "2026-06-03T10:31:34.081Z",
     "read": false
+  },
+  {
+    "id": "1780566098865-1t7n",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-05",
+      "slug": "google-ia-marche-pme-francaises-2026",
+      "title": "Le Marché de l'IA en Ébullition : Ce Que l'Hégémonie de Google Signifie pour les PME Françaises"
+    },
+    "timestamp": "2026-06-04T09:41:38.865Z",
+    "read": false
   }
 ]
