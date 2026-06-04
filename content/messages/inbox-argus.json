@@ -1875,5 +1875,18 @@
     },
     "timestamp": "2026-06-04T09:41:38.866Z",
     "read": false
+  },
+  {
+    "id": "1780571708282-q8q9",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-budget-innovation-strategie",
+      "date": "2026-06-04"
+    },
+    "timestamp": "2026-06-04T11:15:08.282Z",
+    "read": false
   }
 ]

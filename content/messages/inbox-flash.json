@@ -687,5 +687,18 @@
     },
     "timestamp": "2026-06-01T13:35:46.291Z",
     "read": false
+  },
+  {
+    "id": "1780571708281-vgld",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-budget-innovation-strategie",
+      "title": "L'IA à quel prix ? Comment les PME françaises peuvent naviguer entre innovation et budgets serrés",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-04T11:15:08.281Z",
+    "read": false
   }
 ]

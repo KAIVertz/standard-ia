@@ -592,5 +592,16 @@
     },
     "timestamp": "2026-06-01T13:35:46.292Z",
     "read": false
+  },
+  {
+    "id": "1780571708281-2ssa",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-budget-innovation-strategie"
+    },
+    "timestamp": "2026-06-04T11:15:08.281Z",
+    "read": false
   }
 ]
