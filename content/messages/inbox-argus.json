@@ -1900,5 +1900,18 @@
     },
     "timestamp": "2026-06-05T09:27:14.911Z",
     "read": false
+  },
+  {
+    "id": "1780658898694-axg4",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-ia-marche-pme-francaises-2026",
+      "date": "2026-06-05"
+    },
+    "timestamp": "2026-06-05T11:28:18.694Z",
+    "read": false
   }
 ]
