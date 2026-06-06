@@ -1925,5 +1925,18 @@
     },
     "timestamp": "2026-06-06T08:22:43.943Z",
     "read": false
+  },
+  {
+    "id": "1780740202818-uvb5",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "explosion-ia-opportunites-defis-pme-francaises",
+      "date": "2026-06-06"
+    },
+    "timestamp": "2026-06-06T10:03:22.818Z",
+    "read": false
   }
 ]

@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'explosion-ia-opportunites-defis-pme-francaises',
+    title: 'L\'IA en 2026 : Le Chiffre Fou d\'Anthropic, la Guerre des Coûts et les Stratégies pour les PME Françaises',
+    excerpt: 'Alors que les investissements en IA s\'envolent et qu\'Anthropic annonce des revenus astronomiques, le marché de l\'intelligence artificielle mature à vitesse grand V. Quelles sont les opportunités et les défis concrets pour les entrepreneurs et PME français face à cette révolution, entre solutions coûteuses et alternatives gratuites ?',
+    type: 'article',
+    date: '2026-06-06',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'google-ia-marche-pme-francaises-2026',
     title: 'Le Marché de l\'IA en Ébullition : Ce Que l\'Hégémonie de Google Signifie pour les PME Françaises',
     excerpt: 'Entre investissements colossaux, refonte historique de la recherche et émergence d\'alternatives, le paysage de l\'IA est en pleine mutation. Comment les PME françaises peuvent-elles naviguer et prospérer dans cette nouvelle ère dominée par les géants technologiques mais aussi riche en opportunités décentralisées ?',
