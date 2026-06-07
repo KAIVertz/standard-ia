@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'le-cout-cache-de-l-ia-une-nouvelle-frontiere-pour-les-pme',
+    title: 'Le Coût Caché de l\'IA : Pourquoi 920 Millions par Mois chez Google Changent la Donne pour Votre PME',
+    excerpt: 'Alors que Google s\'engage à des dépenses astronomiques pour sa puissance de calcul IA, une nouvelle ère de l\'infrastructure et des outils IA se dessine. Comprenez les implications pour vos investissements technologiques et la viabilité de vos projets IA.',
+    type: 'article',
+    date: '2026-06-07',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'explosion-ia-opportunites-defis-pme-francaises',
     title: 'L\'IA en 2026 : Le Chiffre Fou d\'Anthropic, la Guerre des Coûts et les Stratégies pour les PME Françaises',
     excerpt: 'Alors que les investissements en IA s\'envolent et qu\'Anthropic annonce des revenus astronomiques, le marché de l\'intelligence artificielle mature à vitesse grand V. Quelles sont les opportunités et les défis concrets pour les entrepreneurs et PME français face à cette révolution, entre solutions coûteuses et alternatives gratuites ?',

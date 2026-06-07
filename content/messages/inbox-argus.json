@@ -1962,5 +1962,18 @@
     },
     "timestamp": "2026-06-07T08:43:16.947Z",
     "read": false
+  },
+  {
+    "id": "1780828118716-yd1r",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "le-cout-cache-de-l-ia-une-nouvelle-frontiere-pour-les-pme",
+      "date": "2026-06-07"
+    },
+    "timestamp": "2026-06-07T10:28:38.716Z",
+    "read": false
   }
 ]
