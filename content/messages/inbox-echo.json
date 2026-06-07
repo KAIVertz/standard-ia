@@ -765,5 +765,18 @@
     },
     "timestamp": "2026-06-06T08:22:43.942Z",
     "read": true
+  },
+  {
+    "id": "1780821796946-5yiy",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-08",
+      "slug": "google-redefine-la-recherche-ce-que-ca-change-pour-les-pme",
+      "title": "Google redéfinit la recherche avec l'IA : les PME françaises face à un nouveau paradigme numérique"
+    },
+    "timestamp": "2026-06-07T08:43:16.946Z",
+    "read": false
   }
 ]
