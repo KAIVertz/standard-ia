@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'google-redefine-la-recherche-ce-que-ca-change-pour-les-pme',
+    title: 'Google redéfinit la recherche avec l\'IA : les PME françaises face à un nouveau paradigme numérique',
+    excerpt: 'Le redesign historique du moteur de recherche Google, propulsé par l\'IA, marque un tournant majeur. Les entrepreneurs et PME françaises doivent réinventer leur stratégie de visibilité pour rester compétitifs.',
+    type: 'article',
+    date: '2026-06-08',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'le-cout-cache-de-l-ia-une-nouvelle-frontiere-pour-les-pme',
     title: 'Le Coût Caché de l\'IA : Pourquoi 920 Millions par Mois chez Google Changent la Donne pour Votre PME',
     excerpt: 'Alors que Google s\'engage à des dépenses astronomiques pour sa puissance de calcul IA, une nouvelle ère de l\'infrastructure et des outils IA se dessine. Comprenez les implications pour vos investissements technologiques et la viabilité de vos projets IA.',

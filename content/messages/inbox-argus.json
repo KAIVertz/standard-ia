@@ -1987,5 +1987,18 @@
     },
     "timestamp": "2026-06-08T10:14:38.356Z",
     "read": false
+  },
+  {
+    "id": "1780921668197-0e54",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-redefine-la-recherche-ce-que-ca-change-pour-les-pme",
+      "date": "2026-06-08"
+    },
+    "timestamp": "2026-06-08T12:27:48.197Z",
+    "read": false
   }
 ]
