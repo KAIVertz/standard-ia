@@ -2000,5 +2000,18 @@
     },
     "timestamp": "2026-06-08T12:27:48.197Z",
     "read": false
+  },
+  {
+    "id": "1781002778151-ya33",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-couts-flamboyants-et-infrastructures-revolutions",
+      "date": "2026-06-09"
+    },
+    "timestamp": "2026-06-09T10:59:38.151Z",
+    "read": false
   }
 ]

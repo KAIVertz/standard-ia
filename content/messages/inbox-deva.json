@@ -647,5 +647,16 @@
     },
     "timestamp": "2026-06-08T12:27:48.196Z",
     "read": false
+  },
+  {
+    "id": "1781002778150-wb8m",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-couts-flamboyants-et-infrastructures-revolutions"
+    },
+    "timestamp": "2026-06-09T10:59:38.150Z",
+    "read": false
   }
 ]

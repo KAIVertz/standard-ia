@@ -752,5 +752,18 @@
     },
     "timestamp": "2026-06-08T12:27:48.196Z",
     "read": false
+  },
+  {
+    "id": "1781002778150-fxlu",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-couts-flamboyants-et-infrastructures-revolutions",
+      "title": "L'IA entre coûts flamboyants et infrastructures révolutionnaires : le défi des PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-09T10:59:38.150Z",
+    "read": false
   }
 ]
