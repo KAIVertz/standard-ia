@@ -2013,5 +2013,17 @@
     },
     "timestamp": "2026-06-09T10:59:38.151Z",
     "read": false
+  },
+  {
+    "id": "1781258107526-w2sw",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-06-13"
+    },
+    "timestamp": "2026-06-12T09:55:07.526Z",
+    "read": false
   }
 ]

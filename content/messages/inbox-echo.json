@@ -791,5 +791,18 @@
     },
     "timestamp": "2026-06-08T10:14:38.356Z",
     "read": true
+  },
+  {
+    "id": "1781258107525-fpb6",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-13",
+      "slug": "le-grand-ecart-ia-couts-souverainete-et-democratisation-pour-les-pme",
+      "title": "L'IA : Le Grand Écart entre Rêve et Réalité pour les Entreprises Françaises"
+    },
+    "timestamp": "2026-06-12T09:55:07.525Z",
+    "read": false
   }
 ]
