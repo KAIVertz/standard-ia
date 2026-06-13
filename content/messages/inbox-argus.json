@@ -2037,5 +2037,18 @@
     },
     "timestamp": "2026-06-13T08:45:25.501Z",
     "read": false
+  },
+  {
+    "id": "1781346462438-hym1",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "le-grand-ecart-ia-couts-souverainete-et-democratisation-pour-les-pme",
+      "date": "2026-06-13"
+    },
+    "timestamp": "2026-06-13T10:27:42.438Z",
+    "read": false
   }
 ]

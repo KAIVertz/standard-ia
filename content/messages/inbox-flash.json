@@ -765,5 +765,18 @@
     },
     "timestamp": "2026-06-09T10:59:38.150Z",
     "read": false
+  },
+  {
+    "id": "1781346462437-tj2s",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-ecart-ia-couts-souverainete-et-democratisation-pour-les-pme",
+      "title": "L'IA : Le Grand Écart entre Rêve et Réalité pour les Entreprises Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-13T10:27:42.437Z",
+    "read": false
   }
 ]

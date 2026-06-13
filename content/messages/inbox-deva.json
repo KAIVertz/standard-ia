@@ -658,5 +658,16 @@
     },
     "timestamp": "2026-06-09T10:59:38.150Z",
     "read": false
+  },
+  {
+    "id": "1781346462437-330p",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-ecart-ia-couts-souverainete-et-democratisation-pour-les-pme"
+    },
+    "timestamp": "2026-06-13T10:27:42.437Z",
+    "read": false
   }
 ]
