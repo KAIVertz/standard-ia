@@ -817,5 +817,18 @@
     },
     "timestamp": "2026-06-13T08:45:25.500Z",
     "read": true
+  },
+  {
+    "id": "1781427623075-63cg",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-15",
+      "slug": "ia-geopolitique-le-coup-de-semonce-americain-et-le-reveil-force-des-pme-francaises",
+      "title": "IA géopolitique : Le coup de semonce américain et le réveil forcé des PME françaises"
+    },
+    "timestamp": "2026-06-14T09:00:23.075Z",
+    "read": false
   }
 ]
