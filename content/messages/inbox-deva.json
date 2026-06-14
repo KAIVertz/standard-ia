@@ -669,5 +669,16 @@
     },
     "timestamp": "2026-06-13T10:27:42.437Z",
     "read": false
+  },
+  {
+    "id": "1781434116563-xe8r",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-couts-regulations-opportunites-pme-francaises"
+    },
+    "timestamp": "2026-06-14T10:48:36.563Z",
+    "read": false
   }
 ]

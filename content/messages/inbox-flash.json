@@ -778,5 +778,18 @@
     },
     "timestamp": "2026-06-13T10:27:42.437Z",
     "read": false
+  },
+  {
+    "id": "1781434116563-sn2z",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-couts-regulations-opportunites-pme-francaises",
+      "title": "IA : Entre facture salée et régulations incertaines, comment les PME françaises peuvent-elles tirer leur épingle du jeu ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-14T10:48:36.563Z",
+    "read": false
   }
 ]

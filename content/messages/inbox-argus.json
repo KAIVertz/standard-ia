@@ -2074,5 +2074,18 @@
     },
     "timestamp": "2026-06-14T09:00:23.075Z",
     "read": false
+  },
+  {
+    "id": "1781434116564-m0n6",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-couts-regulations-opportunites-pme-francaises",
+      "date": "2026-06-14"
+    },
+    "timestamp": "2026-06-14T10:48:36.564Z",
+    "read": false
   }
 ]
