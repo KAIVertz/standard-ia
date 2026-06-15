@@ -830,5 +830,18 @@
     },
     "timestamp": "2026-06-14T09:00:23.075Z",
     "read": true
+  },
+  {
+    "id": "1781523755850-i383",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-16",
+      "slug": "infra-ia-nouvelles-regles-du-jeu-pour-pme",
+      "title": "Infrastructure IA : Le Nouveau Far West Numérique, Opportunités et Pièges pour nos PME"
+    },
+    "timestamp": "2026-06-15T11:42:35.850Z",
+    "read": false
   }
 ]
