@@ -2111,5 +2111,18 @@
     },
     "timestamp": "2026-06-15T11:42:35.851Z",
     "read": false
+  },
+  {
+    "id": "1781531675346-aiok",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-geopolitique-le-coup-de-semonce-americain-et-le-reveil-force-des-pme-francaises",
+      "date": "2026-06-15"
+    },
+    "timestamp": "2026-06-15T13:54:35.346Z",
+    "read": false
   }
 ]

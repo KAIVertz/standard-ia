@@ -680,5 +680,16 @@
     },
     "timestamp": "2026-06-14T10:48:36.563Z",
     "read": false
+  },
+  {
+    "id": "1781531675345-o4d6",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-geopolitique-le-coup-de-semonce-americain-et-le-reveil-force-des-pme-francaises"
+    },
+    "timestamp": "2026-06-15T13:54:35.345Z",
+    "read": false
   }
 ]

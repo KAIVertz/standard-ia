@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-geopolitique-le-coup-de-semonce-americain-et-le-reveil-force-des-pme-francaises',
+    title: 'IA géopolitique : Le coup de semonce américain et le réveil forcé des PME françaises',
+    excerpt: 'L\'affaire Anthropic, avec le blocage de son dernier modèle par Washington, révèle la mainmise géopolitique sur l\'IA. Pour les entrepreneurs et PME français, c\'est l\'heure d\'une prise de conscience stratégique face à la \',
+    type: 'article',
+    date: '2026-06-15',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-couts-regulations-opportunites-pme-francaises',
     title: 'IA : Entre facture salée et régulations incertaines, comment les PME françaises peuvent-elles tirer leur épingle du jeu ?',
     excerpt: 'L\'IA promet la lune mais son coût explose et les régulateurs serrent la vis. Nous analysons l\'actualité brûlante d\'Anthropic et les budgets IA des banques pour guider les entrepreneurs français face à ces défis majeurs.',
