@@ -691,5 +691,16 @@
     },
     "timestamp": "2026-06-15T13:54:35.345Z",
     "read": false
+  },
+  {
+    "id": "1781614352608-wnp6",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "infra-ia-nouvelles-regles-du-jeu-pour-pme"
+    },
+    "timestamp": "2026-06-16T12:52:32.608Z",
+    "read": false
   }
 ]

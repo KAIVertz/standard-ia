@@ -2136,5 +2136,18 @@
     },
     "timestamp": "2026-06-16T10:51:38.935Z",
     "read": false
+  },
+  {
+    "id": "1781614352609-had4",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "infra-ia-nouvelles-regles-du-jeu-pour-pme",
+      "date": "2026-06-16"
+    },
+    "timestamp": "2026-06-16T12:52:32.609Z",
+    "read": false
   }
 ]

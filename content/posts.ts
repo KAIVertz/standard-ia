@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'infra-ia-nouvelles-regles-du-jeu-pour-pme',
+    title: 'Infrastructure IA : Le Nouveau Far West Numérique, Opportunités et Pièges pour nos PME',
+    excerpt: 'Alors que la course aux IPO et les innovations technologiques redessinent le paysage de l\'IA, les PME françaises doivent naviguer entre des infrastructures émergentes, des outils à coût variable et une visibilité digitale en pleine mutation. Décryptage des enjeux et stratégies.',
+    type: 'article',
+    date: '2026-06-16',
+    readTime: 8,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-geopolitique-le-coup-de-semonce-americain-et-le-reveil-force-des-pme-francaises',
     title: 'IA géopolitique : Le coup de semonce américain et le réveil forcé des PME françaises',
     excerpt: 'L\'affaire Anthropic, avec le blocage de son dernier modèle par Washington, révèle la mainmise géopolitique sur l\'IA. Pour les entrepreneurs et PME français, c\'est l\'heure d\'une prise de conscience stratégique face à la \',
