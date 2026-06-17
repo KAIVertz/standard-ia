@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-europe-souverainete-innovation-pme',
+    title: 'L\'Europe face au grand défi de l\'IA : Une course contre la montre pour nos PME',
+    excerpt: 'Alors que les États-Unis serrent la vis sur leurs géants de l\'IA et que l\'Europe cherche sa voie, les entrepreneurs français sont à un carrefour. Comment naviguer entre souveraineté numérique, innovations fulgurantes et opportunités concrètes pour leur croissance ?',
+    type: 'article',
+    date: '2026-06-17',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'infra-ia-nouvelles-regles-du-jeu-pour-pme',
     title: 'Infrastructure IA : Le Nouveau Far West Numérique, Opportunités et Pièges pour nos PME',
     excerpt: 'Alors que la course aux IPO et les innovations technologiques redessinent le paysage de l\'IA, les PME françaises doivent naviguer entre des infrastructures émergentes, des outils à coût variable et une visibilité digitale en pleine mutation. Décryptage des enjeux et stratégies.',

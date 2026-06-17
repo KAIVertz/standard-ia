@@ -2161,5 +2161,18 @@
     },
     "timestamp": "2026-06-17T10:23:38.639Z",
     "read": false
+  },
+  {
+    "id": "1781698523218-74p6",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-europe-souverainete-innovation-pme",
+      "date": "2026-06-17"
+    },
+    "timestamp": "2026-06-17T12:15:23.218Z",
+    "read": false
   }
 ]

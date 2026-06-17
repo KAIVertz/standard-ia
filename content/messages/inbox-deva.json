@@ -702,5 +702,16 @@
     },
     "timestamp": "2026-06-16T12:52:32.608Z",
     "read": false
+  },
+  {
+    "id": "1781698523217-u42j",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-europe-souverainete-innovation-pme"
+    },
+    "timestamp": "2026-06-17T12:15:23.217Z",
+    "read": false
   }
 ]

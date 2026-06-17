@@ -817,5 +817,18 @@
     },
     "timestamp": "2026-06-16T12:52:32.608Z",
     "read": false
+  },
+  {
+    "id": "1781698523217-w481",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-europe-souverainete-innovation-pme",
+      "title": "L'Europe face au grand défi de l'IA : Une course contre la montre pour nos PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-17T12:15:23.217Z",
+    "read": false
   }
 ]
