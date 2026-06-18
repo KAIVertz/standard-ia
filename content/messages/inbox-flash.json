@@ -830,5 +830,18 @@
     },
     "timestamp": "2026-06-17T12:15:23.217Z",
     "read": false
+  },
+  {
+    "id": "1781783419971-4j4q",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ere-des-super-apps-ia-comment-google-openai-redefinissent-le-terrain-pour-pme",
+      "title": "L'Ère des Super-Apps IA : Comment Google et OpenAI Redéfinissent le Terrain pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-18T11:50:19.971Z",
+    "read": false
   }
 ]

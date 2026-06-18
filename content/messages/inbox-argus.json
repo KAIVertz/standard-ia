@@ -2174,5 +2174,18 @@
     },
     "timestamp": "2026-06-17T12:15:23.218Z",
     "read": false
+  },
+  {
+    "id": "1781783419972-hll8",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ere-des-super-apps-ia-comment-google-openai-redefinissent-le-terrain-pour-pme",
+      "date": "2026-06-18"
+    },
+    "timestamp": "2026-06-18T11:50:19.972Z",
+    "read": false
   }
 ]

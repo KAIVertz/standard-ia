@@ -713,5 +713,16 @@
     },
     "timestamp": "2026-06-17T12:15:23.217Z",
     "read": false
+  },
+  {
+    "id": "1781783419971-rz8a",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ere-des-super-apps-ia-comment-google-openai-redefinissent-le-terrain-pour-pme"
+    },
+    "timestamp": "2026-06-18T11:50:19.971Z",
+    "read": false
   }
 ]

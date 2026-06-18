@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ere-des-super-apps-ia-comment-google-openai-redefinissent-le-terrain-pour-pme',
+    title: 'L\'Ère des Super-Apps IA : Comment Google et OpenAI Redéfinissent le Terrain pour les PME Françaises',
+    excerpt: 'OpenAI veut transformer ChatGPT en \'super-app\' et Google intègre Gemini partout, de la recherche à Android. Cette course à la plateforme \'tout-en-un\' bouleverse le paysage numérique. Que signifie cette consolidation pour les entrepreneurs français et comment s\'y préparer ?',
+    type: 'article',
+    date: '2026-06-18',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-europe-souverainete-innovation-pme',
     title: 'L\'Europe face au grand défi de l\'IA : Une course contre la montre pour nos PME',
     excerpt: 'Alors que les États-Unis serrent la vis sur leurs géants de l\'IA et que l\'Europe cherche sa voie, les entrepreneurs français sont à un carrefour. Comment naviguer entre souveraineté numérique, innovations fulgurantes et opportunités concrètes pour leur croissance ?',
