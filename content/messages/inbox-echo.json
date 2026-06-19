@@ -869,5 +869,18 @@
     },
     "timestamp": "2026-06-17T10:23:38.638Z",
     "read": true
+  },
+  {
+    "id": "1781863801479-3rdw",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-20",
+      "slug": "ia-france-entrepreneurs-entre-promesses-politiques-et-realites-du-terrain",
+      "title": "IA en France : Entre Promesses Politiques et Réalités du Terrain pour les PME"
+    },
+    "timestamp": "2026-06-19T10:10:01.479Z",
+    "read": false
   }
 ]
