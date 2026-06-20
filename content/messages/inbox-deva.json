@@ -724,5 +724,16 @@
     },
     "timestamp": "2026-06-18T11:50:19.971Z",
     "read": false
+  },
+  {
+    "id": "1781951520629-2aqi",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-france-entrepreneurs-entre-promesses-politiques-et-realites-du-terrain"
+    },
+    "timestamp": "2026-06-20T10:32:00.629Z",
+    "read": false
   }
 ]

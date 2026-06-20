@@ -2211,5 +2211,18 @@
     },
     "timestamp": "2026-06-20T08:39:07.819Z",
     "read": false
+  },
+  {
+    "id": "1781951520629-gh44",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-france-entrepreneurs-entre-promesses-politiques-et-realites-du-terrain",
+      "date": "2026-06-20"
+    },
+    "timestamp": "2026-06-20T10:32:00.629Z",
+    "read": false
   }
 ]

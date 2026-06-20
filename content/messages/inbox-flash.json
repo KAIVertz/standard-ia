@@ -843,5 +843,18 @@
     },
     "timestamp": "2026-06-18T11:50:19.971Z",
     "read": false
+  },
+  {
+    "id": "1781951520628-t78v",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-france-entrepreneurs-entre-promesses-politiques-et-realites-du-terrain",
+      "title": "IA en France : Entre Promesses Politiques et Réalités du Terrain pour les PME",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-20T10:32:00.628Z",
+    "read": false
   }
 ]
