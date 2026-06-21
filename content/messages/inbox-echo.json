@@ -895,5 +895,18 @@
     },
     "timestamp": "2026-06-20T08:39:07.818Z",
     "read": true
+  },
+  {
+    "id": "1782034436383-ngv0",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-22",
+      "slug": "l-ia-n-est-plus-un-repas-gratuit-comment-les-pme-peuvent-elles-garder-le-cap",
+      "title": "L'IA n'est plus un repas gratuit : Comment les PME peuvent-elles garder le cap et maîtriser leurs coûts ?"
+    },
+    "timestamp": "2026-06-21T09:33:56.384Z",
+    "read": false
   }
 ]
