@@ -154,5 +154,18 @@
     },
     "timestamp": "2026-06-14T08:16:30.377Z",
     "read": true
+  },
+  {
+    "id": "1782030769973-e7up",
+    "from": "SCOUT",
+    "to": "NOVA",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "report_ready",
+      "file": "content/scout/report-2026-06-21.json",
+      "improvements": 0
+    },
+    "timestamp": "2026-06-21T08:32:49.973Z",
+    "read": true
   }
 ]
