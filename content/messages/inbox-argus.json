@@ -2248,5 +2248,18 @@
     },
     "timestamp": "2026-06-21T09:33:56.384Z",
     "read": false
+  },
+  {
+    "id": "1782040528969-zhdv",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-cout-croissant-et-reglementation-souveraine-le-nouveau-defi-des-pme-francaises",
+      "date": "2026-06-21"
+    },
+    "timestamp": "2026-06-21T11:15:28.969Z",
+    "read": false
   }
 ]

@@ -735,5 +735,16 @@
     },
     "timestamp": "2026-06-20T10:32:00.629Z",
     "read": false
+  },
+  {
+    "id": "1782040528968-07zv",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-cout-croissant-et-reglementation-souveraine-le-nouveau-defi-des-pme-francaises"
+    },
+    "timestamp": "2026-06-21T11:15:28.968Z",
+    "read": false
   }
 ]

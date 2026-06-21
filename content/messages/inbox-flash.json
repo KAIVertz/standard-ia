@@ -856,5 +856,18 @@
     },
     "timestamp": "2026-06-20T10:32:00.628Z",
     "read": false
+  },
+  {
+    "id": "1782040528968-x0ls",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-cout-croissant-et-reglementation-souveraine-le-nouveau-defi-des-pme-francaises",
+      "title": "IA : entre coût croissant et régulation souveraine, le nouveau défi des PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-21T11:15:28.968Z",
+    "read": false
   }
 ]
