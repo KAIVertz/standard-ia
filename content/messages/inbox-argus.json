@@ -2285,5 +2285,18 @@
     },
     "timestamp": "2026-06-22T11:31:21.602Z",
     "read": false
+  },
+  {
+    "id": "1782135248568-bl84",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-n-est-plus-un-repas-gratuit-comment-les-pme-peuvent-elles-garder-le-cap",
+      "date": "2026-06-22"
+    },
+    "timestamp": "2026-06-22T13:34:08.568Z",
+    "read": false
   }
 ]

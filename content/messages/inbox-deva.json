@@ -746,5 +746,16 @@
     },
     "timestamp": "2026-06-21T11:15:28.968Z",
     "read": false
+  },
+  {
+    "id": "1782135248567-qco7",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-n-est-plus-un-repas-gratuit-comment-les-pme-peuvent-elles-garder-le-cap"
+    },
+    "timestamp": "2026-06-22T13:34:08.567Z",
+    "read": false
   }
 ]
