@@ -882,5 +882,18 @@
     },
     "timestamp": "2026-06-22T13:34:08.566Z",
     "read": false
+  },
+  {
+    "id": "1782213348350-j1uv",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-geopolitique-anthropic-pme-francaises",
+      "title": "Le Blocage d'Anthropic : La Guerre de l'IA est Déclarée, Quelle Stratégie pour les PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-23T11:15:48.350Z",
+    "read": false
   }
 ]

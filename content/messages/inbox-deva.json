@@ -757,5 +757,16 @@
     },
     "timestamp": "2026-06-22T13:34:08.567Z",
     "read": false
+  },
+  {
+    "id": "1782213348351-dq3s",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-geopolitique-anthropic-pme-francaises"
+    },
+    "timestamp": "2026-06-23T11:15:48.351Z",
+    "read": false
   }
 ]
