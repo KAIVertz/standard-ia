@@ -2335,5 +2335,18 @@
     },
     "timestamp": "2026-06-24T08:51:20.473Z",
     "read": false
+  },
+  {
+    "id": "1782298114082-eqx0",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "les-couts-caches-de-lia-comment-les-pme-peuvent-naviguer-la-tempete",
+      "date": "2026-06-24"
+    },
+    "timestamp": "2026-06-24T10:48:34.082Z",
+    "read": false
   }
 ]

@@ -895,5 +895,18 @@
     },
     "timestamp": "2026-06-23T11:15:48.350Z",
     "read": false
+  },
+  {
+    "id": "1782298114080-0z1y",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "les-couts-caches-de-lia-comment-les-pme-peuvent-naviguer-la-tempete",
+      "title": "Les Coûts Cachés de l'IA : Comment les PME Françaises Peuvent Naviguer la Tempête Économique",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-24T10:48:34.080Z",
+    "read": false
   }
 ]

@@ -768,5 +768,16 @@
     },
     "timestamp": "2026-06-23T11:15:48.351Z",
     "read": false
+  },
+  {
+    "id": "1782298114081-3cj9",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "les-couts-caches-de-lia-comment-les-pme-peuvent-naviguer-la-tempete"
+    },
+    "timestamp": "2026-06-24T10:48:34.081Z",
+    "read": false
   }
 ]
