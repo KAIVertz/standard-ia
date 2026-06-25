@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-au-quotidien-defis-opportunites-pme-francaises',
+    title: 'L\'IA au Quotidien : Défis et Opportunités pour les PME Françaises Face à l\'Accélération Technologique',
+    excerpt: 'De la personnalisation marketing à la gestion des connaissances internes, l\'IA redéfinit la manière de faire des affaires. Les PME françaises doivent naviguer entre solutions coûteuses et alternatives abordables pour rester compétitives et visibles.',
+    type: 'article',
+    date: '2026-06-25',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'les-couts-caches-de-lia-comment-les-pme-peuvent-naviguer-la-tempete',
     title: 'Les Coûts Cachés de l\'IA : Comment les PME Françaises Peuvent Naviguer la Tempête Économique',
     excerpt: 'L\'IA est à la fois une promesse et un défi économique majeur. Entre outils coûteux, infrastructures agiles et guerre des talents, les PME françaises doivent affûter leur stratégie pour transformer la disruption en opportunité.',

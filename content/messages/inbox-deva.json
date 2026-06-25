@@ -779,5 +779,16 @@
     },
     "timestamp": "2026-06-24T10:48:34.081Z",
     "read": false
+  },
+  {
+    "id": "1782384063500-3uaa",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-au-quotidien-defis-opportunites-pme-francaises"
+    },
+    "timestamp": "2026-06-25T10:41:03.500Z",
+    "read": false
   }
 ]

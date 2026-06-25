@@ -908,5 +908,18 @@
     },
     "timestamp": "2026-06-24T10:48:34.080Z",
     "read": false
+  },
+  {
+    "id": "1782384063499-ij7g",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-au-quotidien-defis-opportunites-pme-francaises",
+      "title": "L'IA au Quotidien : Défis et Opportunités pour les PME Françaises Face à l'Accélération Technologique",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-25T10:41:03.499Z",
+    "read": false
   }
 ]

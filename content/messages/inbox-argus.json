@@ -2360,5 +2360,18 @@
     },
     "timestamp": "2026-06-25T08:49:47.861Z",
     "read": false
+  },
+  {
+    "id": "1782384063500-hczo",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-au-quotidien-defis-opportunites-pme-francaises",
+      "date": "2026-06-25"
+    },
+    "timestamp": "2026-06-25T10:41:03.500Z",
+    "read": false
   }
 ]
