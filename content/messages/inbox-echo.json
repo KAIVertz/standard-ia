@@ -947,5 +947,18 @@
     },
     "timestamp": "2026-06-24T08:51:20.473Z",
     "read": true
+  },
+  {
+    "id": "1782377387860-vuzq",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-06-26",
+      "slug": "l-ia-entre-cout-et-democratisation-defi-des-pme-francaises",
+      "title": "L'IA : Entre Coût Exorbitant et Démocratisation Gratuite, Où Se Situent les PME Françaises ?"
+    },
+    "timestamp": "2026-06-25T08:49:47.860Z",
+    "read": false
   }
 ]
