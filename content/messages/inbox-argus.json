@@ -2385,5 +2385,18 @@
     },
     "timestamp": "2026-06-26T08:48:13.055Z",
     "read": false
+  },
+  {
+    "id": "1782471027356-rvhh",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-cout-et-democratisation-defi-des-pme-francaises",
+      "date": "2026-06-26"
+    },
+    "timestamp": "2026-06-26T10:50:27.356Z",
+    "read": false
   }
 ]

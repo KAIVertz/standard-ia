@@ -790,5 +790,16 @@
     },
     "timestamp": "2026-06-25T10:41:03.500Z",
     "read": false
+  },
+  {
+    "id": "1782471027356-suzg",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-cout-et-democratisation-defi-des-pme-francaises"
+    },
+    "timestamp": "2026-06-26T10:50:27.356Z",
+    "read": false
   }
 ]

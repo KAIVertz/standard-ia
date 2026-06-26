@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-entre-cout-et-democratisation-defi-des-pme-francaises',
+    title: 'L\'IA : Entre Coût Exorbitant et Démocratisation Gratuite, Où Se Situent les PME Françaises ?',
+    excerpt: 'Alors que l\'IA révolutionne le monde, les PME françaises naviguent entre des outils puissants mais coûteux et des alternatives gratuites. Comment s\'adapter face à la transformation des infrastructures cloud et des interfaces utilisateurs, tout en restant compétitives ?',
+    type: 'article',
+    date: '2026-06-26',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-au-quotidien-defis-opportunites-pme-francaises',
     title: 'L\'IA au Quotidien : Défis et Opportunités pour les PME Françaises Face à l\'Accélération Technologique',
     excerpt: 'De la personnalisation marketing à la gestion des connaissances internes, l\'IA redéfinit la manière de faire des affaires. Les PME françaises doivent naviguer entre solutions coûteuses et alternatives abordables pour rester compétitives et visibles.',

@@ -921,5 +921,18 @@
     },
     "timestamp": "2026-06-25T10:41:03.499Z",
     "read": false
+  },
+  {
+    "id": "1782471027355-xk2q",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-cout-et-democratisation-defi-des-pme-francaises",
+      "title": "L'IA : Entre Coût Exorbitant et Démocratisation Gratuite, Où Se Situent les PME Françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-26T10:50:27.355Z",
+    "read": false
   }
 ]
