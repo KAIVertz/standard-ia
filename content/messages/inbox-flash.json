@@ -934,5 +934,18 @@
     },
     "timestamp": "2026-06-26T10:50:27.355Z",
     "read": false
+  },
+  {
+    "id": "1782554853389-h41s",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-iaflation-et-le-defi-des-couts-pour-les-pme-francaises",
+      "title": "L'IAflation : Le Coût Caché de l'Intelligence Artificielle pour les Entrepreneurs Français",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-27T10:07:33.389Z",
+    "read": false
   }
 ]

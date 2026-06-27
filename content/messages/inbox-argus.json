@@ -2410,5 +2410,18 @@
     },
     "timestamp": "2026-06-27T08:25:00.651Z",
     "read": false
+  },
+  {
+    "id": "1782554853390-nabf",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-iaflation-et-le-defi-des-couts-pour-les-pme-francaises",
+      "date": "2026-06-27"
+    },
+    "timestamp": "2026-06-27T10:07:33.390Z",
+    "read": false
   }
 ]

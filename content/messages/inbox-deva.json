@@ -801,5 +801,16 @@
     },
     "timestamp": "2026-06-26T10:50:27.356Z",
     "read": false
+  },
+  {
+    "id": "1782554853389-yjhw",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-iaflation-et-le-defi-des-couts-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-06-27T10:07:33.389Z",
+    "read": false
   }
 ]

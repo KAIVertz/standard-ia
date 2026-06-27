@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-iaflation-et-le-defi-des-couts-pour-les-pme-francaises',
+    title: 'L\'IAflation : Le Coût Caché de l\'Intelligence Artificielle pour les Entrepreneurs Français',
+    excerpt: 'Alors que l\'IA promettait des gains de productivité massifs, une nouvelle réalité économique émerge : l\'« IAflation ». Cet article décrypte les coûts croissants de l\'IA et propose des stratégies aux PME françaises pour naviguer ce nouveau paysage sans se ruiner.',
+    type: 'article',
+    date: '2026-06-27',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-entre-cout-et-democratisation-defi-des-pme-francaises',
     title: 'L\'IA : Entre Coût Exorbitant et Démocratisation Gratuite, Où Se Situent les PME Françaises ?',
     excerpt: 'Alors que l\'IA révolutionne le monde, les PME françaises naviguent entre des outils puissants mais coûteux et des alternatives gratuites. Comment s\'adapter face à la transformation des infrastructures cloud et des interfaces utilisateurs, tout en restant compétitives ?',
