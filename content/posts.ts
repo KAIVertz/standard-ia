@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'mainmise-etat-ia-enjeux-pme-france',
+    title: 'L\'IA sous haute surveillance étatique : Un tournant pour l\'innovation et les PME françaises ?',
+    excerpt: 'Les récentes interventions des gouvernements américain et les limitations imposées aux géants de l\'IA comme Anthropic et OpenAI marquent un changement de paradigme. Quelle signification revêt cette mainmise étatique sur les modèles de pointe pour les entrepreneurs et les PME françaises ?',
+    type: 'article',
+    date: '2026-06-28',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-iaflation-et-le-defi-des-couts-pour-les-pme-francaises',
     title: 'L\'IAflation : Le Coût Caché de l\'Intelligence Artificielle pour les Entrepreneurs Français',
     excerpt: 'Alors que l\'IA promettait des gains de productivité massifs, une nouvelle réalité économique émerge : l\'« IAflation ». Cet article décrypte les coûts croissants de l\'IA et propose des stratégies aux PME françaises pour naviguer ce nouveau paysage sans se ruiner.',

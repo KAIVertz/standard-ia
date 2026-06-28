@@ -947,5 +947,18 @@
     },
     "timestamp": "2026-06-27T10:07:33.389Z",
     "read": false
+  },
+  {
+    "id": "1782642414319-xn3s",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "mainmise-etat-ia-enjeux-pme-france",
+      "title": "L'IA sous haute surveillance étatique : Un tournant pour l'innovation et les PME françaises ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-28T10:26:54.319Z",
+    "read": false
   }
 ]

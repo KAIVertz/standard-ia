@@ -2447,5 +2447,18 @@
     },
     "timestamp": "2026-06-28T08:39:09.352Z",
     "read": false
+  },
+  {
+    "id": "1782642414320-5x8b",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "mainmise-etat-ia-enjeux-pme-france",
+      "date": "2026-06-28"
+    },
+    "timestamp": "2026-06-28T10:26:54.320Z",
+    "read": false
   }
 ]

@@ -812,5 +812,16 @@
     },
     "timestamp": "2026-06-27T10:07:33.389Z",
     "read": false
+  },
+  {
+    "id": "1782642414320-az46",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "mainmise-etat-ia-enjeux-pme-france"
+    },
+    "timestamp": "2026-06-28T10:26:54.320Z",
+    "read": false
   }
 ]
