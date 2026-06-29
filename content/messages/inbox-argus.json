@@ -2484,5 +2484,18 @@
     },
     "timestamp": "2026-06-29T10:18:51.626Z",
     "read": false
+  },
+  {
+    "id": "1782736319387-3tys",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-redessine-search-ia-impact-pme",
+      "date": "2026-06-29"
+    },
+    "timestamp": "2026-06-29T12:31:59.387Z",
+    "read": false
   }
 ]

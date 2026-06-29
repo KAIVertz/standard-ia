@@ -960,5 +960,18 @@
     },
     "timestamp": "2026-06-28T10:26:54.319Z",
     "read": false
+  },
+  {
+    "id": "1782736319385-d3vl",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-redessine-search-ia-impact-pme",
+      "title": "Google redessine sa barre de recherche : séisme digital pour les PME françaises face à l'IA ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-29T12:31:59.385Z",
+    "read": false
   }
 ]
