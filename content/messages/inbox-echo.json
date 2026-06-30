@@ -1012,5 +1012,18 @@
     },
     "timestamp": "2026-06-29T10:18:51.625Z",
     "read": true
+  },
+  {
+    "id": "1782809646589-dpgh",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-01",
+      "slug": "ia-moteur-croissance-emploi-pme-france",
+      "title": "IA : Loin des craintes, une aubaine pour l'emploi et l'expansion des PME françaises"
+    },
+    "timestamp": "2026-06-30T08:54:06.589Z",
+    "read": false
   }
 ]
