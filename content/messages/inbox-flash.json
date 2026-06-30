@@ -973,5 +973,18 @@
     },
     "timestamp": "2026-06-29T12:31:59.385Z",
     "read": false
+  },
+  {
+    "id": "1782816967589-6co1",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-data-centers-opportunite-insoupconnee-pme-francaises",
+      "title": "L'IA, le boom des data centers : l'opportunité insoupçonnée pour les PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-06-30T10:56:07.589Z",
+    "read": false
   }
 ]

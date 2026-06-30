@@ -834,5 +834,16 @@
     },
     "timestamp": "2026-06-29T12:31:59.386Z",
     "read": false
+  },
+  {
+    "id": "1782816967590-muc3",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-data-centers-opportunite-insoupconnee-pme-francaises"
+    },
+    "timestamp": "2026-06-30T10:56:07.590Z",
+    "read": false
   }
 ]

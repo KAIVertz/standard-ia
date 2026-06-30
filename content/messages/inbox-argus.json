@@ -2509,5 +2509,18 @@
     },
     "timestamp": "2026-06-30T08:54:06.590Z",
     "read": false
+  },
+  {
+    "id": "1782816967590-bs4k",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-data-centers-opportunite-insoupconnee-pme-francaises",
+      "date": "2026-06-30"
+    },
+    "timestamp": "2026-06-30T10:56:07.590Z",
+    "read": false
   }
 ]
