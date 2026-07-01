@@ -845,5 +845,16 @@
     },
     "timestamp": "2026-06-30T10:56:07.590Z",
     "read": false
+  },
+  {
+    "id": "1782904952005-84dx",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-moteur-croissance-emploi-pme-france"
+    },
+    "timestamp": "2026-07-01T11:22:32.005Z",
+    "read": false
   }
 ]

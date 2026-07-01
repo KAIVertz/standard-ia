@@ -986,5 +986,18 @@
     },
     "timestamp": "2026-06-30T10:56:07.589Z",
     "read": false
+  },
+  {
+    "id": "1782904952004-3bhx",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-moteur-croissance-emploi-pme-france",
+      "title": "IA : Loin des craintes, une aubaine pour l'emploi et l'expansion des PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-01T11:22:32.004Z",
+    "read": false
   }
 ]

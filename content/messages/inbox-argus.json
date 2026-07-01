@@ -2534,5 +2534,18 @@
     },
     "timestamp": "2026-07-01T09:26:46.475Z",
     "read": false
+  },
+  {
+    "id": "1782904952005-gezy",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-moteur-croissance-emploi-pme-france",
+      "date": "2026-07-01"
+    },
+    "timestamp": "2026-07-01T11:22:32.005Z",
+    "read": false
   }
 ]
