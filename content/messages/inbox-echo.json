@@ -1025,5 +1025,18 @@
     },
     "timestamp": "2026-06-30T08:54:06.589Z",
     "read": true
+  },
+  {
+    "id": "1782898006474-7i1m",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-02",
+      "slug": "chaos-reglementaire-opportunites-super-ia-pme-francaises",
+      "title": "IA : Entre Chaos Réglementaire et Puissance Débridée, Comment les PME Françaises Peuvent Tirer Leur Épingle du Jeu"
+    },
+    "timestamp": "2026-07-01T09:26:46.474Z",
+    "read": false
   }
 ]
