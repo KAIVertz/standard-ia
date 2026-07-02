@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'chaos-reglementaire-opportunites-super-ia-pme-francaises',
+    title: 'IA : Entre Chaos Réglementaire et Puissance Débridée, Comment les PME Françaises Peuvent Tirer Leur Épingle du Jeu',
+    excerpt: 'Le gouvernement américain lève ses restrictions sur les modèles d\'IA les plus puissants d\'Anthropic, tandis que les tensions géopolitiques s\'intensifient. Quel impact pour les entrepreneurs français face à cette ère de super-IA ?',
+    type: 'article',
+    date: '2026-07-02',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-moteur-croissance-emploi-pme-france',
     title: 'IA : Loin des craintes, une aubaine pour l\'emploi et l\'expansion des PME françaises',
     excerpt: 'Un rapport récent déconstruit le mythe de l\'IA tueuse d\'emplois, révélant une croissance significative des effectifs. En parallèle, l\'exemple de Blablacar démontre comment l\'IA propulse les entreprises françaises à l\'international. Une analyse de ce que ces dynamiques signifient pour nos PME.',

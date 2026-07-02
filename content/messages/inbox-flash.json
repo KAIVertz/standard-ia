@@ -999,5 +999,18 @@
     },
     "timestamp": "2026-07-01T11:22:32.004Z",
     "read": false
+  },
+  {
+    "id": "1782988687503-kyfi",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "chaos-reglementaire-opportunites-super-ia-pme-francaises",
+      "title": "IA : Entre Chaos Réglementaire et Puissance Débridée, Comment les PME Françaises Peuvent Tirer Leur Épingle du Jeu",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-02T10:38:07.503Z",
+    "read": false
   }
 ]

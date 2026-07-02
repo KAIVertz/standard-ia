@@ -2559,5 +2559,18 @@
     },
     "timestamp": "2026-07-02T08:39:31.888Z",
     "read": false
+  },
+  {
+    "id": "1782988687504-qh12",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "chaos-reglementaire-opportunites-super-ia-pme-francaises",
+      "date": "2026-07-02"
+    },
+    "timestamp": "2026-07-02T10:38:07.504Z",
+    "read": false
   }
 ]

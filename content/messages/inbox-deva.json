@@ -856,5 +856,16 @@
     },
     "timestamp": "2026-07-01T11:22:32.005Z",
     "read": false
+  },
+  {
+    "id": "1782988687504-c97f",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "chaos-reglementaire-opportunites-super-ia-pme-francaises"
+    },
+    "timestamp": "2026-07-02T10:38:07.504Z",
+    "read": false
   }
 ]
