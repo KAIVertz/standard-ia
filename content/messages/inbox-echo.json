@@ -1038,5 +1038,18 @@
     },
     "timestamp": "2026-07-01T09:26:46.474Z",
     "read": true
+  },
+  {
+    "id": "1782981571887-2v3j",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-03",
+      "slug": "ia-challengers-geants-tech-opportunites-pme",
+      "title": "L'IA Bouleverse les Géants : De Nouvelles Opportunités pour les PME Françaises ?"
+    },
+    "timestamp": "2026-07-02T08:39:31.887Z",
+    "read": false
   }
 ]

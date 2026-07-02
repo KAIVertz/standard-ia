@@ -2547,5 +2547,17 @@
     },
     "timestamp": "2026-07-01T11:22:32.005Z",
     "read": false
+  },
+  {
+    "id": "1782981571888-asfy",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-07-03"
+    },
+    "timestamp": "2026-07-02T08:39:31.888Z",
+    "read": false
   }
 ]
