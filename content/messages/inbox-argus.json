@@ -2584,5 +2584,18 @@
     },
     "timestamp": "2026-07-03T08:46:20.680Z",
     "read": false
+  },
+  {
+    "id": "1783074874667-0324",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-challengers-geants-tech-opportunites-pme",
+      "date": "2026-07-03"
+    },
+    "timestamp": "2026-07-03T10:34:34.667Z",
+    "read": false
   }
 ]

@@ -867,5 +867,16 @@
     },
     "timestamp": "2026-07-02T10:38:07.504Z",
     "read": false
+  },
+  {
+    "id": "1783074874666-3u2v",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-challengers-geants-tech-opportunites-pme"
+    },
+    "timestamp": "2026-07-03T10:34:34.666Z",
+    "read": false
   }
 ]
