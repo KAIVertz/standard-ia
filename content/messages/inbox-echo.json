@@ -1051,5 +1051,18 @@
     },
     "timestamp": "2026-07-02T08:39:31.887Z",
     "read": true
+  },
+  {
+    "id": "1783068380679-hche",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-04",
+      "slug": "l-ia-entre-le-fantasme-et-la-facture-salee",
+      "title": "L'IA : Entre le fantasme marketing et la facture salée – Ce que les PME doivent absolument savoir"
+    },
+    "timestamp": "2026-07-03T08:46:20.679Z",
+    "read": false
   }
 ]
