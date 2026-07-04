@@ -2609,5 +2609,18 @@
     },
     "timestamp": "2026-07-04T08:21:02.976Z",
     "read": false
+  },
+  {
+    "id": "1783159732931-fj9g",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-le-fantasme-et-la-facture-salee",
+      "date": "2026-07-04"
+    },
+    "timestamp": "2026-07-04T10:08:52.931Z",
+    "read": false
   }
 ]

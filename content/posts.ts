@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-entre-le-fantasme-et-la-facture-salee',
+    title: 'L\'IA : Entre le fantasme marketing et la facture salée – Ce que les PME doivent absolument savoir',
+    excerpt: 'L\'IA est partout, des bilans financiers aux menus des fast-foods. Mais derrière le buzz, une réalité plus complexe et coûteuse se dessine. Décryptons ensemble les dernières actualités pour aider les entrepreneurs français à naviguer entre promesses grandioses et pragmatisme nécessaire.',
+    type: 'article',
+    date: '2026-07-04',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-challengers-geants-tech-opportunites-pme',
     title: 'L\'IA Bouleverse les Géants : De Nouvelles Opportunités pour les PME Françaises ?',
     excerpt: 'L\'intelligence artificielle ne se contente pas d\'améliorer l\'existant, elle permet à de nouveaux acteurs de défier les géants de la tech sur leur propre terrain. Cette vague de disruption crée un océan d\'opportunités pour les entrepreneurs et les PME françaises.',

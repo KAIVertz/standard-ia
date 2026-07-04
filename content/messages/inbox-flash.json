@@ -1025,5 +1025,18 @@
     },
     "timestamp": "2026-07-03T10:34:34.666Z",
     "read": false
+  },
+  {
+    "id": "1783159732929-yn4t",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-le-fantasme-et-la-facture-salee",
+      "title": "L'IA : Entre le fantasme marketing et la facture salée – Ce que les PME doivent absolument savoir",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-04T10:08:52.929Z",
+    "read": false
   }
 ]
