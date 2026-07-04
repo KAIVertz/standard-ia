@@ -1064,5 +1064,18 @@
     },
     "timestamp": "2026-07-03T08:46:20.679Z",
     "read": true
+  },
+  {
+    "id": "1783153262975-tcjo",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-05",
+      "slug": "l-essor-du-cloud-ia-natif-une-nouvelle-donne-pour-les-pme-francaises",
+      "title": "L'essor du Cloud IA-Natifs : La nouvelle ère de l'infrastructure qui redéfinit l'équation pour les PME françaises"
+    },
+    "timestamp": "2026-07-04T08:21:02.975Z",
+    "read": false
   }
 ]
