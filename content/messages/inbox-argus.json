@@ -2646,5 +2646,18 @@
     },
     "timestamp": "2026-07-05T08:39:00.849Z",
     "read": false
+  },
+  {
+    "id": "1783246285983-uk9r",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-essor-du-cloud-ia-natif-une-nouvelle-donne-pour-les-pme-francaises",
+      "date": "2026-07-05"
+    },
+    "timestamp": "2026-07-05T10:11:25.983Z",
+    "read": false
   }
 ]

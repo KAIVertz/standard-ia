@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-essor-du-cloud-ia-natif-une-nouvelle-donne-pour-les-pme-francaises',
+    title: 'L\'essor du Cloud IA-Natifs : La nouvelle ère de l\'infrastructure qui redéfinit l\'équation pour les PME françaises',
+    excerpt: 'Le financement massif de Railway pour son infrastructure cloud optimisée pour l\'IA marque un tournant. Est-ce la clé pour démocratiser l\'accès à l\'intelligence artificielle et offrir un avantage compétitif aux entrepreneurs français ?',
+    type: 'article',
+    date: '2026-07-05',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-entre-le-fantasme-et-la-facture-salee',
     title: 'L\'IA : Entre le fantasme marketing et la facture salée – Ce que les PME doivent absolument savoir',
     excerpt: 'L\'IA est partout, des bilans financiers aux menus des fast-foods. Mais derrière le buzz, une réalité plus complexe et coûteuse se dessine. Décryptons ensemble les dernières actualités pour aider les entrepreneurs français à naviguer entre promesses grandioses et pragmatisme nécessaire.',

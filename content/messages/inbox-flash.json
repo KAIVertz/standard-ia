@@ -1038,5 +1038,18 @@
     },
     "timestamp": "2026-07-04T10:08:52.929Z",
     "read": false
+  },
+  {
+    "id": "1783246285981-gmoa",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-essor-du-cloud-ia-natif-une-nouvelle-donne-pour-les-pme-francaises",
+      "title": "L'essor du Cloud IA-Natifs : La nouvelle ère de l'infrastructure qui redéfinit l'équation pour les PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-05T10:11:25.981Z",
+    "read": false
   }
 ]

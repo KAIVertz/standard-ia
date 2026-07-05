@@ -889,5 +889,16 @@
     },
     "timestamp": "2026-07-04T10:08:52.930Z",
     "read": false
+  },
+  {
+    "id": "1783246285982-d9f2",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-essor-du-cloud-ia-natif-une-nouvelle-donne-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-07-05T10:11:25.982Z",
+    "read": false
   }
 ]
