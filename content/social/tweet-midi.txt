@@ -1,3 +1,3 @@
-💡 PME, pour défier les géants, utilisez l'IA pour analyser les micro-niches. Un prompt simple : "Analyse les besoins non satisfaits de [votre secteur] pour une clientèle de [votre cible] et propose 3 solution...
+💡 Pour éviter la facture salée de l'IA, soyez précis ! Un bon prompt n'est pas juste une question, c'est une intention. Définissez persona, ton, format ET objectif clair. Moins d'itérations = plus de gains.
 
-👉 standard-ia.pro/posts/ia-challengers-geants-tech-opportunites-pme
+👉 standard-ia.pro/posts/l-ia-entre-le-fantasme-et-la-facture-salee
