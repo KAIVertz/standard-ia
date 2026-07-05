@@ -1077,5 +1077,18 @@
     },
     "timestamp": "2026-07-04T08:21:02.975Z",
     "read": true
+  },
+  {
+    "id": "1783240740848-u9ex",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-06",
+      "slug": "l-ia-pour-les-pme-entre-cout-securite-et-nouvelles-infrastructures",
+      "title": "L'IA pour les PME : Naviguer entre Coût, Sécurité et Nouvelles Infrastructures Cloud"
+    },
+    "timestamp": "2026-07-05T08:39:00.848Z",
+    "read": false
   }
 ]
