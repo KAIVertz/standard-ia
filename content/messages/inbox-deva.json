@@ -900,5 +900,16 @@
     },
     "timestamp": "2026-07-05T10:11:25.982Z",
     "read": false
+  },
+  {
+    "id": "1783339438481-b7xm",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-pour-les-pme-entre-cout-securite-et-nouvelles-infrastructures"
+    },
+    "timestamp": "2026-07-06T12:03:58.481Z",
+    "read": false
   }
 ]

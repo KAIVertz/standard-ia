@@ -2683,5 +2683,18 @@
     },
     "timestamp": "2026-07-06T09:52:53.339Z",
     "read": false
+  },
+  {
+    "id": "1783339438482-b2km",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-pour-les-pme-entre-cout-securite-et-nouvelles-infrastructures",
+      "date": "2026-07-06"
+    },
+    "timestamp": "2026-07-06T12:03:58.482Z",
+    "read": false
   }
 ]

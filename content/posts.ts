@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-pour-les-pme-entre-cout-securite-et-nouvelles-infrastructures',
+    title: 'L\'IA pour les PME : Naviguer entre Coût, Sécurité et Nouvelles Infrastructures Cloud',
+    excerpt: 'L\'adoption de l\'IA par les petites et moyennes entreprises est un impératif, mais aussi un parcours semé d\'embûches. Entre le prix des outils, les questions de sécurité et l\'évolution des infrastructures cloud, comment les PME françaises peuvent-elles tirer leur épingle du jeu ?',
+    type: 'article',
+    date: '2026-07-06',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-essor-du-cloud-ia-natif-une-nouvelle-donne-pour-les-pme-francaises',
     title: 'L\'essor du Cloud IA-Natifs : La nouvelle ère de l\'infrastructure qui redéfinit l\'équation pour les PME françaises',
     excerpt: 'Le financement massif de Railway pour son infrastructure cloud optimisée pour l\'IA marque un tournant. Est-ce la clé pour démocratiser l\'accès à l\'intelligence artificielle et offrir un avantage compétitif aux entrepreneurs français ?',
