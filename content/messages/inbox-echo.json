@@ -1090,5 +1090,18 @@
     },
     "timestamp": "2026-07-05T08:39:00.848Z",
     "read": true
+  },
+  {
+    "id": "1783331573338-apcj",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-07",
+      "slug": "lia-se-democratise-enjeux-pme-francaises",
+      "title": "L'IA à portée de toutes les bourses ? Comment la nouvelle vague d'outils et d'infrastructures redéfinit le jeu pour les PME françaises"
+    },
+    "timestamp": "2026-07-06T09:52:53.338Z",
+    "read": false
   }
 ]
