@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'lia-se-democratise-enjeux-pme-francaises',
+    title: 'L\'IA à portée de toutes les bourses ? Comment la nouvelle vague d\'outils et d\'infrastructures redéfinit le jeu pour les PME françaises',
+    excerpt: 'Entre l\'émergence d\'infrastructures cloud dédiées à l\'IA comme Railway et la montée en puissance d\'alternatives gratuites aux agents de code coûteux, l\'écosystème de l\'intelligence artificielle est en pleine mutation. Quelles opportunités et défis ces changements représentent-ils pour les entrepreneurs et PME de l\'Hexagone ?',
+    type: 'article',
+    date: '2026-07-07',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ia-pour-les-pme-entre-cout-securite-et-nouvelles-infrastructures',
     title: 'L\'IA pour les PME : Naviguer entre Coût, Sécurité et Nouvelles Infrastructures Cloud',
     excerpt: 'L\'adoption de l\'IA par les petites et moyennes entreprises est un impératif, mais aussi un parcours semé d\'embûches. Entre le prix des outils, les questions de sécurité et l\'évolution des infrastructures cloud, comment les PME françaises peuvent-elles tirer leur épingle du jeu ?',

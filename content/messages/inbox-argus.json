@@ -2708,5 +2708,18 @@
     },
     "timestamp": "2026-07-07T09:21:16.767Z",
     "read": false
+  },
+  {
+    "id": "1783421665793-v98u",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "lia-se-democratise-enjeux-pme-francaises",
+      "date": "2026-07-07"
+    },
+    "timestamp": "2026-07-07T10:54:25.793Z",
+    "read": false
   }
 ]

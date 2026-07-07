@@ -1064,5 +1064,18 @@
     },
     "timestamp": "2026-07-06T12:03:58.481Z",
     "read": false
+  },
+  {
+    "id": "1783421665791-v4wa",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "lia-se-democratise-enjeux-pme-francaises",
+      "title": "L'IA à portée de toutes les bourses ? Comment la nouvelle vague d'outils et d'infrastructures redéfinit le jeu pour les PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-07T10:54:25.791Z",
+    "read": false
   }
 ]
