@@ -922,5 +922,16 @@
     },
     "timestamp": "2026-07-07T10:54:25.792Z",
     "read": false
+  },
+  {
+    "id": "1783505767782-qbdd",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-defi-opportunites-pme-francaises-2026"
+    },
+    "timestamp": "2026-07-08T10:16:07.782Z",
+    "read": false
   }
 ]

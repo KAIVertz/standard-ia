@@ -1077,5 +1077,18 @@
     },
     "timestamp": "2026-07-07T10:54:25.791Z",
     "read": false
+  },
+  {
+    "id": "1783505767782-uk4y",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-defi-opportunites-pme-francaises-2026",
+      "title": "IA : Entre Cybermenaces et Outils Accessibles, Comment les PME Françaises Naviguent-elles en 2026 ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-08T10:16:07.782Z",
+    "read": false
   }
 ]
