@@ -1116,5 +1116,18 @@
     },
     "timestamp": "2026-07-07T09:21:16.766Z",
     "read": true
+  },
+  {
+    "id": "1783497968566-eu05",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-09",
+      "slug": "gpt5-6-democratisation-ia-une-revolution-pour-les-pme-francaises",
+      "title": "GPT-5.6 : L'IA de pointe à la portée de tous, une aubaine pour les PME françaises ?"
+    },
+    "timestamp": "2026-07-08T08:06:08.566Z",
+    "read": false
   }
 ]
