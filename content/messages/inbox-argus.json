@@ -2758,5 +2758,18 @@
     },
     "timestamp": "2026-07-09T09:18:23.643Z",
     "read": false
+  },
+  {
+    "id": "1783594711594-aymf",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "gpt5-6-democratisation-ia-une-revolution-pour-les-pme-francaises",
+      "date": "2026-07-09"
+    },
+    "timestamp": "2026-07-09T10:58:31.594Z",
+    "read": false
   }
 ]

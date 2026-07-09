@@ -933,5 +933,16 @@
     },
     "timestamp": "2026-07-08T10:16:07.782Z",
     "read": false
+  },
+  {
+    "id": "1783594711593-8cw0",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "gpt5-6-democratisation-ia-une-revolution-pour-les-pme-francaises"
+    },
+    "timestamp": "2026-07-09T10:58:31.593Z",
+    "read": false
   }
 ]
