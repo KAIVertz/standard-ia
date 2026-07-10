@@ -2783,5 +2783,18 @@
     },
     "timestamp": "2026-07-10T08:58:21.946Z",
     "read": false
+  },
+  {
+    "id": "1783680725977-h2q1",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-opus-class-a-la-portee-des-pme-francaises",
+      "date": "2026-07-10"
+    },
+    "timestamp": "2026-07-10T10:52:05.977Z",
+    "read": false
   }
 ]

@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-opus-class-a-la-portee-des-pme-francaises',
+    title: 'L\'IA \'Opus-class\' débarque : comment les PME françaises peuvent-elles s\'emparer de cette révolution ?',
+    excerpt: 'Avec le lancement public de GPT-5.6 et Grok 4.5, et l\'émergence d\'alternatives économiques, l\'IA de pointe n\'est plus l\'apanage des géants. Une aubaine pour les entrepreneurs français, à condition de savoir naviguer dans ce nouveau paysage.',
+    type: 'article',
+    date: '2026-07-10',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'gpt5-6-democratisation-ia-une-revolution-pour-les-pme-francaises',
     title: 'GPT-5.6 : L\'IA de pointe à la portée de tous, une aubaine pour les PME françaises ?',
     excerpt: 'Le lancement public de GPT-5.6 par OpenAI marque une étape décisive dans l\'accessibilité de l\'IA. Cette démocratisation, couplée à l\'émergence d\'outils français innovants et économiques, ouvre des perspectives inédites pour les entrepreneurs et les PME de l\'Hexagone.',

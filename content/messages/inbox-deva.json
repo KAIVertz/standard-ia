@@ -944,5 +944,16 @@
     },
     "timestamp": "2026-07-09T10:58:31.593Z",
     "read": false
+  },
+  {
+    "id": "1783680725976-9bar",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-opus-class-a-la-portee-des-pme-francaises"
+    },
+    "timestamp": "2026-07-10T10:52:05.976Z",
+    "read": false
   }
 ]
