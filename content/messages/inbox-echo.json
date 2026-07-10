@@ -1142,5 +1142,18 @@
     },
     "timestamp": "2026-07-09T09:18:23.642Z",
     "read": true
+  },
+  {
+    "id": "1783673901945-tknh",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-11",
+      "slug": "gpt5-6-democratisation-ia-defis-pme-francaises",
+      "title": "GPT-5.6 et la Gratuité de l'IA Spécialisée : Le Double Défi des PME Françaises"
+    },
+    "timestamp": "2026-07-10T08:58:21.945Z",
+    "read": false
   }
 ]

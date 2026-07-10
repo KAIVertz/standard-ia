@@ -2771,5 +2771,17 @@
     },
     "timestamp": "2026-07-09T10:58:31.594Z",
     "read": false
+  },
+  {
+    "id": "1783673901946-1pp1",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-07-11"
+    },
+    "timestamp": "2026-07-10T08:58:21.946Z",
+    "read": false
   }
 ]
