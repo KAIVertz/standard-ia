@@ -955,5 +955,16 @@
     },
     "timestamp": "2026-07-10T10:52:05.976Z",
     "read": false
+  },
+  {
+    "id": "1783762089884-g2xi",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "gpt5-6-democratisation-ia-defis-pme-francaises"
+    },
+    "timestamp": "2026-07-11T09:28:09.884Z",
+    "read": false
   }
 ]
