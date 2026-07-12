@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-pme-entre-couts-ip-et-opportunites-open-source',
+    title: 'IA : Les PME Françaises face au dilemme du coût, de la propriété intellectuelle et de l\'open source',
+    excerpt: 'L\'intelligence artificielle est une promesse de productivité, mais pour les entrepreneurs français, elle rime aussi avec des défis majeurs : des outils parfois hors de prix, des batailles juridiques féroces et l\'impératif de maîtriser l\'open source. Comment s\'y retrouver ?',
+    type: 'article',
+    date: '2026-07-12',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'gpt5-6-democratisation-ia-defis-pme-francaises',
     title: 'GPT-5.6 et la Gratuité de l\'IA Spécialisée : Le Double Défi des PME Françaises',
     excerpt: 'Entre la puissance accrue de GPT-5.6 intégrée à Copilot et l\'émergence d\'alternatives IA gratuites face aux outils onéreux, les PME françaises naviguent un paysage en pleine mutation. Comment tirer parti de ces avancées sans alourdir les budgets ?',

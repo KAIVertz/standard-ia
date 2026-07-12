@@ -2845,5 +2845,18 @@
     },
     "timestamp": "2026-07-12T07:56:46.464Z",
     "read": false
+  },
+  {
+    "id": "1783849798538-pdwm",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pme-entre-couts-ip-et-opportunites-open-source",
+      "date": "2026-07-12"
+    },
+    "timestamp": "2026-07-12T09:49:58.538Z",
+    "read": false
   }
 ]

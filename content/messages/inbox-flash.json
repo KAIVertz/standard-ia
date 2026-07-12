@@ -1129,5 +1129,18 @@
     },
     "timestamp": "2026-07-11T09:28:09.884Z",
     "read": false
+  },
+  {
+    "id": "1783849798537-jilv",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pme-entre-couts-ip-et-opportunites-open-source",
+      "title": "IA : Les PME Françaises face au dilemme du coût, de la propriété intellectuelle et de l'open source",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-12T09:49:58.537Z",
+    "read": false
   }
 ]
