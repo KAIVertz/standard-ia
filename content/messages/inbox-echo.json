@@ -1181,5 +1181,18 @@
     },
     "timestamp": "2026-07-12T07:56:46.463Z",
     "read": true
+  },
+  {
+    "id": "1783932261209-1oky",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-14",
+      "slug": "l-ere-du-cao-comment-les-pme-doivent-re-inventer-leur-visibilite-ia",
+      "title": "L'Ère de l'Optimisation pour Chatbots : Comment les PME Doivent Réinventer Leur Visibilité dans un Monde IA"
+    },
+    "timestamp": "2026-07-13T08:44:21.209Z",
+    "read": false
   }
 ]
