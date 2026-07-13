@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-redessine-le-terrain-de-jeu-numerique-visibilite-ethique-et-guerre-des-talents',
+    title: 'L\'IA Redéfinit le Terrain de Jeu Numérique : Visibilité, Éthique et Guerre des Talents pour les PME Françaises',
+    excerpt: 'Entre nouveaux fronts marketing, batailles juridiques sur la propriété intellectuelle et exigences croissantes de transparence, l\'IA force les entreprises à repenser leur stratégie digitale et leur gestion des risques. L\'heure est à l\'action éclairée pour les PME françaises.',
+    type: 'article',
+    date: '2026-07-13',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-pme-entre-couts-ip-et-opportunites-open-source',
     title: 'IA : Les PME Françaises face au dilemme du coût, de la propriété intellectuelle et de l\'open source',
     excerpt: 'L\'intelligence artificielle est une promesse de productivité, mais pour les entrepreneurs français, elle rime aussi avec des défis majeurs : des outils parfois hors de prix, des batailles juridiques féroces et l\'impératif de maîtriser l\'open source. Comment s\'y retrouver ?',

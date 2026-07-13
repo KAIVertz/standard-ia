@@ -977,5 +977,16 @@
     },
     "timestamp": "2026-07-12T09:49:58.537Z",
     "read": false
+  },
+  {
+    "id": "1783940963508-k309",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-redessine-le-terrain-de-jeu-numerique-visibilite-ethique-et-guerre-des-talents"
+    },
+    "timestamp": "2026-07-13T11:09:23.508Z",
+    "read": false
   }
 ]

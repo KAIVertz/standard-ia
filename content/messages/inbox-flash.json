@@ -1142,5 +1142,18 @@
     },
     "timestamp": "2026-07-12T09:49:58.537Z",
     "read": false
+  },
+  {
+    "id": "1783940963507-thia",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-redessine-le-terrain-de-jeu-numerique-visibilite-ethique-et-guerre-des-talents",
+      "title": "L'IA Redéfinit le Terrain de Jeu Numérique : Visibilité, Éthique et Guerre des Talents pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-13T11:09:23.507Z",
+    "read": false
   }
 ]
