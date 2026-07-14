@@ -2907,5 +2907,18 @@
     },
     "timestamp": "2026-07-14T07:45:23.038Z",
     "read": false
+  },
+  {
+    "id": "1784023036977-kxqs",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ere-du-cao-comment-les-pme-doivent-re-inventer-leur-visibilite-ia",
+      "date": "2026-07-14"
+    },
+    "timestamp": "2026-07-14T09:57:16.977Z",
+    "read": false
   }
 ]
