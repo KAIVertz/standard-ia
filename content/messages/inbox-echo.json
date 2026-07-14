@@ -1194,5 +1194,18 @@
     },
     "timestamp": "2026-07-13T08:44:21.209Z",
     "read": true
+  },
+  {
+    "id": "1784015123037-z2bv",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-15",
+      "slug": "article-2026-07-15",
+      "title": "Article du jour"
+    },
+    "timestamp": "2026-07-14T07:45:23.037Z",
+    "read": false
   }
 ]
