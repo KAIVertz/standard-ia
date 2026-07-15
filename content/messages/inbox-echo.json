@@ -1207,5 +1207,18 @@
     },
     "timestamp": "2026-07-14T07:45:23.037Z",
     "read": true
+  },
+  {
+    "id": "1784101707518-hmgs",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-16",
+      "slug": "google-search-redesign-ia-pme-impact",
+      "title": "Le Nouveau Google Search : Comment l'IA Redessine le Web et l'Avenir des PME Françaises"
+    },
+    "timestamp": "2026-07-15T07:48:27.518Z",
+    "read": false
   }
 ]
