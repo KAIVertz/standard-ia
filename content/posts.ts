@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'article-2026-07-15',
+    title: 'Article du jour',
+    excerpt: '',
+    type: 'article',
+    date: '2026-07-15',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'l-ere-du-cao-comment-les-pme-doivent-re-inventer-leur-visibilite-ia',
     title: 'L\'Ère de l\'Optimisation pour Chatbots : Comment les PME Doivent Réinventer Leur Visibilité dans un Monde IA',
     excerpt: 'Le paysage numérique est en pleine mutation. Avec Google qui redessine sa recherche et Reddit devenu un champ de bataille pour l\'IA, les entreprises doivent urgemment adapter leur stratégie pour être citées par les chatbots, pas seulement rankées.',

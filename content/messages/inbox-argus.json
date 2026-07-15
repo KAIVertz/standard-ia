@@ -2932,5 +2932,18 @@
     },
     "timestamp": "2026-07-15T07:48:27.519Z",
     "read": false
+  },
+  {
+    "id": "1784109683246-0rio",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "article-2026-07-15",
+      "date": "2026-07-15"
+    },
+    "timestamp": "2026-07-15T10:01:23.246Z",
+    "read": false
   }
 ]

@@ -999,5 +999,16 @@
     },
     "timestamp": "2026-07-14T09:57:16.976Z",
     "read": false
+  },
+  {
+    "id": "1784109683245-mn4o",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "article-2026-07-15"
+    },
+    "timestamp": "2026-07-15T10:01:23.245Z",
+    "read": false
   }
 ]

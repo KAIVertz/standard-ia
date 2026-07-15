@@ -1168,5 +1168,18 @@
     },
     "timestamp": "2026-07-14T09:57:16.975Z",
     "read": false
+  },
+  {
+    "id": "1784109683244-mf1z",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "article-2026-07-15",
+      "title": "Article du jour",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-15T10:01:23.244Z",
+    "read": false
   }
 ]
