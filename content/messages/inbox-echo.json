@@ -1220,5 +1220,18 @@
     },
     "timestamp": "2026-07-15T07:48:27.518Z",
     "read": true
+  },
+  {
+    "id": "1784188391498-go1j",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-17",
+      "slug": "souverainete-ia-pme-francaises-entre-protection-et-innovation",
+      "title": "Souveraineté IA : Les PME Françaises à la Croisée des Chemins entre Protectionnisme et Innovation Mondiale"
+    },
+    "timestamp": "2026-07-16T07:53:11.498Z",
+    "read": false
   }
 ]
