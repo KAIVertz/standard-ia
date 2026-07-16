@@ -2957,5 +2957,18 @@
     },
     "timestamp": "2026-07-16T07:53:11.499Z",
     "read": false
+  },
+  {
+    "id": "1784196465360-tc8l",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-search-redesign-ia-pme-impact",
+      "date": "2026-07-16"
+    },
+    "timestamp": "2026-07-16T10:07:45.360Z",
+    "read": false
   }
 ]

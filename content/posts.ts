@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'google-search-redesign-ia-pme-impact',
+    title: 'Le Nouveau Google Search : Comment l\'IA Redessine le Web et l\'Avenir des PME Françaises',
+    excerpt: 'Le redesign historique de la barre de recherche Google, porté par l\'IA, marque un tournant pour la visibilité des entreprises. Découvrez comment les PME françaises peuvent transformer ce défi en opportunité grâce à des outils IA accessibles.',
+    type: 'article',
+    date: '2026-07-16',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'article-2026-07-15',
     title: 'Article du jour',
     excerpt: '',

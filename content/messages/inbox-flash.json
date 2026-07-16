@@ -1181,5 +1181,18 @@
     },
     "timestamp": "2026-07-15T10:01:23.244Z",
     "read": false
+  },
+  {
+    "id": "1784196465358-8gi8",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-search-redesign-ia-pme-impact",
+      "title": "Le Nouveau Google Search : Comment l'IA Redessine le Web et l'Avenir des PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-16T10:07:45.358Z",
+    "read": false
   }
 ]
