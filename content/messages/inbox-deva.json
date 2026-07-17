@@ -1021,5 +1021,16 @@
     },
     "timestamp": "2026-07-16T10:07:45.358Z",
     "read": false
+  },
+  {
+    "id": "1784282148179-t1m9",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "souverainete-ia-pme-francaises-entre-protection-et-innovation"
+    },
+    "timestamp": "2026-07-17T09:55:48.179Z",
+    "read": false
   }
 ]

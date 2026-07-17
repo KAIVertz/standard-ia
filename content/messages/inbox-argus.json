@@ -2982,5 +2982,18 @@
     },
     "timestamp": "2026-07-17T07:50:27.830Z",
     "read": false
+  },
+  {
+    "id": "1784282148179-2v9l",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "souverainete-ia-pme-francaises-entre-protection-et-innovation",
+      "date": "2026-07-17"
+    },
+    "timestamp": "2026-07-17T09:55:48.179Z",
+    "read": false
   }
 ]

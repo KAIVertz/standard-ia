@@ -1194,5 +1194,18 @@
     },
     "timestamp": "2026-07-16T10:07:45.358Z",
     "read": false
+  },
+  {
+    "id": "1784282148178-eot1",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "souverainete-ia-pme-francaises-entre-protection-et-innovation",
+      "title": "Souveraineté IA : Les PME Françaises à la Croisée des Chemins entre Protectionnisme et Innovation Mondiale",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-17T09:55:48.178Z",
+    "read": false
   }
 ]
