@@ -1233,5 +1233,18 @@
     },
     "timestamp": "2026-07-16T07:53:11.498Z",
     "read": true
+  },
+  {
+    "id": "1784274627829-l1x9",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-18",
+      "slug": "ia-pour-pme-opportunites-risques-regulations-europeennes",
+      "title": "L'IA pour les PME : Entre promesses d'accessibilité et pièges cachés des infrastructures"
+    },
+    "timestamp": "2026-07-17T07:50:27.829Z",
+    "read": false
   }
 ]
