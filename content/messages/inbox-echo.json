@@ -1246,5 +1246,18 @@
     },
     "timestamp": "2026-07-17T07:50:27.829Z",
     "read": true
+  },
+  {
+    "id": "1784359519921-zhkj",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-19",
+      "slug": "ia-entreprise-defis-cout-securite-confiance-pme",
+      "title": "IA en entreprise : Au-delà du buzz, les vrais défis de coût, sécurité et confiance que les PME ne peuvent ignorer"
+    },
+    "timestamp": "2026-07-18T07:25:19.921Z",
+    "read": false
   }
 ]
