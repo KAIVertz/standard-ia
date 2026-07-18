@@ -1032,5 +1032,16 @@
     },
     "timestamp": "2026-07-17T09:55:48.179Z",
     "read": false
+  },
+  {
+    "id": "1784366638712-rmf6",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-pour-pme-opportunites-risques-regulations-europeennes"
+    },
+    "timestamp": "2026-07-18T09:23:58.712Z",
+    "read": false
   }
 ]

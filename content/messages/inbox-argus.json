@@ -3007,5 +3007,18 @@
     },
     "timestamp": "2026-07-18T07:25:19.922Z",
     "read": false
+  },
+  {
+    "id": "1784366638713-r20n",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-pour-pme-opportunites-risques-regulations-europeennes",
+      "date": "2026-07-18"
+    },
+    "timestamp": "2026-07-18T09:23:58.713Z",
+    "read": false
   }
 ]
