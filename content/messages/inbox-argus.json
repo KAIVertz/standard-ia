@@ -3044,5 +3044,18 @@
     },
     "timestamp": "2026-07-19T07:56:33.219Z",
     "read": false
+  },
+  {
+    "id": "1784454656065-okmt",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-entreprise-defis-cout-securite-confiance-pme",
+      "date": "2026-07-19"
+    },
+    "timestamp": "2026-07-19T09:50:56.065Z",
+    "read": false
   }
 ]

@@ -1043,5 +1043,16 @@
     },
     "timestamp": "2026-07-18T09:23:58.712Z",
     "read": false
+  },
+  {
+    "id": "1784454656064-z8b7",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-entreprise-defis-cout-securite-confiance-pme"
+    },
+    "timestamp": "2026-07-19T09:50:56.064Z",
+    "read": false
   }
 ]
