@@ -3081,5 +3081,18 @@
     },
     "timestamp": "2026-07-20T08:36:16.231Z",
     "read": false
+  },
+  {
+    "id": "1784544639928-hqky",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-les-pieges-caches-de-l-adoption-couts-securite-confiance",
+      "date": "2026-07-20"
+    },
+    "timestamp": "2026-07-20T10:50:39.928Z",
+    "read": false
   }
 ]

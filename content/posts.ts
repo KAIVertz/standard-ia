@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-les-pieges-caches-de-l-adoption-couts-securite-confiance',
+    title: 'IA : Le Triptyque des Dangers pour les PME – Coûts, Sécurité, Confiance, ce que les entrepreneurs français doivent retenir',
+    excerpt: 'Les dernières études auprès des géants de la tech sonnent l\'alarme : dépenses incontrôlées, failles de sécurité des agents et problèmes de confiance minent l\'adoption de l\'IA. Des leçons cruciales pour les entrepreneurs et PME français qui veulent éviter les pièges.',
+    type: 'article',
+    date: '2026-07-20',
+    readTime: 5,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-entreprise-defis-cout-securite-confiance-pme',
     title: 'IA en entreprise : Au-delà du buzz, les vrais défis de coût, sécurité et confiance que les PME ne peuvent ignorer',
     excerpt: 'Alors que l\'IA continue de transformer le paysage économique, de nouvelles études révèlent des gouffres cachés en matière de coûts, de sécurité et de confiance. Pour les PME françaises, anticiper ces pièges est crucial pour une adoption réussie et durable de l\'intelligence artificielle.',

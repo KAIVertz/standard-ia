@@ -1054,5 +1054,16 @@
     },
     "timestamp": "2026-07-19T09:50:56.064Z",
     "read": false
+  },
+  {
+    "id": "1784544639927-cqiz",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-les-pieges-caches-de-l-adoption-couts-securite-confiance"
+    },
+    "timestamp": "2026-07-20T10:50:39.928Z",
+    "read": false
   }
 ]

@@ -1233,5 +1233,18 @@
     },
     "timestamp": "2026-07-19T09:50:56.063Z",
     "read": false
+  },
+  {
+    "id": "1784544639927-ppwg",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-les-pieges-caches-de-l-adoption-couts-securite-confiance",
+      "title": "IA : Le Triptyque des Dangers pour les PME – Coûts, Sécurité, Confiance, ce que les entrepreneurs français doivent retenir",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-20T10:50:39.927Z",
+    "read": false
   }
 ]
