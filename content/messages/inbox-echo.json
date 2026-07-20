@@ -1272,5 +1272,18 @@
     },
     "timestamp": "2026-07-19T07:56:33.218Z",
     "read": true
+  },
+  {
+    "id": "1784536576230-j2pt",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-21",
+      "slug": "ia-trois-gouffres-menacent-pme-francaises",
+      "title": "IA : Les trois gouffres qui menacent les PME françaises face à la guerre des géants"
+    },
+    "timestamp": "2026-07-20T08:36:16.230Z",
+    "read": false
   }
 ]
