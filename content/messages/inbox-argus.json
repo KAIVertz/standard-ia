@@ -3094,5 +3094,17 @@
     },
     "timestamp": "2026-07-20T10:50:39.928Z",
     "read": false
+  },
+  {
+    "id": "1784621131653-dvix",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-07-22"
+    },
+    "timestamp": "2026-07-21T08:05:31.653Z",
+    "read": false
   }
 ]
