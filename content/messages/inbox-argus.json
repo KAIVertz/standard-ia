@@ -3106,5 +3106,18 @@
     },
     "timestamp": "2026-07-21T08:05:31.653Z",
     "read": false
+  },
+  {
+    "id": "1784629486619-0nvc",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-trois-gouffres-menacent-pme-francaises",
+      "date": "2026-07-21"
+    },
+    "timestamp": "2026-07-21T10:24:46.619Z",
+    "read": false
   }
 ]

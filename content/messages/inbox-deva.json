@@ -1065,5 +1065,16 @@
     },
     "timestamp": "2026-07-20T10:50:39.928Z",
     "read": false
+  },
+  {
+    "id": "1784629486618-f08e",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-trois-gouffres-menacent-pme-francaises"
+    },
+    "timestamp": "2026-07-21T10:24:46.618Z",
+    "read": false
   }
 ]

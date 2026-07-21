@@ -1246,5 +1246,18 @@
     },
     "timestamp": "2026-07-20T10:50:39.927Z",
     "read": false
+  },
+  {
+    "id": "1784629486617-lda6",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-trois-gouffres-menacent-pme-francaises",
+      "title": "IA : Les trois gouffres qui menacent les PME françaises face à la guerre des géants",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-21T10:24:46.617Z",
+    "read": false
   }
 ]
