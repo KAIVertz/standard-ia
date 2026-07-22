@@ -1259,5 +1259,18 @@
     },
     "timestamp": "2026-07-21T10:24:46.617Z",
     "read": false
+  },
+  {
+    "id": "1784715838626-9cw5",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-en-entreprise-les-pieges-caches-derriere-l-enthousiasme-des-pme-francaises",
+      "title": "IA en entreprise : les pièges cachés derrière l'enthousiasme des PME françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-22T10:23:58.626Z",
+    "read": false
   }
 ]

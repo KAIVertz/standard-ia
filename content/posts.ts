@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-en-entreprise-les-pieges-caches-derriere-l-enthousiasme-des-pme-francaises',
+    title: 'IA en entreprise : les pièges cachés derrière l\'enthousiasme des PME françaises',
+    excerpt: 'L\'adoption de l\'IA s\'accélère en entreprise, mais une nouvelle étude révèle des lacunes critiques en matière de coûts, de sécurité et de confiance. Une mise en garde essentielle pour les entrepreneurs français.',
+    type: 'article',
+    date: '2026-07-22',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-trois-gouffres-menacent-pme-francaises',
     title: 'IA : Les trois gouffres qui menacent les PME françaises face à la guerre des géants',
     excerpt: 'Alors que les géants de la tech s\'affrontent sans merci et que l\'IA inonde le marché, les PME françaises peinent à maîtriser les coûts, la sécurité et la fiabilité de leurs déploiements. Une course contre la montre pour éviter les pièges du cheval de Troie numérique.',

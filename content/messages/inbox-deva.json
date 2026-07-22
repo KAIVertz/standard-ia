@@ -1076,5 +1076,16 @@
     },
     "timestamp": "2026-07-21T10:24:46.618Z",
     "read": false
+  },
+  {
+    "id": "1784715838626-8ltc",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-en-entreprise-les-pieges-caches-derriere-l-enthousiasme-des-pme-francaises"
+    },
+    "timestamp": "2026-07-22T10:23:58.626Z",
+    "read": false
   }
 ]
