@@ -1272,5 +1272,18 @@
     },
     "timestamp": "2026-07-22T10:23:58.626Z",
     "read": false
+  },
+  {
+    "id": "1784802103236-etcx",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-entreprise-les-failles-cachees-derriere-l-acceleration-des-investissements",
+      "title": "IA en Entreprise : Les Failles Cachées Derrière l'Accélération des Investissements",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-23T10:21:43.236Z",
+    "read": false
   }
 ]

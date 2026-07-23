@@ -3156,5 +3156,18 @@
     },
     "timestamp": "2026-07-23T08:08:54.259Z",
     "read": false
+  },
+  {
+    "id": "1784802103237-801e",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-entreprise-les-failles-cachees-derriere-l-acceleration-des-investissements",
+      "date": "2026-07-23"
+    },
+    "timestamp": "2026-07-23T10:21:43.237Z",
+    "read": false
   }
 ]
