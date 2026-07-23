@@ -3144,5 +3144,17 @@
     },
     "timestamp": "2026-07-22T10:23:58.627Z",
     "read": false
+  },
+  {
+    "id": "1784794134259-mas4",
+    "from": "LÉON",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "daily_generation",
+      "date": "2026-07-24"
+    },
+    "timestamp": "2026-07-23T08:08:54.259Z",
+    "read": false
   }
 ]
