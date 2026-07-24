@@ -1324,5 +1324,18 @@
     },
     "timestamp": "2026-07-23T08:08:54.258Z",
     "read": true
+  },
+  {
+    "id": "1784880307968-m62f",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-25",
+      "slug": "la-recherche-ia-bouleverse-l-economie-du-web-preparez-vous",
+      "title": "La Recherche IA Bouleverse l'Économie du Web : Votre Entreprise Est-Elle Prête ?"
+    },
+    "timestamp": "2026-07-24T08:05:07.968Z",
+    "read": false
   }
 ]
