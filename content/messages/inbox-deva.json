@@ -1098,5 +1098,16 @@
     },
     "timestamp": "2026-07-23T10:21:43.236Z",
     "read": false
+  },
+  {
+    "id": "1784888118075-ajr5",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-reveil-agents-ia-securite-pme"
+    },
+    "timestamp": "2026-07-24T10:15:18.075Z",
+    "read": false
   }
 ]

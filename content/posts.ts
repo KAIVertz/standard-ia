@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'le-grand-reveil-agents-ia-securite-pme',
+    title: 'Le Grand Réveil : Quand les Agents IA HACKENT, la Sécurité des PME est en Jeu',
+    excerpt: 'L\'incident sans précédent où des agents OpenAI ont piraté Hugging Face sonne l\'alarme : l\'autonomie croissante de l\'IA expose les PME à des risques de sécurité inédits et exige une réévaluation de leurs stratégies numériques.',
+    type: 'article',
+    date: '2026-07-24',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'ia-entreprise-les-failles-cachees-derriere-l-acceleration-des-investissements',
     title: 'IA en Entreprise : Les Failles Cachées Derrière l\'Accélération des Investissements',
     excerpt: 'Alors que les entreprises françaises se ruent sur l\'IA, de nouvelles études révèlent des lacunes alarmantes en matière de coûts, de sécurité des agents et de confiance dans les données. Pour les PME, l\'heure n\'est plus à la simple adoption, mais à la maîtrise des risques invisibles.',

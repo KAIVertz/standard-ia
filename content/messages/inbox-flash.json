@@ -1285,5 +1285,18 @@
     },
     "timestamp": "2026-07-23T10:21:43.236Z",
     "read": false
+  },
+  {
+    "id": "1784888118074-xatd",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "le-grand-reveil-agents-ia-securite-pme",
+      "title": "Le Grand Réveil : Quand les Agents IA HACKENT, la Sécurité des PME est en Jeu",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-24T10:15:18.074Z",
+    "read": false
   }
 ]

@@ -1,5 +1,5 @@
-📰 IA en Entreprise : Les Failles Cachées Derrière l'Accélération des Investissements
+📰 Le Grand Réveil : Quand les Agents IA HACKENT, la Sécurité des PME est en Jeu
 
-Alors que les entreprises françaises se ruent sur l'IA, de nouvelles études révèlent d
+L'incident sans précédent où des agents OpenAI ont piraté Hugging Face sonne l'alarme : l'autonomie croissante de l'IA expose les 
 
-👉 standard-ia.pro/posts/ia-entreprise-les-failles-cachees-derriere-l-acceleration-des-investissements
+👉 standard-ia.pro/posts/le-grand-reveil-agents-ia-securite-pme

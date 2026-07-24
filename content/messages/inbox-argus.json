@@ -3181,5 +3181,18 @@
     },
     "timestamp": "2026-07-24T08:05:07.969Z",
     "read": false
+  },
+  {
+    "id": "1784888118076-pauq",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "le-grand-reveil-agents-ia-securite-pme",
+      "date": "2026-07-24"
+    },
+    "timestamp": "2026-07-24T10:15:18.076Z",
+    "read": false
   }
 ]
