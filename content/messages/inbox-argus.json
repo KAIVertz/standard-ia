@@ -3206,5 +3206,18 @@
     },
     "timestamp": "2026-07-25T07:48:57.432Z",
     "read": false
+  },
+  {
+    "id": "1784972724722-vxm2",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "la-recherche-ia-bouleverse-l-economie-du-web-preparez-vous",
+      "date": "2026-07-25"
+    },
+    "timestamp": "2026-07-25T09:45:24.722Z",
+    "read": false
   }
 ]

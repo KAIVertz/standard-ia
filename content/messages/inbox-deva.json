@@ -1109,5 +1109,16 @@
     },
     "timestamp": "2026-07-24T10:15:18.075Z",
     "read": false
+  },
+  {
+    "id": "1784972724722-q4if",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "la-recherche-ia-bouleverse-l-economie-du-web-preparez-vous"
+    },
+    "timestamp": "2026-07-25T09:45:24.722Z",
+    "read": false
   }
 ]

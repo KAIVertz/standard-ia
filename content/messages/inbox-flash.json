@@ -1298,5 +1298,18 @@
     },
     "timestamp": "2026-07-24T10:15:18.074Z",
     "read": false
+  },
+  {
+    "id": "1784972724721-mim2",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "la-recherche-ia-bouleverse-l-economie-du-web-preparez-vous",
+      "title": "La Recherche IA Bouleverse l'Économie du Web : Votre Entreprise Est-Elle Prête ?",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-25T09:45:24.721Z",
+    "read": false
   }
 ]
