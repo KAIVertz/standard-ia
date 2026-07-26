@@ -3243,5 +3243,18 @@
     },
     "timestamp": "2026-07-26T08:04:47.051Z",
     "read": false
+  },
+  {
+    "id": "1785059900744-1grn",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "ia-redefinit-visibilite-et-operations-pme-francaises",
+      "date": "2026-07-26"
+    },
+    "timestamp": "2026-07-26T09:58:20.744Z",
+    "read": false
   }
 ]

@@ -1311,5 +1311,18 @@
     },
     "timestamp": "2026-07-25T09:45:24.721Z",
     "read": false
+  },
+  {
+    "id": "1785059900742-lznm",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-redefinit-visibilite-et-operations-pme-francaises",
+      "title": "L'IA Redéfinit la Visibilité et les Opérations : Ce Que les PME Françaises Doivent Savoir Maintenant",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-26T09:58:20.742Z",
+    "read": false
   }
 ]

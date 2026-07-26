@@ -1120,5 +1120,16 @@
     },
     "timestamp": "2026-07-25T09:45:24.722Z",
     "read": false
+  },
+  {
+    "id": "1785059900743-b71f",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "ia-redefinit-visibilite-et-operations-pme-francaises"
+    },
+    "timestamp": "2026-07-26T09:58:20.743Z",
+    "read": false
   }
 ]

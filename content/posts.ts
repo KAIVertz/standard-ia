@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'ia-redefinit-visibilite-et-operations-pme-francaises',
+    title: 'L\'IA Redéfinit la Visibilité et les Opérations : Ce Que les PME Françaises Doivent Savoir Maintenant',
+    excerpt: 'De la refonte du moteur de recherche Google aux nouvelles plateformes d\'automatisation, l\'IA transforme en profondeur la manière dont les entreprises acquièrent des clients et gèrent leurs tâches quotidiennes. Les PME françaises doivent anticiper ces changements pour rester compétitives.',
+    type: 'article',
+    date: '2026-07-26',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'la-recherche-ia-bouleverse-l-economie-du-web-preparez-vous',
     title: 'La Recherche IA Bouleverse l\'Économie du Web : Votre Entreprise Est-Elle Prête ?',
     excerpt: 'Google a refondu sa barre de recherche après 25 ans, intégrant les "AI Overviews" qui menacent de redéfinir la visibilité en ligne et l\'économie du contenu. Une révolution silencieuse qui exige une adaptation immédiate des entrepreneurs et PME français.',
