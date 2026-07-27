@@ -1363,5 +1363,18 @@
     },
     "timestamp": "2026-07-26T08:04:47.050Z",
     "read": true
+  },
+  {
+    "id": "1785144327300-za1f",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-28",
+      "slug": "cyberattaques-ia-autonomes-defis-pme-francaises",
+      "title": "L'Ère des Cyberattaques IA Autonomes : Un Nouveau Défi pour les PME Françaises"
+    },
+    "timestamp": "2026-07-27T09:25:27.300Z",
+    "read": false
   }
 ]
