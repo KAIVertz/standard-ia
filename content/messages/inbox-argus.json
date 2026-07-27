@@ -3280,5 +3280,18 @@
     },
     "timestamp": "2026-07-27T09:25:27.301Z",
     "read": false
+  },
+  {
+    "id": "1785151152058-5es9",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "google-reforme-recherche-pme-survivre-prosperer-ai-overviews",
+      "date": "2026-07-27"
+    },
+    "timestamp": "2026-07-27T11:19:12.058Z",
+    "read": false
   }
 ]

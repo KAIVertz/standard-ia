@@ -1324,5 +1324,18 @@
     },
     "timestamp": "2026-07-26T09:58:20.742Z",
     "read": false
+  },
+  {
+    "id": "1785151152056-7jw3",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-reforme-recherche-pme-survivre-prosperer-ai-overviews",
+      "title": "Google réécrit les règles : comment les PME peuvent survivre et prospérer dans l'ère des AI Overviews",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-27T11:19:12.056Z",
+    "read": false
   }
 ]

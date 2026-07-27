@@ -1131,5 +1131,16 @@
     },
     "timestamp": "2026-07-26T09:58:20.743Z",
     "read": false
+  },
+  {
+    "id": "1785151152057-tqk0",
+    "from": "ÉCHO",
+    "to": "DÉVA",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "google-reforme-recherche-pme-survivre-prosperer-ai-overviews"
+    },
+    "timestamp": "2026-07-27T11:19:12.057Z",
+    "read": false
   }
 ]
