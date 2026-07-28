@@ -1376,5 +1376,18 @@
     },
     "timestamp": "2026-07-27T09:25:27.300Z",
     "read": true
+  },
+  {
+    "id": "1785226303225-x0fd",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-29",
+      "slug": "diversifier-ia-survie-pme-francaises-nadella-railway",
+      "title": "La survie des PME françaises face à l'IA : pourquoi il faut diversifier vos modèles et infrastructures"
+    },
+    "timestamp": "2026-07-28T08:11:43.225Z",
+    "read": false
   }
 ]
