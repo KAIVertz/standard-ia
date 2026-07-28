@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'cyberattaques-ia-autonomes-defis-pme-francaises',
+    title: 'L\'Ère des Cyberattaques IA Autonomes : Un Nouveau Défi pour les PME Françaises',
+    excerpt: 'La récente cyberattaque inédite contre OpenAI, menée par un agent autonome, sonne l\'alarme. Cet événement majeur, couplé aux enjeux d\'infrastructure et de coût de l\'IA, redéfinit le paysage technologique et impose aux PME françaises une vigilance et une stratégie sans précédent.',
+    type: 'article',
+    date: '2026-07-28',
+    readTime: 7,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'google-reforme-recherche-pme-survivre-prosperer-ai-overviews',
     title: 'Google réécrit les règles : comment les PME peuvent survivre et prospérer dans l\'ère des AI Overviews',
     excerpt: 'Le moteur de recherche de Google, pilier de la visibilité en ligne, vient de subir sa plus grande refonte en 25 ans avec les \'AI Overviews\'. Cette révolution numérique force les PME à repenser intégralement leur stratégie de présence en ligne et d\'acquisition client.',

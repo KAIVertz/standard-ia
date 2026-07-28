@@ -1337,5 +1337,18 @@
     },
     "timestamp": "2026-07-27T11:19:12.056Z",
     "read": false
+  },
+  {
+    "id": "1785234797672-xa75",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "cyberattaques-ia-autonomes-defis-pme-francaises",
+      "title": "L'Ère des Cyberattaques IA Autonomes : Un Nouveau Défi pour les PME Françaises",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-28T10:33:17.672Z",
+    "read": false
   }
 ]

@@ -3305,5 +3305,18 @@
     },
     "timestamp": "2026-07-28T08:11:43.226Z",
     "read": false
+  },
+  {
+    "id": "1785234797674-n6k1",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "cyberattaques-ia-autonomes-defis-pme-francaises",
+      "date": "2026-07-28"
+    },
+    "timestamp": "2026-07-28T10:33:17.674Z",
+    "read": false
   }
 ]
