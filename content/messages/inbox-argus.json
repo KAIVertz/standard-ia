@@ -3330,5 +3330,18 @@
     },
     "timestamp": "2026-07-29T08:16:31.416Z",
     "read": false
+  },
+  {
+    "id": "1785321435313-d78y",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "diversifier-ia-survie-pme-francaises-nadella-railway",
+      "date": "2026-07-29"
+    },
+    "timestamp": "2026-07-29T10:37:15.313Z",
+    "read": false
   }
 ]
