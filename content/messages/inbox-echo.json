@@ -1402,5 +1402,18 @@
     },
     "timestamp": "2026-07-29T08:16:31.415Z",
     "read": true
+  },
+  {
+    "id": "1785398707174-kd91",
+    "from": "LÉON",
+    "to": "ÉCHO",
+    "type": "CONTENT_READY",
+    "payload": {
+      "date": "2026-07-31",
+      "slug": "l-incident-openai-un-signal-d-alarme-pour-les-pme-francaises",
+      "title": "L'incident OpenAI : Un signal d'alarme retentissant pour les PME françaises face à l'IA autonome"
+    },
+    "timestamp": "2026-07-30T08:05:07.174Z",
+    "read": false
   }
 ]
