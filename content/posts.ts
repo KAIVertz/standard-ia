@@ -2,6 +2,17 @@ import { Post } from '@/types'
 
 export const posts: Post[] = [
   {
+    slug: 'l-ia-entre-promesses-et-pieges-ce-que-les-pme-doivent-savoir-apres-le-hack-d-openai',
+    title: 'L\'IA, entre promesses et pièges : ce que les PME françaises doivent savoir après le hack d\'OpenAI',
+    excerpt: 'Le récent incident chez OpenAI, qualifié d\'« inédit » par certains mais de « prévisible » par d\'autres, est un signal fort. Il rappelle aux entrepreneurs français que l\'innovation en IA s\'accompagne de risques accrus – cybersécurité, éthique, coût, et propriété intellectuelle – qu\'il est crucial de maîtriser.',
+    type: 'article',
+    date: '2026-07-30',
+    readTime: 6,
+    content: `
+Contenu indisponible.
+    `.trim(),
+  },
+  {
     slug: 'diversifier-ia-survie-pme-francaises-nadella-railway',
     title: 'La survie des PME françaises face à l\'IA : pourquoi il faut diversifier vos modèles et infrastructures',
     excerpt: 'Satya Nadella met en garde les entreprises : ne misez pas tout sur une seule IA. Entre coûts exorbitants, infrastructures gourmandes et alternatives émergentes, les PME françaises doivent repenser leur stratégie pour éviter la dépendance et assurer leur souveraineté numérique.',

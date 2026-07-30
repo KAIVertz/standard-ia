@@ -1,5 +1,5 @@
-📰 La survie des PME françaises face à l'IA : pourquoi il faut diversifier vos modèles et infrastructures
+📰 L'IA, entre promesses et pièges : ce que les PME françaises doivent savoir après le hack d'OpenAI
 
-Satya Nadella met en garde les entreprises : ne misez pas tout sur une seule IA. Entre coût
+Le récent incident chez OpenAI, qualifié d'« inédit » par certain
 
-👉 standard-ia.pro/posts/diversifier-ia-survie-pme-francaises-nadella-railway
+👉 standard-ia.pro/posts/l-ia-entre-promesses-et-pieges-ce-que-les-pme-doivent-savoir-apres-le-hack-d-openai

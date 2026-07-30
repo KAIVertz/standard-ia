@@ -1363,5 +1363,18 @@
     },
     "timestamp": "2026-07-29T10:37:15.311Z",
     "read": false
+  },
+  {
+    "id": "1785407021508-n4y3",
+    "from": "ÉCHO",
+    "to": "FLASH",
+    "type": "ARTICLE_PUBLISHED",
+    "payload": {
+      "slug": "l-ia-entre-promesses-et-pieges-ce-que-les-pme-doivent-savoir-apres-le-hack-d-openai",
+      "title": "L'IA, entre promesses et pièges : ce que les PME françaises doivent savoir après le hack d'OpenAI",
+      "tweetFile": "content/social/tweet-today.txt"
+    },
+    "timestamp": "2026-07-30T10:23:41.508Z",
+    "read": false
   }
 ]

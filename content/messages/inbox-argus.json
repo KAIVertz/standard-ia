@@ -3355,5 +3355,18 @@
     },
     "timestamp": "2026-07-30T08:05:07.175Z",
     "read": false
+  },
+  {
+    "id": "1785407021510-81i4",
+    "from": "ÉCHO",
+    "to": "ARGUS",
+    "type": "HEALTH_OK",
+    "payload": {
+      "action": "published",
+      "slug": "l-ia-entre-promesses-et-pieges-ce-que-les-pme-doivent-savoir-apres-le-hack-d-openai",
+      "date": "2026-07-30"
+    },
+    "timestamp": "2026-07-30T10:23:41.510Z",
+    "read": false
   }
 ]
